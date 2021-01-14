@@ -1,0 +1,1076 @@
+/* 
+  multiLanguage.strings
+  BaseDevelopmentFramework
+
+  Created by 王涛 on 2019/11/5.
+  Copyright © 2019 Celery. All rights reserved.
+*/
+//tabBar模块
+"tabbar1" = "Home";
+"tabbar2" = "Quote";
+"tabbar3" = "Transaction";
+"tabbar4" = "Contract";
+"tabbar5" = "Asset";
+"tabbar6" = "Mine";
+
+// General
+"mainCurrency" = "HDU";
+
+// Home
+"homeTip1" = "Yesterday's Revenue";
+"homeTip2" = "More";
+"homeTip3" = "Real Time •";
+"homeTip4" = "Quote";
+"homeTip5" = "24H Growth List";
+"homeTip6" = "Currency";
+"homeTip7" = "Latest Price";
+"homeTip8" = "24H Change";
+"homeTip9" = "Please log in to view earnings";
+"homeTip10" = "Go to Login";
+"homeButtonTip11" = "Red envelope";
+"homeButtonTip12" = "Ledger";
+"homeButtonTip13" = "Invite to activate";
+"homeButtonTip14" = "Charity";
+"homeButtonTip15" = "Announcement";
+"homeButtonTip16" = "Mall";
+
+//More applications
+"MoreApplicationTip1" = "Sort";
+"MoreApplicationTip2" = "Complete";
+"MoreApplicationTip3" = "Press and drag to adjust the order";
+
+// Home drawer
+"homeSkidTip1" = "click to log in";
+"homeSkidTip2" = "Welcome to SD";
+"homeSkidTip3" = "Account Management";
+"homeSkidTip4" = "Security Center";
+"homeSkidTip5" = "Payment Management";
+"homeSkidTip6" = "Hua Huo Announcement";
+"homeSkidTip7" = "About Us";
+"homeSkidTip8" = "Real Name Authentication";
+"homeSkidTip9" = "Help Center";
+"homeSkidTip10" = "Settings";
+"homeSkidTip11" = "Contact Customer Service";
+"homeSkidTip12" = "Share Flower Fire APP";
+"homeSkidTip13" = "Please authenticate yourself first";
+
+//Security center
+"securityTip1" = "Security Center";
+"securityTip2" = "Change Login Password";
+"securityTip3" = "Modify Transaction Password";
+"securityTip4" = "Recover Transaction Password";
+"securityTip5" = "Google Authentication";
+"securityTip6" = "Transaction Security Settings";
+"securityTip7" = "Payment Verification Settings";
+"securityTip8" = "Login Authentication Settings";
+"securityTip9" = "Modify Phone Number";
+"securityTip10" = "Modify Mailbox";
+
+// Modify login password
+"changeLoginPwdTip1" = "Change Login Password";
+"changeLoginPwdTip2" = "Logging in for your account";
+"changeLoginPwdTip3" = "Original Login Password";
+"changeLoginPwdTip4" = "Please enter the original login password";
+"changeLoginPwdTip5" = "New Login Password";
+"changeLoginPwdTip6" = "Please enter a new login password";
+"changeLoginPwdTip7" = "Confirm New Password";
+"changeLoginPwdTip8" = "Please enter a new login password to confirm";
+"changeLoginPwdTip9" = "Confirm Changes";
+"changeLoginPwdTip10" = "Mailbox Verification Code";
+"changeLoginPwdTip11" = "Please enter the email verification code";
+"changeLoginPwdTip12" = "Get Verification Code";
+"changeLoginPwdTip13" = "Two inputs are inconsistent";
+"Resend after seconds" = "Resend after seconds";
+"changeLoginPwdTip14" = "Please fill in all information";
+"BindingPhoneResendCode" = "Resend Verification Code";
+
+// Modify transaction password
+"changeFundPwdTip1" = "Change Transaction Password";
+"changeFundPwdTip2" = "Original Transaction Password";
+"changeFundPwdTip3" = "Please enter the original transaction password";
+"changeFundPwdTip4" = "New Transaction Password";
+"changeFundPwdTip5" = "Please enter a new transaction password";
+"changeFundPwdTip6" = "Confirm New Password";
+"changeFundPwdTip7" = "Please confirm the new transaction password";
+
+// Modify mailbox
+"changeEmailTip1" = "Change Email";
+"changeEmailTip2" = "Mailbox Number";
+"changeEmailTip3" = "Please enter your email number";
+"changeEmailTip4" = "OK";
+"changeEmailTip5" = "Please enter the correct email address";
+
+// Modify mobile phone number
+"changePhoneTip1" = "Change Phone Number";
+"changePhoneTip2" = "Phone Number";
+"changePhoneTip3" = "Please enter your mobile phone number";
+"changePhoneTip4" = "OK";
+"changePhoneTip5" = "Please enter the correct phone number";
+"changePhoneTip6" = "Phone Verification Code";
+"changePhoneTip7" = "Please enter the phone verification code";
+
+// Verify settings
+"VerificationSettingTip1" = "Transaction Set-Free";
+"VerificationSettingTip2" = "VerificationSettingTip2";
+"VerificationSettingTip3" = "VerificationSettingTip3";
+"VerificationSettingTip4" = "Never enter a transaction password";
+"VerificationSettingTip5" = "SMS Verification Code";
+"VerificationSettingTip6" = "Login Password";
+"VerificationSettingTip7" = "Submit";
+
+// Set
+"settingTip1" = "Language Switching";
+"settingTip2" = "Login";
+"settingTip3" = "Safe Exit";
+"settingTip4" = "setting";
+"settingTip5" = "Language Setting";
+
+// Google Authenticator
+"googleVerificationTip1" = "Google Authenticator";
+"googleVerificationTip2" = "Unbound";
+"googleVerificationTip3" = "Binding Google Authenticator";
+"googleVerificationTip4" = "Please backup the key properly to prevent loss";
+"googleVerificationTip5" = "Save QR code to mobile phone or copy key to clipboard may have security risks, please save it properly.";
+"googleVerificationTip6" = "Next";
+"googleVerificationTip7" = "Copy";
+"googleVerificationTip8" = "Google Verification Code";
+"googleVerificationTip9" = "Key not obtained";
+"googleVerificationTip10" = "Bound";
+"googleVerificationTip11" = "Google Verification";
+"googleVerificationTip12" = "Google verification code missing?";
+"googleVerificationTip13" = "Click here";
+"googleVerificationTip14" = "Paste";
+"googleVerificationTip15" = "Not opened";
+"googleVerificationTip16" = "Turned On";
+"googleVerificationTip17" = "Empty Key";
+"googleVerificationTip18" = "Please enter Google Verification Code";
+"Safety verification" = "Safety verification";
+"Send" = "Send";
+"login password" = "Login password";
+"Enter your login password" = "Enter your login password";
+"SMS verification code" = "SMS verification code";
+"Successful copy" = "Successful copy";
+"Resend Code" = "Resend Code";
+"ForgetTip1" = "Please enter the correct email or mobile phone number";
+"LoginTip1" = "Verification Code Error";
+
+"aboutUsTip1" = "About Us";
+"aboutUsTip2" = "User Agreement";
+"aboutUsTip3" = "Current Version";
+
+// Quotes
+"quotesTip1" = "Optional";
+"quotesTip2" = "All";
+"quotesTip3" = "Currency";
+"quotesTip4" = "Latest Price";
+"quotesTip5" = "24H Change";
+"Vol" = "Volume";
+
+//transaction
+"transactionTip1" = "Exchange";
+"transactionTip2" = "Fiat";
+"ccTip1" = "Unknown Trading Pair";
+"ccTotal" = "Transaction Amount";
+"Optimal market price" = "Trading at the current optimal price";
+"BUY" = "Buy";
+"SELL" = "Sell";
+"market" = "Market Price";
+"Limit" = "Limit Price";
+"ccTip2" = "Please enter the commission price";
+"ccTip3" = "The commission price must be greater than 0";
+"ccTip4" = "Please enter the commission quantity";
+"ccTip5" = "The number of delegates must be greater than 0";
+"ccTip6" = "Please enter the commission amount";
+"ccTip7" = "The commission amount must be greater than 0";
+"ccTip8" = "The quantity you enter cannot be greater than the quantity available for purchase";
+"Default" = "Default";
+"BuyHandicap" = "Buy Order";
+"SellHandicap" = "Sell Order";
+"Stop-Limit" = "Take Profit and Stop Loss";
+"Depth" = "Depth";
+"ccBuy1" = "Buy";
+"ccSell1" = "Sell";
+"Price" = "Price";
+"Open Orders" = "Current Orders";
+"Not record" = "No commission";
+"cancel1" = "Cancel";
+"cancel2" = "Cancel2";
+"ccTip9" = "Completed";
+"Revocation order" = "Revocation Order";
+"All commission" = "All commission";
+"Order History" = "History";
+"Order Type" = "Order Type";
+"Order Status" = "Order Status";
+"Reset" = "Reset";
+"Search" = "Search Currency";
+"Exchange" = "Exchange";
+"Fiat1" = "Fiat";
+"ccTip10" = "The transaction is not completed and the details cannot be viewed";
+"ccTip11" = "Please enter the trigger price";
+"Buy1" = "Buy";
+"Sell1" = "Sell";
+"Deal done" = "Deal done";
+"Copy1" = "Copyed";
+"No" = "Nothing";
+"H" = "High";
+"L" = "Low";
+"Line" = "Time Sharing";
+"1min" = "1min";
+"5min" = "5 points";
+"1hour" = "1hour";
+"1day" = "Day Line";
+"1week" = "1week";
+"1mon" = "1 month";
+"15min" = "15 minutes";
+"30min" = "30 minutes";
+"close2" = "close";
+"More" = "More";
+"Index" = "Index";
+"Filled" = "Filled";
+"Introduction" = "Introduction";
+"Issue Time" = "Issue Time";
+"Total Amount" = "Total Amount";
+"Circulation" = "Total Circulation";
+"Token Price" = "Crowdfunding Price";
+"White Paper" = "White Paper";
+"Official Website" = "Official Website";
+"Block Explorer" = "Block Explorer";
+"Main" = "Main Picture";
+"Sub" = "Sub-picture";
+"Open1" = "Open";
+"Close1" = "Close";
+"Change1" = "Increase and Decrease";
+"Change%" = "Change or Decrease";
+"Executed" = "Volume";
+"cursorTip1" = "Commission Price";
+"cursorTip2" = "Cumulative Quantity";
+"cursorTip3" = "Cumulative Amount";
+"direction" = "Direction";
+"VOL" = "VOL";
+"ccTip12" = "Transaction Details";
+"ccTip13" = "Total Transaction Value";
+"ccTip14" = "Average Price";
+"ccTip15" = "Volume";
+"ccTip16" = "Handling Fee";
+"ccTip17" = "Time";
+"ccTip18" = "Deal Price";
+"All" = "History";
+"Available" = "Available: ";
+"Amount" = "Amount";
+"Login" = "Login";
+
+// French currency
+"FBTip1" = "Purchase";
+"FBTip2" = "Sell";
+"FBTip3" = "Order Order";
+"FBTip4" = "Order";
+"FBTip5" = "Currency";
+"FBTip6" = "Quantity";
+"FBTip7" = "Limit";
+
+"Order" = "Order";
+"Commission Order" = "Commission Order";
+"Optional transaction" = "Optional transaction";
+"Filter" = "Filter";
+"Filtered" = "Filtered";
+"FiatBuy" = "Payment";
+"By Price1" = "Buy at Price";
+"By amount1" = "Buy by quantity";
+"By Price2" = "Sell at Price";
+"By amount2" = "Sell by Quantity";
+"Total buy amount1" = "Please enter the total amount of fiat currency you want to buy";
+"Total buy amount2" = "Please enter the total amount of legal currency to be sold";
+"Buy amount1" = "Please enter the amount of legal currency you want to buy";
+"Buy amount2" = "Please enter the amount of fiat currency to be sold";
+"FiatPrice" = "Unit Price";
+"FiatAmount" = "Number of Transactions";
+"Payment total" = "Payment total";
+"Cancelled in" = "Automatically Cancel After";
+"FiatOrder" = "Place Order";
+"Minimum amount" = "Minimum amount";
+"Please enter the minimum amount" = "Please enter the minimum amount";
+"Clear" = "Clear";
+"Issue order" = "Issue order";
+"I want to buy" = "I want to buy";
+"I want to sell" = "I want to sell";
+"Trading price" = "Trading price";
+"FiatTip1" = "Please enter the transaction price";
+"FiatTip2" = "Current Market Price:";
+"FiatTip3" = "Transaction Amount";
+"FiatTip4" = "Limit Minimum Amount";
+"FiatTip5" = "Transaction Amount Required";
+"FiatTip6" = "Limit the minimum amount required";
+"FiatTip7" = "Adversary Limit";
+"FiatTip8" = "Adversary Authentication Level";
+"FiatTip9" = "opponent registration time";
+"FiatTip10" = "Transaction Description";
+"FiatTip11" = "Quick payment after placing an order, and deposit money in time after arrival";
+"FiatTip12" = "Counter Payment Time";
+"FiatTip13" = "1. Please pay in time and click the [I have paid] button \ n2. The currency is locked and managed by the system, please order with peace of mind";
+"Hanging up" = "Hanging up";
+"Actual transaction" = "Actual transaction";
+"Order record" = "Order record";
+"FiatTip14" = "The client has set limits";
+"FiatTip15" = "Delegator's request: KYC level 2 certification required";
+"Certification" = "Certification";
+"FiatLimit" = "Limit";
+"FiatLimit1" = "Limit No Limit";
+"FiatTip16" = "Input cannot be 0";
+"FiatTip17" = "Limit Registration Time";
+"No limit" = "No limit";
+"FiatTip18" = "The amount you entered is greater than the maximum amount";
+"FiatTip19" = "The amount you entered is less than the maximum amount";
+"FiatTip20" = "The amount you entered is less than the minimum amount";
+"FiatTip21" = "The amount of currency you entered is greater than the maximum amount of currency";
+"FiatTip22" = "Submit Successfully";
+"FiatBuy" = "Buy";
+"FiatSell" = "Sell";
+"BuyAll" = "Buy All";
+"SellAll" = "Sell All";
+"Pre-registration" = "Pre-registration";
+"Limit certification level" = "Limit certification level";
+"FiatTip23" = "Please add a payment account first";
+"Go add" = "Go add";
+"Currently available" = "Currently available";
+"FiatTip24" = "Please enter the purchase quantity";
+"FiatTip25" = "Transaction Amount (CNY)";
+"FiatTip26" = "Input amount needs to be <= 0";
+"FiatTip27" = "Payment completed within ten minutes";
+"FiatTip28" = "Minimum amount needs to be <= 0";
+"FiatTip29" = "The quantity sold cannot exceed the total";
+"Not records" = "No records";
+"TransactionType" = "TransactionType";
+"OrderTip1" = "Pending Payment";
+"OrderTip2" = "Paid";
+"OrderTip3" = "Cancelled";
+"OrderTip4" = "Appealing";
+"OrderTip5" = "Paid, pending deposit";
+"OrderTip6" = "Transaction Successful";
+// Fiat orders
+"FiatOrderTip1" = "Cancelled";
+"FiatOrderTip2" = "Order has been cancelled and payment information cannot be viewed";
+"FiatOrderTip3" = "Total Transaction";
+"FiatOrderTip4" = "Please pay";
+"FiatOrderTip5" = "Please be at";
+"FiatOrderTip6" = "Internal Payment to Merchant";
+"FiatOrderTip7" = "Pending Payment";
+"FiatOrderTip8" = "Paid";
+"FiatOrderTip9" = "Waiting for sellers to deposit money";
+"FiatOrderTip10" = "Paid";
+"FiatOrderTip11" = "Appeal";
+"FiatOrderTip12" = "Paid, wait for seller to release coin";
+"FiatOrderTip13" = "Finished";
+"FiatOrderTip14" = "Order completed";
+"FiatOrderTip15" = "Appealing";
+"FiatOrderTip16" = "The other party has appealed, please submit your appeal";
+"FiatOrderTip17" = "Complaint Information";
+"FiatOrderTip18" = "Release";
+"FiatOrderTip19" = "Buyer has paid";
+"FiatOrderTip20" = "Waiting for sellers to deposit money";
+"FiatOrderTip21" = "Waiting for buyer payment";
+"FiatOrderTip22" = "Release has timed out";
+"FiatOrderTip23" = "Contact Each Other";
+"FiatOrderTip24" = "Transaction Unit Price";
+"FiatOrderTip25" = "Number of Transactions";
+"FiatOrderTip26" = "Waiting for the other party's payment";
+"FiatOrderTip27" = "Pending Payment";
+"FiatOrderTip28" = "Switch Mode";
+"FiatOrderTip29" = "If you have transferred the payment to the seller, be sure to click the' Mark as paid 'button, otherwise it may cause financial losses.";
+"FiatOrderTip30" = "Cancel Order";
+"FiatOrderTip31" = "Mark as paid";
+"FiatOrderTip32" = "Payment Confirmation";
+"FiatOrderTip33" = "Please confirm that you have paid the seller \ nMalicious click will directly freeze the account";
+"FiatOrderTip34" = "Confirm Cancel Trade";
+"FiatOrderTip35" = "If you have already paid the seller, please do not cancel the transaction \ nI confirm that there is no payment to the other party";
+"FiatOrderTip36" = "I think about it again";
+"FiatOrderTip37" = "Reference Number";
+"FiatOrderTip38" = "Payee";
+"FiatOrderTip39" = "Receiving QR Code";
+"FiatOrderTip40" = "Confirm order completion, release currency";
+"FiatOrderTip41" = "Seller";
+"FiatOrderTip42" = "Buyer";
+"FiatOrderTip43" = "leftover";
+"FiatOrderTip44" = "Order Number";
+"FiatOrderTip45" = "Order Time";
+"FiatOrderTip46" = "Please be sure to log in to the collection account to confirm the account details to avoid property damage caused by incorrect click release.";
+"QR Code" = "QR Code";
+"FiatOrderTip47" = "Please note the payment reference number in the payment information";
+"FiatOrderTip48" = "Please note the payment reference number in the payment information";
+"FiatOrderTip49" = "● If you have transferred money to the seller, please be sure to click the' Mark as paid 'button, otherwise it may cause financial losses \ n \ n ● If you have transferred money to the seller, please click' Mark 'Paid' button, otherwise it may cause loss of funds \ n ";
+"FiatOrderTip50" = "Order Details";
+"FiatOrderTip51" = "Party Mailbox Number";
+
+//appeal
+"AppealTip1" = "Please enter the content of the appeal";
+"AppealTip2" = "Order Number";
+"AppealTip3" = "Order Quantity";
+"AppealTip4" = "Total Price";
+"AppealTip5" = "Upload Credentials";
+"AppealTip6" = "Certificate";
+
+
+//assets
+"Total Balances (BTC)" = "Total Balance Assets";
+"Exchange" = "Exchange";
+"Contract" = "Contract Account";
+"Fiat" = "Fiat";
+"Exchange Balances (BTC)" = "Currency Total Asset Equivalent (HDU)";
+"Total Contract Equity (BTC)" = "Total Contract Equity (BTC)";
+"Fiat Balances (BTC)" = "Fat Currency Total Assets Equivalent (HDU)";
+"On orders" = "Freeze";
+"Estimated (CNY)" = "Estimated (CNY)";
+"Equity" = "Account Interest";
+"EST liquidation price (USD)" = "Estimated Strong Parity (USD)";
+"Margin rate" = "Margin rate";
+"Finance Records" = "Finance Records";
+"Transactions" = "Contract Bills";
+"System" = "System";
+"Transfer In" = "Transfer In";
+"Transfer Out" = "Transfer Out";
+"Recharge" = "Recharge";
+"Sell" = "Sell";
+"Buy" = "Buy";
+"Open" = "Open Position";
+"Close" = "Close Position";
+"Liquidation" = "Qianping";
+"Delivery settlement" = "Delivery settlement";
+"Fee" = "Fee";
+"Promotion Reward" = "Promotion Reward";
+"Date" = "Time";
+"Total" = "Amount";
+"Type" = "Type";
+"Actual turnover" = "Actual turnover";
+"qrCodeTip1" = "Recognition failed";
+"qrCodeTip2" = "Align to the QR code, you can automatically scan to the address bar";
+"AssetsTip1" = "Hide Small Currency";
+"Search" = "Search";
+"assetsTip1" = "Charge Money";
+"assetsTip2" = "Withdrawal";
+"assetsTip3" = "Transfer";
+"assetsTip4" = "Available:";
+"assetsTip5" = "Freeze:";
+"Status" = "Status";
+
+// Deposit and withdrawal records
+"Currency" = "Currency";
+"Time" = "Time";
+"Amount" = "Amount";
+"Status" = "Status";
+"DepositRecording" = "Deposit Recording";
+"WithdrawRecording" = "WithdrawRecording";
+// Deposit
+"Deposit" = "Deposit";
+"Withdraw" = "Withdraw";
+"Transfer" = "Transfer";
+"leverageRiskWarning" = "Risk Warning";
+"SelectCurrency" = "Select Currency";
+"Save QR code to album" = "Save QR code to album";
+"DepositAddress" = "Deposit Address";
+"Copy" = "Copy Address";
+"Successful copy" = "Successful copy";
+"CopyTag" = "CopyTag";
+"DepositTip1" = "Please check carefully and fill in this address label, if you miss the label, it will result in the loss of funds!";
+"DepositTip2" = "After you recharge to the above address, you need to confirm the entire network node, the arrival time is";
+"DepositTip3" = "After secondary network confirmation. \ N";
+"DepositTip4" = "Minimum Deposit Amount:";
+"DepositTip5" = ", recharges less than the minimum amount will not be posted and cannot be returned. \ N";
+"DepositTip6" = "Your recharge address will not change frequently, you can recharge it; if there is a change, we will try to notify you through the website announcement or email. \ NPlease make sure that the computer and browser are safe to prevent the information from being changed Or leak. ";
+"DepositTip7" = "Deposit Reminder";
+"Address" = "Address";
+"AddAddress" = "AddAddress";
+"chain" = "chain";
+"Remarks" = "Remarks";
+"DepositTip6" = "This currency is temporarily unrechargeable";
+
+// Withdraw
+"Add" = "Add";
+"WithdrawTip1" = "Please enter or long press to paste the address";
+"WithdrawTip2" = "Minimum Withdrawal Number";
+"WithdrawTip3" = "The minimum withdrawal amount is:";
+"WithdrawTip4" = "Please enter the amount received";
+"WithdrawTip5" = "Please enter the fund password";
+"WithdrawTip6" = "To ensure the safety of funds, when your account security policy changes, password changes, we will manually review the withdrawal, please be patient and wait for the staff to contact by phone or email. \ NPlease make sure the computer and browser are safe Prevent the information from being changed or leaked. ";
+"WithdrawAddress" = "WithdrawAddress";
+"CanMention" = "Can Mention";
+"Number of arrivals" = "Number of arrivals";
+"Handling fee" = "Handling fee";
+"Fund password" = "Fund password";
+"InputPaymentPassword" = "Please Input Fund password";
+"Determine the coin" = "Determine the coin";
+"WithdrawTip7" = "Suspend Deposit";
+"WithdrawTip8" = "Pause Withdrawal";
+"WithdrawTip9" = "Once your withdrawal operation is completed, the corresponding asset ownership will be changed by you to the account owner corresponding to the target address. Please be sure to check the withdrawal address information carefully before the withdrawal operation to ensure It is a voluntary act, and it is confirmed that it does not involve any illegal situations such as pyramid schemes, illegal fund-raising, and fraud.";
+"Tag" = "Tag";
+"WithdrawTip10" = "Enter or long press to paste the label";
+"WithdrawTip11" = "(Wrong entry may result in asset loss, please check carefully)";
+"WithdrawTip12" = "Please fill in the withdrawal address";
+"WithdrawTip13" = "Please fill in the withdrawal amount";
+"WithdrawTip14" = "Please fill in the remarks";
+"WithdrawTip15" = "Maximum Withdrawal Quantity";
+
+// Transfer
+"Available" = "Available";
+"Contract account" = "Contract account";
+"Coin account" = "Exchange";
+"Legal currency account" = "Fiat";
+"Legal currency" = "Fat currency"; // Determine whether the string contains fiat currency, English note
+"TransferTip1" = "Please enter the transfer amount";
+"TransferTip2" = "Transferable amount is 0";
+"TransferTip3" = "Maximum number of transfers exceeded";
+"TransferTip4" = "Transfer Description";
+"TransferTip5" = "Number of transfers";
+"TransferTip6" = "Transfers can only be transferred to the corresponding account. No transfer fee will be charged for transfers between accounts";
+"All" = "All";
+"From" = "From";
+"To" = "To";
+
+//log in
+"loginTip1" = "Welcome to SD Trading Platform";
+"loginTip2" = "Username";
+"loginTip3" = "Password";
+"loginTip4" = "Please enter a username";
+"loginTip5" = "Please enter your login password";
+"loginTip6" = "Login";
+"loginTip7" = "Forgot Password";
+"loginTip8" = "Register Account";
+
+//forget password
+"forgetPwdTip1" = "New Login Password";
+"forgetPwdTip2" = "New input new login password";
+"forgetPwdTip3" = "Confirm New Login Password";
+"forgetPwdTip4" = "Please confirm the new login password again";
+"forgetPwdTip5" = "Forget Login Password";
+"forgetPwdTip6" = "Mailbox Number";
+"forgetPwdTip7" = "Please enter your mailbox number";
+
+//registered
+"registeredTip1" = "User nickname consists of letters and numbers";
+"registeredTip2" = "Mailbox Number";
+"registeredTip3" = "Please enter your mailbox number";
+"registeredTip4" = "Next";
+"registeredTip5" = "Tap the' Next 'button above to indicate your agreement";
+"registeredTip6" = "Existing account directly log in >>";
+"registeredTip7" = "Welcome to SD Trading Platform";
+"registeredTip8" = "Privacy Policy and Service Agreement";
+"registeredTip9" = "Existing Account";
+"registeredTip10" = "Direct Login >>";
+
+// Register 2
+"registeredTip11" = "Login Password";
+"registeredTip12" = "Please enter your login password";
+"registeredTip13" = "Confirm Login Password";
+"registeredTip14" = "Please confirm the login password again";
+"registeredTip15" = "Set Password";
+
+// kyc certification
+"Kyc certification" = "kyc certification";
+"KycTip1" = "• Financial currency transactions after authentication";
+"KycTip2" = "• You can increase the withdrawal amount after authentication";
+"KycTip3" = "• After KYC2 certification, a single transaction of legal currency higher than 2K or accumulated amount greater than 5W can be conducted";
+"KycTip4" = "• KYC1 certification can only be used for advanced certification";
+"KycTip5" = "• KYC2 certification can only be performed after KYC1 certification";
+"KycTip6" = "You have not yet completed identity authentication. According to relevant national regulations, currency transactions require real-name registration. Please fill in your real identity information. Once the authentication is completed, it cannot be changed. Thank you for your understanding and support!";
+"Name" = "Name";
+"Identity number" = "Identity number";
+"KYC1 certification" = "KYC1 certification";
+"Go to certification" = "Go to certification";
+"verified" = "Verified";
+"KYC2 certification" = "KYC2 certification";
+"not certified" = "not certified";
+// KYC1 certification
+"Kyc1Tip1" = "Please enter a name";
+"Kyc1Tip2" = "Please enter your ID number";
+"InputTrueName" = "Please enter a real name";
+"ID card Number" = "ID card Number";
+"Save" = "Save";
+// KYC2 certification
+"Kyc2Tip1" = "Please upload a photo of your ID card";
+"Kyc2Tip2" = "Please upload the back photo of your ID card";
+"ID card front photo" = "ID card front photo";
+"ID card back photo" = "ID card back photo";
+
+//收款方式
+"Payment Method" = "payment method";
+"Add" = "Add";
+"paymentMthodTip1" = "No account\n Please be sure to use your real name account";
+//添加收款账户
+"Add PayMent Method" = "Add a collection account";
+"Add Bank card" = "Add a bank card";
+"Add Alipay" = "Add Alipay";
+"Add WChat" = "Add WeChat";
+"InputAcount" = "Please input Username";
+"Input Bank Account" = "Please enter the bank of deposit";
+"cardholder" = "cardholder";
+"cardholder1" = "Please enter the cardholder name";
+"Bank card number" = "Bank card number";
+"Bank card number1" = "Please enter the bank card number";
+"Bank Account" = "Bank account";
+"Alipay Account" = "Alipay account";
+"Input Alipay Account" = "Please enter an Alipay account";
+"Add a QR code (optional)" = "Add a QR code (optional)";
+"WChat Account" = "WeChat account";
+"Input WChat Account" = "Please enter a WeChat account";
+//收款账户详情
+"Collection account details" = "Collection account details";
+"account type" = "account type";
+"Alipay collection code" = "Alipay collection code";
+"WeChat collection code" = "WeChat collection code";
+"accountdetailsTip" = "The legal currency transaction belongs to the C2C transaction. If the funds do not pass through the platform, the platform will not automatically deduct the funds. You need to transfer the funds to the other party manually. The other party can receive the money";
+"Delete this account" = "Delete this account";
+"TrueName" = "actual name";
+"Bank card" = "Bank card";
+"Alipay" = "Alipay";
+"WChat" = "WeChat";
+"HomeTip1" = "A new version is available";
+"HomeTip2" = "Go Update";
+"ShowPaymentMethodTip1" = "Activated";
+"ShowPaymentMethodTip2" = "Not activated";
+
+// Permission prompt
+"permissionCameraTip" = "Camera";
+"permissionPhotoTip" = "Album";
+"permissionTip1" = "Nothing";
+"permissionTip2" = "permission, whether to go to settings";
+
+// Util
+"utilTip1" = "Settings";
+"cancel" = "Cancel";
+"utilTip2" = "Tip";
+"Tips" = "Warm Tips";
+"determine" = "determine";
+"cancel" = "Cancel";
+"Failed to save image" = "Failed to save image";
+"Failed to create album" = "Failed to create album";
+"Save the picture successfully" = "Save the picture successfully";
+"Photo permissions are not turned on" = "Photo permissions are not turned on";
+"PhotoPermissionTip" = "Please enable photo authorization in the system settings, otherwise you will not be able to save pictures";
+"PhotoPermissionTip1" = "Please enable photo authorization in system settings, otherwise you will not be able to upload pictures";
+"Not yet" = "Not yet";
+"Go to set" = "Go to set";
+"photoErrorTip" = "Unable to access the album due to system reasons";
+"NetWorkErrorTip" = "Please check the network link";
+"NetWorkErrorTip1" = "Unauthorized Access";
+"NetWorkErrorTip2" = "System Error";
+"NetWorkErrorTip3" = "You are not currently on the network, and some functions will be unavailable";
+"Take a photo" = "Take a photo";
+"Album" = "Album";
+"upload failed" = "Upload failed";
+"please enter" = "please enter";
+"confirm" = "Confirm";
+"Loading" = "Please wait ...";
+"cameraTip1" = "Camera permissions are not enabled";
+"cameraTip2" = "Turn on the camera in the system settings";
+"netTip" = "No updated version";
+"min" = "Min";
+"second" = "second";
+"utilTip3" = "Save Picture";
+"utilTip4" = "Save Successful";
+"utilTip5" = "Permission Tips";
+"permissionTip12" = "Permission";
+"permissionTip13" = "Go to Settings";
+"SignOutSuccess" = "Sign Out Successful";
+
+// Empty data prompt
+"noDataTip" = "No data, please try again later!";
+"noDataTip1" = "Retry";
+
+//Optional
+"OptionalSymbolTip1" = "Select optional success";
+"OptionalSymbolTip2" = "Optional Optional Failed";
+"OptionalSymbolTip3" = "Cancel optional selection successfully";
+"OptionalSymbolTip4" = "Failed to cancel optional selection";
+"OptionalSymbolTip5" = "Optional";
+
+//Mining pool
+"MiningPollTip1" = "Accepting Account";
+"MiningPollTip2" = "Please enter a cent account";
+"MiningPollTip3" = "Quantity";
+"MiningPollTip4" = "Please enter the quantity";
+"MiningPollTip5" = "All";
+"MiningPollTip6" = "Available";
+"MiningPollTip7" = "Miner's Fee";
+"MiningPollTip8" = "OK";
+"MiningPollTip9" = "MiningPollTip9";
+
+//Red envelope
+"RedEnvelopeTip1" = "Amount";
+"RedEnvelopeTip2" = "Please enter the total amount of the red envelope";
+"RedEnvelopeTip3" = "Quantity";
+"RedEnvelopeTip4" = "Please enter the number of red envelopes";
+"RedEnvelopeTip5" = "piece";
+"RedEnvelopeTip6" = "Available balance";
+"RedEnvelopeTip7" = "Create Red Envelope";
+"RedEnvelopeTip8" = "Create and Share";
+"RedEnvelopeTip9" = "Red EnvelopeTip9";
+
+//Ledger
+"LedgerTip1" = "Ledger Tips";
+
+//Invite to activate
+"InvitationActivateTip1" = "Activate Miner";
+"InvitationActivateTip2" = "The other party's account";
+"InvitationActivateTip3" = "Please enter SD account number";
+"InvitationActivateTip4" = "Activation requires consumption";
+"InvitationActivateTip4jihuoma" = "key";
+//SD announcement
+"AnnouncementTip1" = "SD Announcement";
+
+//Help tutorial
+"HelpCenterTip1" = "Help Center";
+
+//raise
+"RaiseTip1" = "RaiseTip1";
+"RaiseTip2" = "Under review";
+"RaiseTip3" = "Waiting to be raised";
+"RaiseTip4" = "RaiseTip4";
+"RaiseTip5" = "RaiseTip5";
+"RaiseTip6" = "Target Number";
+"RaiseTip7" = "Total Issuance";
+"RaiseTip8" = "RaiseTip8";
+"RaiseTip9" = "Application for Listing";
+"RaiseTip10" = "Project Details";
+"RaiseTip11" = "Public Offer Status";
+"RaiseTip12" = "Review time:";
+"RaiseTip13" = "Limited purchase quantity:";
+"RaiseTip14" = "Receiving currency:";
+"RaiseTip15" = "Exchange ratio:";
+"RaiseTip16" = "Old users:";
+"RaiseTip17" = "New User:";
+"RaiseTip18" = "Raise Tips:";
+"RaiseTip19" = "Issue Time";
+"RaiseTip20" = "Total Circulation";
+"RaiseTip21" = "White Paper";
+"RaiseTip22" = "Official Website";
+"RaiseTip23" = "Wallet Address";
+"RaiseTip24" = "Introduction";
+"RaiseTip25" = "RaiseTip25 has ended";
+"RaiseTip26" = "Required field";
+"RaiseTip27" = "Contact Name";
+"RaiseTip28" = "Please enter the contact name";
+"RaiseTip29" = "Contact Mobile Number";
+"RaiseTip30" = "Please enter the contact's mobile phone number";
+"RaiseTip31" = "Currency Chinese Name";
+"RaiseTip32" = "Please enter the Chinese name of the currency";
+"RaiseTip33" = "English name of currency";
+"RaiseTip34" = "Please enter the English name of the currency";
+"RaiseTip35" = "Total Circulation";
+"RaiseTip36" = "Please enter the total circulation";
+"RaiseTip37" = "Market Circulated Volume";
+"RaiseTip38" = "Please enter the current market volume";
+"RaiseTip39" = "Project Introduction";
+"RaiseTip40" = "Please enter the project description";
+"RaiseTip41" = "Community Users";
+"RaiseTip42" = "Please enter the number of community users";
+"RaiseTip43" = "Marketing Budget";
+"RaiseTip44" = "Please enter the marketing budget";
+"RaiseTip45" = "If your application form meets the criteria, we will reply to you as soon as possible";
+"RaiseTip46" = "Submit Application";
+
+//Flower letter
+"FlowerMessageTip1" = "Flower Message";
+"FlowerMessageTip2" = "Create Group";
+"FlowerMessageTip3" = "Add group/friend";
+"FlowerMessageTip4" = "My Profile";
+"FlowerMessageTip5" = "Search";
+"FlowerMessageTip6" = "Personal Information";
+"FlowerMessageTip7" = "Username";
+"FlowerMessageTip8" = "Portrait";
+"FlowerMessageTip9" = "Friend's Note";
+"FlowerMessageTip10" = "Set Notes";
+"FlowerMessageTip11" = "Set a nickname";
+"FlowerMessageTip12" = "Set Avatar";
+"FlowerMessageTip13" = "Please enter a nickname";
+"FlowerMessageTip14" = "*The nickname cannot be modified after it is set";
+"FlowerMessageTip15" = "Save";
+"FlowerMessageTip16" = "Set Notes";
+"FlowerMessageTip17" = "Friend's Notes";
+"FlowerMessageTip18" = "Enter SD username/group ID to search";
+"FlowerMessageTip19" = "Cancel";
+"FlowerMessageTip20" = "Add Friend";
+"FlowerMessageTip21" = "Friend application sent successfully";
+"FlowerMessageTip22" = "Add Friends";
+"FlowerMessageTip23" = "Add friend message";
+"FlowerMessageTip24" = "Please enter your message...";
+"FlowerMessageTip25" = "OK";
+"FlowerMessageTip26" = "Cancel";
+"FlowerMessageTip27" = "Tips";
+"FlowerMessageTip28" = "Delete Friend";
+"FlowerMessageTip29" = "The chat history with him/her will be deleted at the same time";
+"FlowerMessageTip30" = "Set Personal Nickname";
+"FlowerMessageTip31" = "Please complete your personal nickname first";
+"FlowerMessageTip32" = "Create Group";
+"FlowerMessageTip33" = "Group Name";
+"FlowerMessageTip34" = "Please enter the group name";
+"FlowerMessageTip35" = "Maximum group members is 500";
+"FlowerMessageTip36" = "Allow group members to automatically join the group";
+"FlowerMessageTip37" = "After opening, you can join without the administrator unified";
+"FlowerMessageTip38" = "The minimum requirement to create a group HDU promotion computing power reaches 100,000";
+"FlowerMessageTip39" = "Contact List";
+"FlowerMessageTip40" = "Search";
+"FlowerMessageTip41" = "New Friends";
+"FlowerMessageTip42" = "Friend";
+"FlowerMessageTip43" = "Group";
+"FlowerMessageTip44" = "New Friends";
+"FlowerMessageTip45" = "Contact List";
+"FlowerMessageTip46" = "Start Chat";
+
+//Payment code
+"CollectionQRcodeTip1" = "Collection Code";
+"CollectionQRcodeTip2" = "Click to copy";
+"CollectionQRcodeTip3" = "Scan";
+"CollectionQRcodeTip4" = "No Collection Code";
+
+//578
+"578Tip1" = "Subscribe now>";
+"578Tip2" = "Add Gateway";
+"578Tip3" = "Subscribe now>";
+"578Tip4" = "Activate mining";
+"578Tip5" = "Activate Miner";
+"578Tip6" = "Activated Miner List";
+"578Tip7" = "Application Node";
+"578Tip8" = "Share APP";
+"578Tip9" = "Account Management";
+"578Tip10" = "Security Center";
+"578Tip11" = "Feedback";
+"578Tip12" = "About Us";
+"578Tip13" = "Activated Miner List";
+"578Tip14" = "Activation time:";
+"578Tip15" = "Total holdings:";
+"578Tip16" = "Wallet address:";
+"578Tip17" = "Number of Members:";
+"578Tip18" = "Number of devices:";
+"578Tip19" = "Application Node";
+"578Tip20" = "Account Name";
+"578Tip21" = "Account Name";
+"578Tip22" = "Contact Email";
+"578Tip23" = "Please enter the contact email";
+"578Tip24" = "Description (referrer account)";
+"578Tip25" = "Please enter a description (referrer account)";
+"578Tip26" = "Submit Application";
+"578Tip27" = "Please enter the contact email";
+
+"578Tip28" = "Account Management";
+"578Tip29" = "Logout";
+"578Tip30" = "(Current Account)";
+"578Tip31" = "Create Account";
+"578Tip32" = "Import Account";
+"578Tip33" = "Mnemonic Word Import";
+"578Tip34" = "Private Key Import";
+"578Tip35" = "Please enter your username";
+"578Tip36" = "Username";
+"578Tip37" = "Please enter the mnemonic phrase (separated by spaces)";
+"578Tip38" = "Mnemonic Word";
+"578Tip39" = "OK to import";
+"578Tip40" = "Mnemonic Word Import";
+"578Tip41" = "Please enter the private key";
+"578Tip42" = "Private Key";
+
+"578Tip43" = "Add Account";
+"578Tip44" = "Set a username (must contain letters and numbers)";
+"578Tip45" = "Set Password";
+"578Tip46" = "Repeat Password";
+"578Tip47" = "Please set a username";
+"578Tip48" = "Please set a password";
+"578Tip49" = "Please set a repeat password";
+"578Tip50" = "Confirm to add";
+
+"578Tip51" = "Blockchain Explorer";
+"578Tip52" = "Open Source Address";
+"578Tip53" = "Official Website";
+
+"578Tip54" = "Feedback";
+"578Tip55" = "Please enter your feedback";
+"578Tip56" = "Please enter your email";
+"578Tip57" = "Confirm to submit";
+
+"578Tip58" = "Account Name";
+"578Tip59" = "Backup mnemonic phrase";
+"578Tip60" = "Export Private Key";
+"578Tip61" = "Account Details";
+
+"578Tip62" = "Mining Pool";
+"578Tip63" = "Total dug up as of deadline";
+"578Tip64" = "Coin holding power";
+"578Tip65" = "Promoting Computing Power";
+"578Tip66" = "Best Holding Currency";
+"578Tip67" = "Minimum Holding Currency";
+"578Tip68" = "Cumulative total dug out";
+"578Tip69" = "List of Miners";
+"578Tip70" = "Recent Weekly Earnings (RMB)";
+
+"578Tip689" = "Effective amount";
+"578Tip6899" = "Queuing amount";
+"578Tip68999" = "Balance pool coefficient";
+"578Tip689999" = "Balance pool completion coefficient";
+
+
+"578Tip71" = "List of Miners";
+"578Tip72" = "New Member Today";
+"578Tip73" = "New equipment added today";
+"578Tip74" = "Cumulative new members";
+"578Tip75" = "Cumulative newly added devices";
+"578Tip76" = "Total number of valid devices";
+"578Tip77" = "My list of miners";
+"578Tip78" = "Account Name";
+"578Tip79" = "Team Coin holding";
+
+"578Tip80" = "Transfer";
+"578Tip888" = "Local transfer";
+"578Tip999" = "transaction account";
+"578Tip81" = "Subscribe";
+"578Tip82" = "Enter the number of SD";
+"578Tip83" = "All";
+"578Tip84" = "Maximum subscription amount:";
+"578Tip85" = "Amount of USDT to be paid";
+"578Tip86" = "Current USDT balance:";
+"578Tip87" = "Enter transaction password";
+"578Tip88" = "Note:";
+"578Tip89" = "OK";
+"578Tip90" = "Please enter the number of SD";
+"578Tip91" = "Amount of USDT to be paid";
+"578Tip92" = "Please enter transaction password";
+"maintitle" = "Guoxing Jinding";
+"578Tip93" = "Add Gateway";
+"578Tip94" = "Please select the gateway to add or cancel";
+"578Tip95" = "Please enter transaction password";
+
+"578Tip96" = "Trust";
+"578Tip97" = "Order";
+"578Tip98" = "Bill";
+
+"578Tip100" = "Save mnemonic phrase";
+"578Tip101" = "Please carefully copy and save the mnemonic phrase. Once lost, the wallet cannot be retrieved!";
+"578Tip102" = "*I understand that if I lose the mnemonic, I will never be able to retrieve my assets.\n*I understand that if I forget or lose the mnemonic, no one can help me recover .";
+"578Tip103" = "*I understand that if I forget or lose the mnemonic phrase, no one can help me recover.";
+"578Tip104" = "Next";
+
+"578Tip105" = "Verify mnemonic phrase";
+"578Tip106" = "Please click on the mnemonic phrase in order, it has been confirmed that you back it up correctly";
+"578Tip107" = "Please click all mnemonic words";
+
+"578Tip108" = "Verify Email";
+"578Tip109" = "Please enter the login password again";
+"578Tip110" = "Please enter the login password";
+"578Tip111" = "OK";
+
+"578Tip112" = "Coin holding Computing power";
+"578Tip113" = "Promoting Computing Power";
+"578Tip114" = "Please enter the account name";
+"578Tip115" = "Node Open";
+"578Tip116" = "Node Shutdown";
+"578Tip117" = "SD Subscription";
+"578Tip118" = "Node Shutdown";
+"578Tip119" = "Set Transaction Password";
+"578Tip120" = "Retrieve Transaction Password";
+"578Tip121" = "Please set a transaction password";
+"578Tip122" = "Wallet address is empty";
+"578Tip123" = "Choose Currency";
+"578Tip124" = "Counter's Account";
+"578Tip125" = "Enter the counterparty account";
+"578Tip126" = "Enter the quantity";
+"578Tip127" = "Please enter the transfer amount";
+"578Tip128" = "Available balance:";
+"578Tip129" = "All";
+"578Tip130" = "Miner Fee";
+"575Tip22" = "Partner ID";
+"575Tip23" = "Please enter the acount";
+"575Tip24" = "Transfer Amount";
+"575Tip24777777" = "Transfer Amount：";
+"575Tip25" = "Minimum Amount";
+"575Tip26" = "Highest";
+"575Tip27" = "Available balance of currency account:";
+"575Tip27eee" = "User available balance:";
+
+"575Tip28" = "Fund Password";
+"575Tip29" = "Please enter the fund password";
+"575Tip30" = "Confirm the transfer";
+"575Tip59" = "Choose Currency";
+"575Tip60" = "Please select currency";
+"575Tip42" = "Please enter the transfer amount";
+"575Tip600" = "Please select the number of days";
+"578Tip131" = "Transaction Password";
+"578Tip132" = "Please enter the transaction password";
+"578Tip133" = "Confirm transaction password";
+"578Tip134" = "Please enter the transaction password again";
+"578Tip135" = "Email Verification Code";
+"578Tip136" = "Please enter the email verification code";
+"578Tip137" = "Get verification code";
+"578Tip138" = "ID Number";
+"578Tip139" = "Please enter ID number";
+"578Tip140" = "OK";
+"578Tip141" = "Set Transaction Password";
+"578Tip142" = "Activated";
+"578Tip143" = "Not activated";
+"578Tip144" = "URL is empty";
+"578Tip145" = "Note: 1. Subscription time,";
+"578Tip146" = "2. Each person has only one subscription opportunity, and cannot be modified or cancelled after confirmation;";
+"578Tip147" = "OK";
+"578Tip148" = "No string to copy";
+"578Tip149" = "Whether to switch accounts";
+"578Tip150" = "Duplicate account name";
+"578Tip151" = "Access Suspended";
+"578Tip152" = "View Details";
+"578Tip153" = "Android Download";
+"578Tip154" = "Apple Download";
+"578Tip155" = "Remove this account?";
+"578Tip156" = "Number of activated devices:";
+"578Tip157" = "I have read and agree to the 'User Agreement'";
+"578Tip158" = "'User Agreement'";
+"578Tip159" = "Create Account";
+"578Tip160" = "Import Account";
+"578Tip161" = "Please agree to the agreement";
+"578Tip162" = "No download address";
+"578Tip163" = "Recharge";
+"578Tip164" = "Recharge Amount";
+"578Tip165" = "Recharge Account";
+"578Tip166" = "Confirm the top-up";
+"578Tip167" = "Profit Record";
+"578Tip168" = "Time";
+"578Tip169" = "Profit";
+"578Tip170" = "Promotion of mining revenue";
+"578Tip171" = "Mining income from holding coins";
+"578Tip172" = "ChainName";
+"578Tip173" = "Transactions Number";
+"BindingPhoneTip2" = "Please Bind Email";
+"578Tip174" = "Pending Order Quantity";
+"578Tip175" = "Actual Transaction";
+"578Tip176" = "Please activate the current account first";
+
+"578NOW1" = "Pledge income";
+"578NOW2" = "Promotion revenue";
+"578NOW3" = "Link computing power";
+"578NOW4" = "Team computing power";
+"578NOW5" = "Super node revenue";
+
+"homeButtonTip17" = "Recharge";
+"homeButtonTip18" = "Pool";
+"homeButtonTip19" = "Withdrawal";
+"homeButtonTip20" = "Transfer";
+"homeButtonTip21" = "Delegate";
+"homeButtonTip22" = "Bill";
+"homeButtonTip22suodan" = "day";
+"homeButtonTip23" = "Order";
+"homeButtonTip24" = "Announcement";
+"homeButtonTip25" = "Community";
+"homeButtonTip26" = "Education";
+"homeButtonTip27" = "Charity";
+"homeButtonTip28" = "Mall";
+
+
+"homeButtonTip100" = "Ground";
+"homeButtonTip101" = "community";
+"homeButtonTip102" = "Receive";
+"homeButtonTip103" = "Scan";
+"homeButtonTip104" = "transaction";
+
+
+"575Tip27777777777" = "Balance:";
+"575Tip27777777777777777" = "Transferable amount";
+"575Tip28888888888" = "day";
+"575Tip24444444444" = "lock amount:";
+"578Tip12444444" = "Transfer to day account";
+"578Tip125555555" = "Transfer to local account";
+
+"homeButtonWAIT1" = "DEFI";
+"homeButtonWAIT2" = "group";
+"homeButtonWAIT3" = "Ecological";

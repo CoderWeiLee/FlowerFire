@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  BaseDevelopmentFramework
+
+  Created by 王涛 on 2019/11/5.
+  Copyright © 2019 Celery. All rights reserved.
+*/
+
+"NSCameraUsageDescription" = "上传收款二维码时需要打开相机";
+"NSLocationUsageDescription" = "允许定位以把位置保存到照片中";
+"NSLocationWhenInUseUsageDescription" = "允许定位以把位置保存到照片中";
+"NSPhotoLibraryAddUsageDescription" = "上传收款二维码时需要访问相册";
+"NSPhotoLibraryUsageDescription" = "上传收款二维码时需要访问相册";
+"NSMicrophoneUsageDescription" = "允许获取麦克风权限以在聊天时发送录音";

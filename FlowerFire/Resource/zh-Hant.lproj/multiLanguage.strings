@@ -1,0 +1,663 @@
+/*
+  multiLanguage.strings
+  BaseDevelopmentFramework
+
+  Created by 王濤 on 2019/11/5.
+  Copyright © 2019 Celery. All rights reserved.
+*/
+//tabBar模塊
+"tabbar1" = "首頁";
+"tabbar2" = "行情";
+"tabbar3" = "交易";
+"tabbar4" = "合約";
+"tabbar5" = "資產";
+"tabbar6" = "我的";
+"maintitle" = "国兴金鼎";
+//通用
+"mainCurrency" = "HDU";
+
+//首頁
+"homeTip1" = "昨日收益(HDU)";
+"homeTip2" = "更多";
+"homeTip3" = "實時•";
+"homeTip4" = "行情";
+"homeTip5" = "24H漲幅榜";
+"homeTip6" = "幣種";
+"homeTip7" = "最新價";
+"homeTip8" = "24H漲跌";
+"homeTip9" = "請登錄後查看收益";
+"homeTip10" = "去登錄";
+
+//首頁抽屜
+"homeSkidTip1" = "點擊登錄";
+"homeSkidTip2" = "歡迎使用SD";
+"homeSkidTip3" = "賬戶管理";
+"homeSkidTip4" = "安全中心";
+"homeSkidTip5" = "支付管理";
+"homeSkidTip6" = "SD公告";
+"homeSkidTip7" = "關於我們";
+"homeSkidTip8" = "實名認證";
+"homeSkidTip9" = "幫助中心";
+"homeSkidTip10" = "設置";
+"homeSkidTip11" = "聯繫客服";
+"homeSkidTip12" = "分享SDAPP";
+"homeSkidTip13" = "請先實名認證";
+
+//安全中心
+"securityTip1" = "安全中心";
+"securityTip2" = "修改登錄密碼";
+"securityTip3" = "修改交易密碼";
+"securityTip4" = "找回交易密碼";
+"securityTip5" = "Google認證";
+"securityTip6" = "交易免密設置";
+"securityTip7" = "支付驗證設置";
+"securityTip8" = "登錄驗證設置";
+"securityTip9" = "修改手機號";
+"securityTip10" = "修改郵箱";
+
+//修改登錄密碼
+"changeLoginPwdTip1" = "修改登錄密碼";
+"changeLoginPwdTip2" = "正在為您的賬號";
+"changeLoginPwdTip3" = "原登錄密碼";
+"changeLoginPwdTip4" = "請輸入原登錄密碼";
+"changeLoginPwdTip5" = "新登錄密碼";
+"changeLoginPwdTip6" = "請輸入新登錄密碼";
+"changeLoginPwdTip7" = "確認新密碼";
+"changeLoginPwdTip8" = "請輸入確認新的登錄密碼";
+"changeLoginPwdTip9" = "確認修改";
+"changeLoginPwdTip10" = "郵箱驗證碼";
+"changeLoginPwdTip11" = "請輸入郵箱驗證碼";
+"changeLoginPwdTip12" = "獲取驗證碼";
+"changeLoginPwdTip13" = "兩次輸入不一致";
+"Resend after seconds" = "秒後重新發送";
+"changeLoginPwdTip14" = "請填寫全部信息";
+"BindingPhoneResendCode" = "重新發送驗證碼 ";
+
+//修改交易密碼
+"changeFundPwdTip1" = "修改交易密碼";
+"changeFundPwdTip2" = "原交易密碼";
+"changeFundPwdTip3" = "請輸入原交易密碼";
+"changeFundPwdTip4" = "新交易密碼";
+"changeFundPwdTip5" = "請輸入新的交易密碼";
+"changeFundPwdTip6" = "確認新密碼";
+"changeFundPwdTip7" = "請確認新的交易密碼";
+
+//修改郵箱
+"changeEmailTip1" = "修改郵箱";
+"changeEmailTip2" = "郵箱號";
+"changeEmailTip3" = "請輸入郵箱號";
+"changeEmailTip4" = "確定";
+"changeEmailTip5" = "請輸入正確的郵箱";
+
+//修改手機號
+"changePhoneTip1" = "修改手機號";
+"changePhoneTip2" = "手機號";
+"changePhoneTip3" = "請輸入手機號";
+"changePhoneTip4" = "確定";
+"changePhoneTip5" = "請輸入正確的手機號";
+"changePhoneTip6" = "手機驗證碼";
+"changePhoneTip7" = "請輸入手機驗證碼";
+
+//驗證設置
+"VerificationSettingTip1" = "交易免密設置";
+"VerificationSettingTip2" = "支付驗證設置";
+"VerificationSettingTip3" = "登錄驗證設置";
+"VerificationSettingTip4" = "永不輸入交易密碼";
+"VerificationSettingTip5" = "短信驗證碼";
+"VerificationSettingTip6" = "登錄密碼";
+"VerificationSettingTip7" = "提交";
+
+//設置
+"settingTip1" = "語言切換";
+"settingTip2" = "登錄";
+"settingTip3" = "安全退出";
+"settingTip4" = "設置";
+"settingTip5" = "語言設置";
+
+//谷歌身份驗證器
+"googleVerificationTip1" = "谷歌身份驗證器";
+"googleVerificationTip2" = "未綁定";
+"googleVerificationTip3" = "綁定谷歌身份驗證器";
+"googleVerificationTip4" = "請妥善備份密鑰以防遺失";
+"googleVerificationTip5" = "保存二維碼到手機或複制密鑰到剪貼板可能會有安全風險，請妥善保存。";
+"googleVerificationTip6" = "下一步";
+"googleVerificationTip7" = "複製";
+"googleVerificationTip8" = "谷歌驗證碼";
+"googleVerificationTip9" = "未獲得密鑰";
+"googleVerificationTip10" = "已綁定";
+"googleVerificationTip11" = "谷歌身份驗證";
+"googleVerificationTip12" = "谷歌驗證碼丟失?";
+"googleVerificationTip13" = "點擊這裡";
+"googleVerificationTip14" = "粘貼";
+"googleVerificationTip15" = "未開啟";
+"googleVerificationTip16" = "已開啟";
+"googleVerificationTip17" = "空密鑰";
+"googleVerificationTip18" = "請輸入谷歌驗證碼";
+"Safety verification" = "安全驗證";
+"Send" = "發送";
+"login password" = "登錄密碼";
+"Enter your login password" = "輸入登錄密碼";
+"SMS verification code" = "郵箱驗證碼";
+"Successful copy" = "複製成功";
+"Resend Code" = "重新發送驗證碼";
+"ForgetTip1" = "請輸入正確的郵箱或手機號";
+"LoginTip1" = "驗證碼錯誤";
+
+"aboutUsTip1" = "關於我們";
+"aboutUsTip2" = "用戶協議";
+"aboutUsTip3" = "當前版本";
+
+//行情
+"quotesTip1" = "自選";
+"quotesTip2" = "全部";
+"quotesTip3" = "幣種";
+"quotesTip4" = "最新價";
+"quotesTip5" = "24H漲跌";
+"Vol" = "量";
+
+//交易
+"transactionTip1" = "幣幣交易";
+"transactionTip2" = "法幣交易";
+"ccTip1" = "未知交易對";
+"ccTotal" = "交易額";
+"Optimal market price" = "以當前最優價格交易";
+"BUY" = "買入";
+"SELL" = "賣出";
+"market" = "市價";
+"Limit" = "限價";
+"ccTip2" = "請輸入委託價格";
+"ccTip3" = "委託價格要大於0";
+"ccTip4" = "請輸入委託數量";
+"ccTip5" = "委託數量要大於0";
+"ccTip6" = "請輸入委託額";
+"ccTip7" = "委託額要大於0";
+"ccTip8" = "您輸入的數量不可大於可購買數量";
+"Default" = "默認";
+"BuyHandicap" = "買盤";
+"SellHandicap" = "賣盤";
+"Stop-Limit" = "止盈止損";
+"Depth" = "深度";
+"ccBuy1" = "買入 ";
+"ccSell1" = "賣出 ";
+"Price" = "價格";
+"Open Orders" = "當前委託";
+"Not record" = "暫無委託";
+"cancel1" = "撤銷";
+"cancel2" = "已撤銷";
+"ccTip9" = "已完成";
+"Revocation order" = "撤銷委託單";
+"All commission" = "全部委託";
+"Order History" = "歷史記錄";
+"Order Type" = "訂單類型";
+"Order Status" = "訂單狀態";
+"Reset" = "重置";
+"Search" = "搜索幣種";
+"Exchange" = "幣幣";
+"Fiat1" = "法幣";
+"ccTip10" = "交易未完成，無法查看明細";
+"ccTip11" = "請輸入觸發價";
+"Buy1" = "購買";
+"Sell1" = "出售";
+"Deal done" = "已成交";
+"Copy1" = "已復制";
+"No" = "暫無";
+"H" = "高";
+"L" = "低";
+"Line" = "分時";
+"1min" = "1分";
+"5min" = "5分";
+"1hour" = "1時";
+"1day" = "日線";
+"1week" = "1週";
+"1mon" = "1月";
+"15min" = "15分";
+"30min" = "30分";
+"close2" = "關閉";
+"More" = "更多";
+"Index" = "指標";
+"Filled" = "成交";
+"Introduction" = "簡介";
+"Issue Time" = "發行時間";
+"Total Amount" = "發行總量";
+"Circulation" = "流通總量";
+"Token Price" = "眾籌價格";
+"White Paper" = "白皮書";
+"Official Website" = "官網";
+"Block Explorer" = "區塊查詢";
+"Main" = "主圖";
+"Sub" = "副圖";
+"Open1" = "開";
+"Close1" = "收";
+"Change1" = "漲跌額";
+"Change%" = "漲跌幅";
+"Executed" = "成交量";
+"cursorTip1" = "委託價";
+"cursorTip2" = "累計數量";
+"cursorTip3" = "累計金額";
+"direction" = "方向";
+"VOL" = "VOL";
+"ccTip12" = "成交明細";
+"ccTip13" = "成交總額";
+"ccTip14" = "成交均價";
+"ccTip15" = "成交量";
+"ccTip16" = "手續費";
+"ccTip17" = "時間";
+"ccTip18" = "成交價";
+"All" = "歷史記錄";
+"Available" = "可用:";
+"Amount" = "數量";
+"Login" = "登錄";
+
+//法幣
+"FBTip1" = "購買";
+"FBTip2" = "出售";
+"FBTip3" = "委託單";
+"FBTip4" = "訂單";
+"FBTip5" = "幣種";
+"FBTip6" = "數量";
+"FBTip7" = "限額";
+
+"Order" = "訂單";
+"Commission Order" = "委託單";
+"Optional transaction" = "自選交易";
+"Filter" = "篩選";
+"Filtered" = "已篩選";
+"FiatBuy" = "付款";
+"By Price1" = "按價格購買";
+"By amount1" = "按數量購買";
+"By Price2" = "按價格出售";
+"By amount2" = "按數量出售";
+"Total buy amount1" = "請輸入欲購買法幣總額";
+"Total buy amount2" = "請輸入欲出售法幣總額";
+"Buy amount1" = "請輸入欲購買法幣數量";
+"Buy amount2" = "請輸入欲出售法幣數量";
+"FiatPrice" = "單價";
+"FiatAmount" = "交易數量";
+"Payment total" = "交易總額";
+"Cancelled in" = "後自動取消";
+"FiatOrder" = "下單";
+"Minimum amount" = "最小金額";
+"Please enter the minimum amount" = "請輸入最小金額";
+"Clear" = "清除";
+"Issue order" = "發布委託單";
+"I want to buy" = "我要購買";
+"I want to sell" = "我要出售";
+"Trading price" = "交易價格";
+"FiatTip1" = "請輸入交易價格";
+"FiatTip2" = "當前盤口價格:";
+"FiatTip3" = "交易金額";
+"FiatTip4" = "限制最小金額";
+"FiatTip5" = "交易金額需";
+"FiatTip6" = "限制最小金額需";
+"FiatTip7" = "對手限制";
+"FiatTip8" = "對手認證等級";
+"FiatTip9" = "對手註冊時間";
+"FiatTip10" = "交易說明";
+"FiatTip11" = "下單後急速付款，到賬後及時放幣";
+"FiatTip12" = "對手付款時間";
+"FiatTip13" = "1.請及時付款並點擊[我已支付]按鈕\n2.幣由系統鎖定託管，請安心下單";
+"Hanging up" = "掛售中";
+"Actual transaction" = "實際成交";
+"Order record" = "訂單記錄";
+"FiatTip14" = "委託方已設限";
+"FiatTip15" = "委託方要求:需通過KYC2級認證";
+"Certification" = "認證";
+"FiatLimit" = "限額";
+"FiatLimit1" = "限額 不限";
+"FiatTip16" = "輸入不能為0";
+"FiatTip17" = "限制註冊時間";
+"No limit" = "不限額";
+"FiatTip18" = "您輸入的金額大於最大金額";
+"FiatTip19" = "您輸入的金額小於最大金額";
+"FiatTip20" = "您輸入的幣量小於最小幣量";
+"FiatTip21" = "您輸入的幣量大於最大幣量";
+"FiatTip22" = "提交成功";
+"FiatBuy" = "購買";
+"FiatSell" = "出售";
+"BuyAll" = "全部買入";
+"SellAll" = "全部售出";
+"Pre-registration" = "前註冊";
+"Limit certification level" = "限制認證等級";
+"FiatTip23" = "請先添加收款賬號";
+"Go add" = "去添加";
+"Currently available" = "當前可用";
+"FiatTip24" = "請輸入購買數量";
+"FiatTip25" = "交易金額(CNY)";
+"FiatTip26" = "輸入金額需<=0";
+"FiatTip27" = "十分鐘內完成付款";
+"FiatTip28" = "最小金額需<=0";
+"FiatTip29" = "出售數量不能超過總量";
+"Not records" = "暫無記錄";
+"TransactionType" = "交易類型";
+"OrderTip1" = "待付款";
+"OrderTip2" = "已付款";
+"OrderTip3" = "已取消";
+"OrderTip4" = "申訴中";
+"OrderTip5" = "已付款，待放幣";
+"OrderTip6" = "交易成功";
+//法幣訂單
+"FiatOrderTip1" = "已取消";
+"FiatOrderTip2" = "訂單已取消，無法查看支付信息";
+"FiatOrderTip3" = "交易總額";
+"FiatOrderTip4" = "請付款";
+"FiatOrderTip5" = "請在";
+"FiatOrderTip6" = "內付款給商家";
+"FiatOrderTip7" = "待支付";
+"FiatOrderTip8" = "已付款";
+"FiatOrderTip9" = "等待賣家放幣";
+"FiatOrderTip10" = "已支付";
+"FiatOrderTip11" = "申訴";
+"FiatOrderTip12" = "已支付,等待賣家放幣";
+"FiatOrderTip13" = "已完成";
+"FiatOrderTip14" = "訂單已完成";
+"FiatOrderTip15" = "申訴中";
+"FiatOrderTip16" = "對方已申訴，請提交您的申訴";
+"FiatOrderTip17" = "申訴信息";
+"FiatOrderTip18" = "放行";
+"FiatOrderTip19" = "買家已付款";
+"FiatOrderTip20" = "等待賣家放幣";
+"FiatOrderTip21" = "等待買家付款";
+"FiatOrderTip22" = "放行已超時";
+"FiatOrderTip23" = "聯繫對方";
+"FiatOrderTip24" = "交易單價";
+"FiatOrderTip25" = "交易數量";
+"FiatOrderTip26" = "等待對方付款";
+"FiatOrderTip27" = "待付款";
+"FiatOrderTip28" = "切換方式";
+"FiatOrderTip29" = "如您已向賣家轉賬付款，請務必點擊“標記為已支付“按鈕,否則有可能造成資金損失。";
+"FiatOrderTip30" = "取消訂單";
+"FiatOrderTip31" = "標記為已支付";
+"FiatOrderTip32" = "付款確認";
+"FiatOrderTip33" = "請確認您已向賣家付款\n惡意點擊將直接凍結賬戶";
+"FiatOrderTip34" = "確認取消交易";
+"FiatOrderTip35" = "如果您已經向賣家付款，請千萬不要取消交易\n我確認還有沒有付款給對方";
+"FiatOrderTip36" = "我再想想";
+"FiatOrderTip37" = "參考號";
+"FiatOrderTip38" = "收款人";
+"FiatOrderTip39" = "收款二維碼";
+"FiatOrderTip40" = "確認訂單完成，放行貨幣";
+"FiatOrderTip41" = "賣家";
+"FiatOrderTip42" = "買家";
+"FiatOrderTip43" = "剩";
+"FiatOrderTip44" = "訂單號";
+"FiatOrderTip45" = "下單時間";
+"FiatOrderTip46" = "請務必登錄收款賬戶確認到賬明細，避免因錯誤點擊放行造成財產損失。";
+"QR Code" = "二維碼";
+"FiatOrderTip47" = "請在付款信息中備註付款參考號";
+"FiatOrderTip48" = "請在付款信息中備註付款參考號";
+"FiatOrderTip49" = "● 如您已向賣家轉賬付款，請務必點擊“標記為已支付”按鈕,否則有可能造成資金損失\n\n ● 如您已向賣家轉賬付款，請務必點擊“標記為已支付”按鈕,否則有可能造成資金損失\n";
+"FiatOrderTip50" = "訂單詳情";
+"FiatOrderTip51" = "對方郵箱號";
+
+//申訴
+"AppealTip1" = "請輸入申訴內容";
+"AppealTip2" = "訂單編號";
+"AppealTip3" = "訂單數量";
+"AppealTip4" = "總價";
+"AppealTip5" = "上傳憑證";
+"AppealTip6" = "憑證";
+
+
+//資產
+"Total Balances(BTC)" = "總賬號資產折合(HDU)";
+"Exchange" = "幣幣賬戶";
+"Contract" = "合約賬戶";
+"Fiat" = "法幣賬戶";
+"Exchange Balances(BTC)" = "幣幣總資產折合(HDU)";
+"Total Contract Equity(BTC)" = "合約總權益折合(HDU)";
+"Fiat Balances(BTC)" = "法幣總資產折合(HDU)";
+"On orders" = "凍結";
+"Estimated(CNY)" = "折合(CNY)";
+"Equity" = "賬戶權益";
+"EST liquidation price(USD)" = "預估強平價(USD)";
+"Margin rate" = "保證金率";
+"Finance Records" = "財務記錄";
+"Transactions" = "合約賬單";
+"System" = "系統";
+"Transfer In" = "轉入";
+"Transfer Out" = "轉出";
+"Recharge" = "充值";
+"Sell" = "賣出";
+"Buy" = "買入";
+"Open" = "開倉";
+"Close" = "平倉";
+"Liquidation" = "強平";
+"Delivery settlement" = "交割結算";
+"Fee" = "手續費";
+"Promotion Reward" = "活動獎勵";
+"Date" = "時間";
+"Total" = "金額";
+"Type" = "類型";
+"Actual turnover" = "實際成交額";
+"qrCodeTip1" = "識別失敗";
+"qrCodeTip2" = "對準二維碼，即可自動掃描至地址欄";
+"AssetsTip1" = "隱藏小額幣種";
+"Search" = "搜索";
+"assetsTip1" = "充幣";
+"assetsTip2" = "提幣";
+"assetsTip3" = "劃轉";
+"assetsTip4" = "可用:";
+"assetsTip5" = "凍結:";
+"Status" = "狀態";
+
+//充提幣記錄
+"Currency" = "幣種";
+"Time" = "時間";
+"Amount" = "數量";
+"Status" = "狀態";
+"DepositRecording" = "充幣記錄";
+"WithdrawRecording" = "提幣記錄";
+//充幣
+"Deposit" = "充幣";
+"Withdraw" = "提幣";
+"Transfer" = "劃轉";
+"leverageRiskWarning" = "風險提示";
+"SelectCurrency" = "選擇幣種";
+"Save QR code to album" = "保存二維碼至相冊";
+"DepositAddress" = "充幣地址";
+"Copy" = "複製地址";
+"Successful copy" = "複製成功";
+"CopyTag" = "複製Tag";
+"DepositTip1" = "請認真核對並填寫此地址標籤，若遺漏標籤將導致資金丟失!";
+"DepositTip2" = "您充值至上述地址後，需要整個網絡節點的確認，到賬時間為";
+"DepositTip3" = "次網絡確認後。\n";
+"DepositTip4" = "最小充值金額:";
+"DepositTip5" = ",小於最小金額的充值將不會上賬且無法退回。\n";
+"DepositTip6" = "您的充值地址不會經常改變，可以重複充值；如有更改，我們會盡量通過網站公告或郵件通知您。\n請務必取人電腦及瀏覽器安全，防止信息被傳改或洩漏。";
+"DepositTip7" = "充幣提醒";
+"Address" = "地址";
+"AddAddress" = "添加地址";
+"chain" = "鏈";
+"Remarks" = "備註";
+"DepositTip6" = "此幣暫不可充值";
+
+//提幣
+"Add" = "添加";
+"WithdrawTip1" = "請輸入或長按粘貼地址";
+"WithdrawTip2" = "最小提幣數量";
+"WithdrawTip3" = "最小提幣數量為:";
+"WithdrawTip4" = "請輸入到賬數量";
+"WithdrawTip5" = "請輸入資金密碼";
+"WithdrawTip6" = "為保障資金安全，當您賬戶安全策略變更、密碼修改、我們會對提幣進行人工審核，請耐心等待工作人員電話或郵件聯繫。\n請務必確認電腦及瀏覽器安全，防止信息被傳改或洩露。";
+"WithdrawAddress" = "提幣地址";
+"CanMention" = "可提";
+"Number of arrivals" = "到賬數量";
+"Handling fee" = "手續費";
+"Fund password" = "資金密碼";
+"Determine the coin" = "確定提幣";
+"WithdrawTip7" = "暫停充幣";
+"WithdrawTip8" = "暫停提幣";
+"WithdrawTip9" = "您的提幣操作一旦完成，對應的資產所有權將由您變更為目標地址所對應的賬戶所有人享有，請您務必在提幣操作前，仔細核對提幣地址信息，確保提幣屬於自願行為，並確認不涉及任何傳銷、非法集資、詐騙等違法情形、謹防上當受騙，避免造成不必要的財產損失。";
+"Tag" = "標籤";
+"WithdrawTip10" = "輸入或長按粘貼標籤";
+"WithdrawTip11" = "(填寫錯誤可能導致資產損失，請仔細核對)";
+"WithdrawTip12" = "請填寫提幣地址";
+"WithdrawTip13" = "請填寫提幣數量";
+"WithdrawTip14" = "請填寫備註";
+"WithdrawTip15" = "最大提幣數量";
+
+//劃轉
+"Available" = "可用";
+"Contract account" = "合約賬戶";
+"Coin account" = "幣幣賬戶";
+"Legal currency account" = "法幣賬戶";
+"Legal currency" = "法幣"; //判定字符串是否包含法幣，英文注意
+"TransferTip1" = "請輸入劃轉數量";
+"TransferTip2" = "可劃轉數量為0";
+"TransferTip3" = "超出最大劃轉數量";
+"TransferTip4" = "交易說明";
+"TransferTip5" = "劃轉數量";
+"TransferTip6" = "只有將資產劃轉到對應賬戶才可以進行交易。賬戶間的劃轉不收取手續費";
+"All" = "全部";
+"From" = "從";
+"To" = "到";
+
+//登錄
+"loginTip1" = "歡迎來到SD交易平台";
+"loginTip2" = "用戶名";
+"loginTip3" = "密碼";
+"loginTip4" = "請輸入用戶名";
+"loginTip5" = "請輸入登錄密碼";
+"loginTip6" = "登錄";
+"loginTip7" = "忘記密碼";
+"loginTip8" = "註冊賬戶";
+
+//忘記密碼
+"forgetPwdTip1" = "新登錄密碼";
+"forgetPwdTip2" = "新輸入新登錄密碼";
+"forgetPwdTip3" = "確認新登錄密碼";
+"forgetPwdTip4" = "請再次確認新的登錄密碼";
+"forgetPwdTip5" = "找回登錄密碼";
+"forgetPwdTip6" = "郵箱號";
+"forgetPwdTip7" = "請輸入郵箱號";
+
+//註冊
+"registeredTip1" = "用戶暱稱";
+"registeredTip2" = "郵箱號";
+"registeredTip3" = "請輸入郵箱號";
+"registeredTip4" = "下一步";
+"registeredTip5" = "輕觸上面“下一步”按鈕，表示您同意";
+"registeredTip6" = "已有賬號 直接登錄>>";
+"registeredTip7" = "歡迎來到SD交易平台";
+"registeredTip8" = " 隱私條款和服務協議";
+"registeredTip9" = " 已有賬號";
+"registeredTip10" = " 直接登錄>>";
+
+//註冊2
+"registeredTip11" = "登錄密碼";
+"registeredTip12" = "請輸入登錄密碼";
+"registeredTip13" = "確認登錄密碼";
+"registeredTip14" = "請再次確認登錄密碼";
+"registeredTip15" = "設置密碼";
+
+//kyc認證
+"Kyc certification" = "kyc認證";
+"KycTip1" = "•認證後可進行法幣交易";
+"KycTip2" = "•認證後可提升提幣額度";
+"KycTip3" = "•KYC2認證後，可進行單筆高於2K或累計金額大於5W的法幣交易";
+"KycTip4" = "•KYC1認證後，方可進行高級認證";
+"KycTip5" = "•KYC1認證後，方可進行KYC2認證";
+"KycTip6" = " 您目前尚未完成身份認證，根據國家相關規定，幣種交易需要進行實名登記，請填寫您的真實身份信息，一旦認證完成將無法更改，感謝您的理解與支持！";
+"Name" = "姓名";
+"Identity number" = "身份證號";
+"KYC1 certification" = "KYC1認證";
+"Go to certification" = "去認證";
+"verified" = "已認證";
+"KYC2 certification" = "KYC2認證";
+"not certified" = "未認證";
+//KYC1認證
+"Kyc1Tip1" = "請輸入姓名";
+"Kyc1Tip2" = "請輸入身份證號碼";
+"InputTrueName" = "請輸入真實姓名";
+"ID card Number" = "身份證號碼";
+"Save" = "保存";
+//KYC2認證
+"Kyc2Tip1" = "請上傳身份證正面照";
+"Kyc2Tip2" = "請上傳身份證背面照";
+"ID card front photo" = "身份證正面照";
+"ID card back photo" = "身份證背面照";
+
+//收款方式
+"Payment Method" = "收款方式";
+"Add" = "添加";
+"paymentMthodTip1" = "暫無賬戶\n請務必使用您本人的實名賬戶";
+//添加收款账户
+"Add PayMent Method" = "添加收款賬戶";
+"Add Bank card" = "添加銀行卡";
+"Add Alipay" = "添加支付寶";
+"Add WChat" = "添加微信";
+"InputAcount" = "請輸入賬號";
+"Input Bank Account" = "請輸入開戶銀行";
+"cardholder" = "持卡人";
+"cardholder1" = "請輸入持卡人姓名";
+"Bank card number" = "銀行卡號";
+"Bank card number1" = "請輸入銀行卡號";
+"Bank Account" = "開戶銀行";
+"Alipay Account" = "支付寶賬號";
+"Input Alipay Account" = "請輸入支付寶賬號";
+"Add a QR code (optional)" = "添加收款二維碼(選填)";
+"WChat Account" = "微信賬號";
+"Input WChat Account" = "請輸入微信賬號";
+//收款账户详情
+"Collection account details" = "收款賬戶詳情";
+"account type" = "賬戶類型";
+"Alipay collection code" = "支付寶收款碼";
+"WeChat collection code" = "微信收款碼";
+"accountdetailsTip" = "法幣交易屬於C2C交易，資金不經過平台，平台不會自動扣款，需要您手動自行轉賬給對方。對方才能收到款項";
+"Delete this account" = "刪除此賬號";
+"TrueName" = "真實姓名";
+"Bank card" = "銀行卡";
+"Alipay" = "支付寶";
+"WChat" = "微信";
+"HomeTip1" = "有新版本";
+"HomeTip2" = "去更新";
+"ShowPaymentMethodTip1" = "已激活";
+"ShowPaymentMethodTip2" = "未激活";
+
+//權限提示
+"permissionCameraTip" = "相機";
+"permissionPhotoTip" = "相冊";
+"permissionTip1" = "沒有 ";
+"permissionTip2" = " 權限,是否前往設置";
+
+//Util
+"utilTip1" = "設置";
+"cancel" = "取消";
+"utilTip2" = "提示";
+"Tips" = "溫馨提示";
+"determine" = "確定";
+"cancel" = "取消";
+"Failed to save image" = "保存圖片失敗";
+"Failed to create album" = "創建相冊失敗";
+"Save the picture successfully" = "保存圖片成功";
+"Photo permissions are not turned on" = "照片權限未開啟";
+"PhotoPermissionTip" = "請在系統設置中開啟照片授權,否則您將無法保存圖片";
+"PhotoPermissionTip1" = "請在系統設置中開啟照片授權,否則您將無法上傳圖片";
+"Not yet" = "暫不";
+"Go to set" = "去設置";
+"photoErrorTip" = "因係統原因，無法訪問相冊";
+"NetWorkErrorTip" = "請檢查網絡鏈接";
+"NetWorkErrorTip1" = "未授權訪問";
+"NetWorkErrorTip2" = "系統錯誤";
+"NetWorkErrorTip3" = "您當前未開啟網絡,將導致部分功能不可用";
+"Take a photo" = "拍照";
+"Album" = "相冊";
+"upload failed" = "上傳失敗";
+"please enter" = "請輸入";
+"confirm" = "確認";
+"Loading" = "請等待...";
+"cameraTip1" = "相機權限未開啟";
+"cameraTip2" = "在系統設置中開啟相機";
+"netTip" = "無更新版本";
+"min" = "分";
+"second" = "秒";
+"utilTip3" = "保存圖片";
+"utilTip4" = "保存成功";
+"utilTip5" = "權限提示";
+"permissionTip12" = "權限";
+"permissionTip13" = "去設置";
+"SignOutSuccess" = "退出成功";
+
+//空數據提示
+"noDataTip" = "暫無數據，請稍後再試！";
+"noDataTip1" = "重試";

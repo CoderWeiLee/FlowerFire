@@ -1,0 +1,175 @@
+//
+//  PrefixHeader.pch
+//  BaseDevelopmentFramework
+//
+//  Created by 王涛 on 2019/11/4.
+//  Copyright © 2019 Celery. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//异步请求
+#import "AFNetworkClass.h" 
+#import "ReqestHelpManager.h"
+//布局库
+//#define MAS_SHORTHAND
+
+//Hud动画
+#import "MBProgressHUD.h"  
+//异步加载图片
+#import "UIImageView+WebCache.h"
+#import "HelpManager.h"
+#import "MJRefresh.h"
+#import "IQKeyboardManager.h"
+#import "UniversalViewMethod.h"
+#import "Masonry.h"
+//#import "YYText.h"
+#import "YYModel.h"
+#import "YYCategories.h"
+//#import "YYWebImage.h"
+#import "GKNavigationBar.h"
+
+// 加载中
+#import "MBManager.h"
+#import "Const.h"
+#import "ThemeColorConst.h"
+#import "AppDelegate.h"
+#import "ToolUtil.h" //工具类
+//#import "UIViewController+CWLateralSlide.h"  //抽屉视图类
+#import "SDTheme.h"  //换肤
+//#import "UITableView+FDTemplateLayoutCell.h"  //高性能自动布局tableview框架
+ 
+//k线图使用
+#import "Config.h"
+#import "PlateConfig.h"
+#import "CommonMethod.h"
+#import "ECMacroHelper.h" 
+#import "ChangeLanguage.h"
+#import "PYHandleDate.h" //时间处理
+
+#define LBXScan_Define_Native  //下载了native模块 二维码库
+#define LBXScan_Define_UI     //下载了界面模块
+
+#import <ReactiveObjC.h>
+#import <NSObject+RACKVOWrapper.h>  //RAC的KVO
+#import <RACReturnSignal.h>
+#import <LYEmptyViewHeader.h>
+
+// 引入 JPush 功能所需头文件
+//#import "JPUSHService.h"
+//// iOS10 注册 APNs 所需头文件
+//#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+//#import <UserNotifications/UserNotifications.h>
+//#endif
+#pragma mark - 工具导入
+#import "WTPageRouterManager.h"
+#import "WTUserInfo.h" //用户信息存储
+#import "WTMallUserInfo.h"
+
+#pragma mark - BaseUIKit
+#import "WTBaseUIKit.h"
+
+#pragma mark - domain
+// 内测域名
+//#define BASE_URL @"http://trade.eos-club.com"
+
+//商城域名
+#define BASE_MALL_URLL @"http://www.ysgf.vip"
+ 
+
+//#define BASE_URL @"http://web.kuaipaobiaoju.com"
+//#define BASE_URL @"https://c1.nextisknow.com"
+//#define BASE_URL @"https://10105.weikuaikeji.com"
+#define BASE_URL @"https://c1.nextisknow.com"
+
+// iphoneX
+#define IS_IPHONE_X (ScreenHeight >= 812.0f) ? YES : NO
+#define Height_NavContentBar 44.0f
+#define Height_StatusBar ((IS_IPHONE_X==YES)?44.0f: 20.0f)
+#define Height_NavBar ((IS_IPHONE_X==YES)?88.0f: 64.0f)
+#define Height_TabBar ((IS_IPHONE_X==YES)?83.0f: 49.0f)
+
+//定义颜色 便于操作
+#define RGBACOLOR(r, g, b, a)   [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define rgba(R,G,B,A)  [UIColor colorWithRed:(R * 1.0) / 255.0 green:(G * 1.0) / 255.0 blue:(B * 1.0) / 255.0 alpha:A]
+#define RGB(r,g,b) rgba(r, g, b, 1)
+
+//黑夜模式下
+//#define MainColor [UIColor colorWithRed:253/255.0 green:76/255.0 blue:93/255.0 alpha:1]
+#define MainColor [UIColor colorWithRed:31/255.0 green:130/255.0 blue:251/255.0 alpha:1]
+#define SkidBackgrouondColor rgba(13, 28, 56, 1);
+#define MainCellColor [UIColor colorWithRed:12.0/255.0 green:27.0/255.0 blue:57.0/255.0 alpha:1]
+#define xianColor rgba(27, 40, 60, 1)
+#define navBarColor rgba(12, 27, 57, 1)
+#define grayTextColor rgba(84, 101, 102, 1)
+#define KWhiteColor [UIColor whiteColor]
+#define KBlackColor  [UIColor blackColor]
+#define klineTypeSwitchBtnNormalTextColor rgba(121, 139, 166, 1)
+#define klineTypeSwitchBtnSelectedTextColor MainColor
+#define ContractDarkBlueColor [UIColor grayColor]
+#define ButtonDisabledColor  rgba(238, 243, 248, 1)
+#define MainBlueColor MainColor
+#define KGrayBacColor rgba(239, 242, 247, 1)
+#define FlowerFirexianColor rgba(248, 248, 248, 1)
+#define FlowerFireBorderColor rgba(241, 242, 243, 1)
+#define qutesRedColor  rgba(210, 91, 93, 1) //rgba(218, 106, 119, 1)
+#define qutesGreenColor rgba(92, 202, 104, 1)
+#define qutesDefaultColor rgba(62, 84, 107, 1)
+
+//字体
+#define tFont(x) [UIFont systemFontOfSize:x]
+
+//渐变色
+#define MainYellowColor rgba(255, 221, 148, 1)
+
+#define MaingradientColor @[rgba(255, 115, 80, 1),MainYellowColor]
+
+//输出alert
+#define printAlert(message,time) [[UniversalViewMethod sharedInstance] ShowAlertOnView:message afterDelay:time InView:nil]
+#define printAlertInView(message,time,view) [[UniversalViewMethod sharedInstance] ShowAlertOnView:message afterDelay:time InView:view]
+
+//app名字
+#define APP_NAME ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"])
+
+
+//通用获取屏幕宽高
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kWindowHOne    [UIScreen mainScreen].bounds.size.height / 667 //应用程序的屏幕单位高度
+#define kWindowWHOne    [UIScreen mainScreen].bounds.size.width / 375 //应用程序的屏幕单位宽度
+#define SafeIS_IPHONE_X (ScreenHeight >= 812.0 ? 50 : 30)
+#define SafeAreaTopHeight ((ScreenHeight >= 812.0) && [[UIDevice currentDevice].model isEqualToString:@"iPhone"] ? 24 : 0)
+#define SafeAreaBottomHeight ((ScreenHeight >= 812.0) && [[UIDevice currentDevice].model isEqualToString:@"iPhone"]  ? 34 : 0)
+#define OverAllLeft_OR_RightSpace  15.0f  //整体左右间距
+//加载失败默认图片
+#define defaultImg [UIImage imageNamed:@"defaultImg"]
+//默认头像
+#define defaultUserPhoto  [UIImage imageNamed:@"zd_user_default_avatar"]
+//app的logo
+#define APP_LOGO_IMAGE  [UIImage imageNamed:@"logo"]
+
+#define LocalizationKey(key) [[ChangeLanguage bundle] localizedStringForKey:key value:nil table:@"multiLanguage"]
+//拼接字符串
+#define NSStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
+
+//字符串
+#define GesturesPassword @"gesturespassword"
+#define TouchIdEnable @"TouchIdEnable"
+#define USERINFO @"USERINFO"
+#define MALLUSERINFO @"MallUSERINFO"
+
+// 让debug包打印log，release包不打印
+
+#ifdef DEBUG
+
+#define NSLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define NSLog(...)
+
+#endif
+
+
+#endif /* PrefixHeader_pch */

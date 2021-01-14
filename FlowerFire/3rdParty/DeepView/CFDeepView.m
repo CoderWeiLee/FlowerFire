@@ -1,0 +1,584 @@
+//
+//  CFDeepView.m
+//  CCLineChart
+//
+//  Created by ZM on 2018/9/13.
+//  Copyright © 2018年 hexuren. All rights reserved.
+//
+
+#import "CFDeepView.h"
+#import "CFCursorView.h"
+
+#define UIColorFromHex(hexValue)            UIColorFromHexWithAlpha(hexValue,1.0)
+
+#define UIColorFromHexWithAlpha(hexValue,a) [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16))/255.0 green:((float)((hexValue & 0xFF00) >> 8))/255.0 blue:((float)(hexValue & 0xFF))/255.0 alpha:a]
+
+@interface CFDeepView ()
+
+@property (nonatomic, strong) UIView  *contentView;
+@property (nonatomic,strong)UIView *lineChartView;
+@property (nonatomic, strong) CFCursorView *cursorView;
+@property (nonatomic,strong)NSMutableArray *buyPointCenterArr;
+@property (nonatomic,strong)NSMutableArray *sellPointCenterArr;
+
+@property (nonatomic, strong) CAShapeLayer * buyShapeLayer;
+@property (nonatomic, strong) CAShapeLayer * buyShadeLayer;
+@property (nonatomic, strong) CAGradientLayer * buygradintLayer;
+@property (nonatomic, strong) CALayer * buyBaseLayer;
+
+@property (nonatomic, strong) CAShapeLayer * sellShapeLayer;
+@property (nonatomic, strong) CAShapeLayer * sellShadeLayer;
+@property (nonatomic, strong) CAGradientLayer * sellgradintLayer;
+@property (nonatomic, strong) CALayer * sellBaseLayer;
+
+@property (nonatomic, strong) void (^touchBlock)(BOOL isTouching);
+
+@end
+
+
+@implementation CFDeepView
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]){
+        //中间区域
+        _contentView = [[UIView alloc]initWithFrame:CGRectMake(0,20, self.bounds.size.width, self.bounds.size.height - 20)];
+        _contentView.backgroundColor = [UIColor clearColor];
+        [self addSubview:_contentView];
+        [self addLineChartView];
+        [self addLinesView];
+        _cursorView = [[CFCursorView alloc] initWithFrame:CGRectMake(0, 20, self.frame.size.width, self.frame.size.height - 40)];
+        _cursorView.backgroundColor = [UIColor clearColor];
+        _cursorView.hidden = YES;
+        [self addSubview:_cursorView];
+        self.buyPointCenterArr = [NSMutableArray array];
+        self.sellPointCenterArr = [NSMutableArray array];
+        [self addShapeLayers];
+    }
+    return self;
+}
+
+- (void)setSymbol:(NSString *)symbol
+{
+    [self.cursorView setSymbol:symbol];
+}
+
+- (void)deepViewTouchBlock:(void (^)(BOOL ifTouching))block
+{
+    self.touchBlock = block;
+}
+
+#pragma mark - 外部赋值
+//外部Y坐标轴赋值
+- (void)setDataArrOfY:(NSArray *)dataArrOfY {
+    _dataArrOfY = dataArrOfY;
+    [self addYAxisViews];
+}
+
+//外部X坐标轴赋值
+- (void)setDataArrOfX:(NSArray *)dataArrOfX {
+    _dataArrOfX = dataArrOfX;
+    [self addXAxisViews];
+}
+
+//买点数据
+- (void)setBuyDataArrOfPoint:(NSArray *)dataArrOfPoint {
+    _buyDataArrOfPoint = dataArrOfPoint;
+    [self addBuyPointView];
+    if (self.buyPointCenterArr.count) {
+        [self addBuyBezierLine];
+    } else {
+        [self clearBuyBezierLine];
+    }
+}
+
+//卖点数据
+- (void)setSellDataArrOfPoint:(NSArray *)dataArrOfPoint {
+    _sellDataArrOfPoint = dataArrOfPoint;
+    [self addSellPointView];
+    if (self.sellPointCenterArr.count) {
+        [self addSellBezierLine];
+    } else {
+        [self clearSellBezierLine];
+    }
+}
+
+#pragma mark - UI
+
+- (void)addLineChartView {
+    _lineChartView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _contentView.bounds.size.width, _contentView.bounds.size.height-20)];
+  //  _lineChartView.layer.masksToBounds = YES;
+  //  _lineChartView.layer.borderWidth = 1;
+  //  _lineChartView.layer.borderColor = UIColorFromHex(0xf3f3f3).CGColor;
+    _lineChartView.backgroundColor = [UIColor clearColor];
+    [_contentView addSubview:_lineChartView];
+}
+
+- (void)addYAxisViews {
+    if (_contentView.subviews.count>6) {
+        for (int i = 0; i <4; i++) {
+            UILabel * l = _contentView.subviews[i+6];
+            l.text = self.dataArrOfY[i];
+        }
+    } else {
+        CGFloat height = _lineChartView.bounds.size.height / (_dataArrOfY.count - 1);
+        for (int i = 0;i< _dataArrOfY.count ;i++ ) {
+            UILabel *leftLabel = [[UILabel alloc]initWithFrame:CGRectMake(_lineChartView.bounds.size.width - 100, height * i - height / 2,100, height)];
+            leftLabel.font = [UIFont fontWithName:@"ArialMT" size:10];
+            leftLabel.textColor = ContractDarkBlueColor;
+          //  leftLabel.textColor = [UIColor colorWithRed:74/255.0 green:74/255.0  blue:74/255.0  alpha:1];
+            leftLabel.textAlignment = NSTextAlignmentRight;
+            leftLabel.text = _dataArrOfY[i];
+            leftLabel.backgroundColor = [UIColor clearColor];
+            if (i != (_dataArrOfY.count -1)) {
+                [_contentView addSubview:leftLabel];
+            }
+        }
+    }
+}
+
+- (void)addXAxisViews {
+    if (_contentView.subviews.count>1) {
+        for (int i = 0; i < 5; i++) {
+            UILabel * l = _contentView.subviews[i+1];
+            l.text = _dataArrOfX[i];
+            if(i == 1 || i == 3){
+                l.hidden = YES;
+            }
+        }
+    } else {
+        CGFloat width = _lineChartView.bounds.size.width /_dataArrOfX.count;
+        for (int i = 0;i< _dataArrOfX.count;i++ ){
+            UILabel *leftLabel = [[UILabel alloc]initWithFrame:CGRectMake(i*width, _lineChartView.bounds.origin.y + _lineChartView.bounds.size.height, width, 20)];
+            leftLabel.font = [UIFont fontWithName:@"ArialMT" size:10];
+           leftLabel.textColor = ContractDarkBlueColor;
+            // leftLabel.textColor = [UIColor colorWithRed:74/255.0 green:74/255.0  blue:74/255.0  alpha:1];
+            leftLabel.text = _dataArrOfX[i];
+            if (i == 0 || i == 1) {
+                leftLabel.textAlignment = NSTextAlignmentLeft;
+            }
+            else if (i == 3 || i == 4) {
+                leftLabel.textAlignment = NSTextAlignmentRight;
+            }
+            else{
+                leftLabel.textAlignment = NSTextAlignmentCenter;
+            }
+            leftLabel.backgroundColor = [UIColor clearColor];
+            [_contentView addSubview:leftLabel];
+        }
+    }
+    
+}
+
+- (void)addLinesView {
+//    CGFloat width = _lineChartView.bounds.size.height /4;
+//    CGFloat height = _lineChartView.bounds.size.width /4;
+//    //横格
+//    for (int i = 0;i < 4;i++ ) {
+//        UIView *hengView = [[UIView alloc] initWithFrame:CGRectMake(0, width * (i + 1),_lineChartView.bounds.size.width , 1)];
+//        hengView.backgroundColor = UIColorFromHex(0xf3f3f3);
+//        [_lineChartView addSubview:hengView];
+//    }
+//    //竖格
+//    for (int i = 0;i< 4;i++ ) {
+//
+//        UIView *shuView = [[UIView alloc]initWithFrame:CGRectMake(height * (i + 1), 0, 1, _lineChartView.bounds.size.height)];
+//        shuView.backgroundColor = UIColorFromHex(0xf3f3f3);
+//        [_lineChartView addSubview:shuView];
+//    }
+}
+
+#pragma mark - 点和根据点画贝塞尔曲线
+- (void)addShapeLayers
+{
+    _buyShapeLayer = ({
+        CAShapeLayer * l = [CAShapeLayer layer];
+        l.fillColor = [UIColor clearColor].CGColor;
+        l.strokeColor = qutesGreenColor.CGColor;//[UIColor colorWithRed:0/255.0 green:190/255.0 blue:102/255.0 alpha:1/1.0].CGColor;
+        l.lineWidth = 2;
+        
+        l;
+    });
+    [_lineChartView.layer addSublayer:_buyShapeLayer];
+    _buyShadeLayer = ({
+        CAShapeLayer * l = [CAShapeLayer layer];
+        l.fillColor = rgba(28, 152, 144, 1).CGColor;//[UIColor colorWithRed:245/255.0 green:166/255.0  blue:35/255.0  alpha:1].CGColor;
+        
+        l;
+    }); 
+    [_lineChartView.layer addSublayer:_buyShadeLayer];
+    _buygradintLayer = ({
+        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+        gradientLayer.frame = CGRectMake(0, 0, 0, _lineChartView.bounds.size.height);
+        gradientLayer.startPoint = CGPointMake(0, 0);
+        gradientLayer.endPoint = CGPointMake(0, 1);
+        gradientLayer.cornerRadius = 5;
+        gradientLayer.masksToBounds = YES;
+        gradientLayer.colors = @[(__bridge id)[UIColor colorWithRed:28/255.0 green:172 /255.0 blue:144/255.0 alpha:0.6].CGColor,(__bridge id)[UIColor colorWithRed:28/255.0 green:172/255.0 blue:144/255.0 alpha:0.2].CGColor];
+        gradientLayer.locations = @[@(0.5f)];
+        
+        gradientLayer;
+    });
+    _buyBaseLayer = ({
+        CALayer * l = [CALayer layer];
+        [l addSublayer:_buygradintLayer];
+        [l setMask:_buyShadeLayer];
+        
+        l;
+    });
+    [_lineChartView.layer addSublayer:_buyBaseLayer];
+    _sellShapeLayer = ({
+        CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+        shapeLayer.fillColor = [UIColor clearColor].CGColor;
+        shapeLayer.strokeColor = qutesRedColor.CGColor;//[UIColor colorWithRed:234/255.0 green:87/255.0 blue:60/255.0 alpha:1/1.0].CGColor;
+        shapeLayer.lineWidth = 2;
+        
+        shapeLayer;
+    });
+    [_lineChartView.layer addSublayer:_sellShapeLayer];
+    _sellShadeLayer = ({
+        CAShapeLayer *shadeLayer = [CAShapeLayer layer];
+        shadeLayer.fillColor = rgba(218, 166, 59, 1).CGColor;//[UIColor colorWithRed:245/255.0 green:166/255.0  blue:35/255.0  alpha:1].CGColor;
+        
+        shadeLayer;
+    });
+    [_lineChartView.layer addSublayer:_sellShadeLayer];
+    _sellgradintLayer = ({
+        CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+        gradientLayer.frame = CGRectMake(0, 0, 0, _lineChartView.bounds.size.height);
+        gradientLayer.startPoint = CGPointMake(0, 0);
+        gradientLayer.endPoint = CGPointMake(0, 1);
+        gradientLayer.cornerRadius = 5;
+        gradientLayer.masksToBounds = YES;
+        gradientLayer.colors = @[(__bridge id)[UIColor colorWithRed:218/255.0 green:106/255.0 blue:119/255.0 alpha:0.6].CGColor,(__bridge id)[UIColor colorWithRed:218/255.0 green:106/255.0 blue:119/255.0 alpha:0.2].CGColor];
+        gradientLayer.locations = @[@(0.5f)];
+        
+        gradientLayer;
+    });
+    _sellBaseLayer = ({
+        CALayer * l = [CALayer layer];
+        [l addSublayer:_sellgradintLayer];
+        [l setMask:_sellShadeLayer];
+        
+        l;
+    });
+    [_lineChartView.layer addSublayer:_sellBaseLayer];
+}
+
+- (void)addBuyPointView {
+    [_buyPointCenterArr removeAllObjects];
+    //区域高
+    CGFloat height = self.lineChartView.bounds.size.height;
+    //y轴最大值
+    double arrmax = _maxY;
+    //区域宽
+    CGFloat width = self.lineChartView.bounds.size.width/2;
+    //X轴间距
+    double Xmargin = 0;
+    if (_buyDataArrOfPoint.count > 1) {
+        Xmargin = width / (_buyDataArrOfPoint.count - 1);
+    }
+    
+    for (int i = 0; i<_buyDataArrOfPoint.count; i++)
+    {
+        //nowFloat是当前值
+        double nowFloat;
+        if(self.priceScale == 0 && self.toScale == 0 && self.fromScale == 0){
+            nowFloat = [[_buyDataArrOfPoint[i] objectForKey:@"amount"] floatValue];
+        }else{
+            nowFloat = [[_buyDataArrOfPoint[i] objectForKey:@"total_surplus"] floatValue];
+        }
+        //点点的x就是(竖着的间距 * i),y坐标就是()
+        UIView *v = [[UIView alloc] initWithFrame:CGRectMake((Xmargin)*i, height - nowFloat/arrmax * height - 2 / 2 , 2, 2)];
+        NSValue *point = [NSValue valueWithCGPoint:v.center];
+        [self.buyPointCenterArr addObject:point];
+    }
+}
+
+- (void)clearBuyBezierLine {
+    _buyShapeLayer.path = nil;
+    CABasicAnimation *anmi = [CABasicAnimation animation];
+    anmi.keyPath = @"strokeEnd";
+    anmi.fromValue = [NSNumber numberWithFloat:0];
+    anmi.toValue = [NSNumber numberWithFloat:1.0f];
+    anmi.duration =0.01f;
+    anmi.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anmi.autoreverses = NO;
+    [_buyShapeLayer addAnimation:anmi forKey:@"stroke"];
+    self.buyShadeLayer.path = nil;
+    
+    CABasicAnimation *anmi1 = [CABasicAnimation animation];
+    anmi1.keyPath = @"bounds";
+    anmi1.duration = 0.01f;
+    anmi1.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 0, _lineChartView.bounds.size.height)];
+    anmi1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anmi1.fillMode = kCAFillModeForwards;
+    anmi1.autoreverses = NO;
+    anmi1.removedOnCompletion = NO;
+    [_buygradintLayer addAnimation:anmi1 forKey:@"bounds"];
+}
+
+-(void)addBuyBezierLine {
+    
+    //取得起点
+    CGPoint p1 = [[self.buyPointCenterArr objectAtIndex:0] CGPointValue];
+    UIBezierPath *beizer = [UIBezierPath bezierPath];
+    [beizer moveToPoint:p1];
+    
+    //添加线
+    for (int i = 0;i<self.buyPointCenterArr.count;i++ )
+    {
+        if (i != 0)
+        {
+            CGPoint prePoint = [[self.buyPointCenterArr objectAtIndex:i-1] CGPointValue];
+            CGPoint nowPoint = [[self.buyPointCenterArr objectAtIndex:i] CGPointValue];
+            [beizer addCurveToPoint:nowPoint controlPoint1:CGPointMake((nowPoint.x+prePoint.x)/2, prePoint.y) controlPoint2:CGPointMake((nowPoint.x+prePoint.x)/2, nowPoint.y)];
+        }
+    }
+    //显示线
+    self.buyShapeLayer.path = beizer.CGPath;
+    //设置动画
+    CABasicAnimation *anmi = [CABasicAnimation animation];
+    anmi.keyPath = @"strokeEnd";
+    anmi.fromValue = [NSNumber numberWithFloat:0];
+    anmi.toValue = [NSNumber numberWithFloat:1.0f];
+    anmi.duration =0.01f;
+    anmi.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anmi.autoreverses = NO;
+    [_buyShapeLayer addAnimation:anmi forKey:@"stroke"];
+    
+    //遮罩层相关
+    UIBezierPath *bezier1 = [UIBezierPath bezierPath];
+    bezier1.lineCapStyle = kCGLineCapRound;
+    bezier1.lineJoinStyle = kCGLineJoinMiter;
+    [bezier1 moveToPoint:p1];
+    CGPoint lastPoint;
+    for (int i = 0;i<self.buyPointCenterArr.count;i++ ) {
+        if (i != 0)
+        {
+            CGPoint prePoint = [[self.buyPointCenterArr objectAtIndex:i-1] CGPointValue];
+            CGPoint nowPoint = [[self.buyPointCenterArr objectAtIndex:i] CGPointValue];
+            [bezier1 addCurveToPoint:nowPoint controlPoint1:CGPointMake((nowPoint.x+prePoint.x)/2, prePoint.y) controlPoint2:CGPointMake((nowPoint.x+prePoint.x)/2, nowPoint.y)];
+            if (i == self.buyPointCenterArr.count-1)
+            {
+                lastPoint = nowPoint;
+            }
+        }
+    }
+    //获取最后一个点的X值
+    CGFloat lastPointX = lastPoint.x;
+    CGPoint lastPointX1 = CGPointMake(lastPointX,_lineChartView.bounds.size.height);
+    [bezier1 addLineToPoint:lastPointX1];
+    //回到原点
+    [bezier1 addLineToPoint:CGPointMake(p1.x, _lineChartView.bounds.size.height)];
+    [bezier1 addLineToPoint:p1];
+    
+    self.buyShadeLayer.path = bezier1.CGPath;
+    
+    CABasicAnimation *anmi1 = [CABasicAnimation animation];
+    anmi1.keyPath = @"bounds";
+    anmi1.duration = 0.01f;
+    anmi1.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 2*lastPoint.x, _lineChartView.bounds.size.height)];
+    anmi1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anmi1.fillMode = kCAFillModeForwards;
+    anmi1.autoreverses = NO;
+    anmi1.removedOnCompletion = NO;
+    [_buygradintLayer addAnimation:anmi1 forKey:@"bounds"];
+}
+
+-(void)addSellPointView {
+    [_sellPointCenterArr removeAllObjects];
+    //区域高
+    CGFloat height = self.lineChartView.bounds.size.height;
+    //y轴最大值
+    double arrmax = _maxY;
+    //区域宽
+    CGFloat width = self.lineChartView.bounds.size.width/2;
+    //X轴间距
+    double Xmargin = 0;
+    if (_sellDataArrOfPoint.count > 1) {
+        Xmargin = width / (_sellDataArrOfPoint.count - 1);
+    }
+    
+    for (int i = 0; i<_sellDataArrOfPoint.count; i++) {
+        //nowFloat是当前值
+        double nowFloat;
+        if(self.priceScale == 0 && self.toScale == 0 && self.fromScale == 0){
+            nowFloat = [[_sellDataArrOfPoint[i] objectForKey:@"amount"] floatValue];
+        }else{
+            nowFloat = [[_sellDataArrOfPoint[i] objectForKey:@"total_surplus"] floatValue];
+        }
+        //点点的x就是(竖着的间距 * i),y坐标就是()
+        UIView *v = [[UIView alloc] initWithFrame:CGRectMake((Xmargin)*i + self.lineChartView.bounds.size.width/2, height - nowFloat/arrmax * height - 2 / 2 , 2, 2)];
+        NSValue *point = [NSValue valueWithCGPoint:v.center];
+        [self.sellPointCenterArr addObject:point];
+    }
+}
+
+- (void)clearSellBezierLine {
+    _sellShapeLayer.path = nil;
+    CABasicAnimation *anmi = [CABasicAnimation animation];
+    anmi.keyPath = @"strokeEnd";
+    anmi.fromValue = [NSNumber numberWithFloat:0];
+    anmi.toValue = [NSNumber numberWithFloat:1.0f];
+    anmi.duration =0.01f;
+    anmi.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anmi.autoreverses = NO;
+    [_sellShapeLayer addAnimation:anmi forKey:@"stroke"];
+    self.sellShadeLayer.path = nil;
+    
+    CABasicAnimation *anmi1 = [CABasicAnimation animation];
+    anmi1.keyPath = @"bounds";
+    anmi1.duration = 0.01f;
+    anmi1.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 0, _lineChartView.bounds.size.height)];
+    anmi1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anmi1.fillMode = kCAFillModeForwards;
+    anmi1.autoreverses = NO;
+    anmi1.removedOnCompletion = NO;
+    [_sellgradintLayer addAnimation:anmi1 forKey:@"bounds"];
+}
+
+- (void)addSellBezierLine {
+    //取得起点
+    CGPoint p1 = [[self.sellPointCenterArr objectAtIndex:0] CGPointValue];
+    UIBezierPath *beizer = [UIBezierPath bezierPath];
+    [beizer moveToPoint:p1];
+    
+    //添加线
+    for (int i = 0;i<self.sellPointCenterArr.count;i++ ) {
+        if (i != 0){
+            CGPoint prePoint = [[self.sellPointCenterArr objectAtIndex:i-1] CGPointValue];
+            CGPoint nowPoint = [[self.sellPointCenterArr objectAtIndex:i] CGPointValue];
+            [beizer addCurveToPoint:nowPoint controlPoint1:CGPointMake((nowPoint.x+prePoint.x)/2, prePoint.y) controlPoint2:CGPointMake((nowPoint.x+prePoint.x)/2, nowPoint.y)];
+        }
+    }
+    //显示线
+    self.sellShapeLayer.path = beizer.CGPath;
+    //设置动画
+    CABasicAnimation *anmi = [CABasicAnimation animation];
+    anmi.keyPath = @"strokeEnd";
+    anmi.fromValue = [NSNumber numberWithFloat:0];
+    anmi.toValue = [NSNumber numberWithFloat:1.0f];
+    anmi.duration =0.01f;
+    anmi.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anmi.autoreverses = NO;
+    [_sellShapeLayer addAnimation:anmi forKey:@"stroke"];
+    //遮罩层相关
+    UIBezierPath *bezier1 = [UIBezierPath bezierPath];
+    bezier1.lineCapStyle = kCGLineCapRound;
+    bezier1.lineJoinStyle = kCGLineJoinMiter;
+    [bezier1 moveToPoint:p1];
+    CGPoint lastPoint;
+    for (int i = 0;i<self.sellPointCenterArr.count;i++ ) {
+        if (i != 0){
+            CGPoint prePoint = [[self.sellPointCenterArr objectAtIndex:i-1] CGPointValue];
+            CGPoint nowPoint = [[self.sellPointCenterArr objectAtIndex:i] CGPointValue];
+            [bezier1 addCurveToPoint:nowPoint controlPoint1:CGPointMake((nowPoint.x+prePoint.x)/2, prePoint.y) controlPoint2:CGPointMake((nowPoint.x+prePoint.x)/2, nowPoint.y)];
+            if (i == self.sellPointCenterArr.count-1)
+            {
+                lastPoint = nowPoint;
+            }
+        }
+    }
+    //获取最后一个点的X值
+    CGFloat lastPointX = lastPoint.x;
+    CGPoint lastPointX1 = CGPointMake(lastPointX,_lineChartView.bounds.size.height);
+    [bezier1 addLineToPoint:lastPointX1];
+    //回到原点
+    [bezier1 addLineToPoint:CGPointMake(p1.x, _lineChartView.bounds.size.height)];
+    [bezier1 addLineToPoint:p1];
+    
+    self.sellShadeLayer.path = bezier1.CGPath;
+    
+    CABasicAnimation *anmi1 = [CABasicAnimation animation];
+    anmi1.keyPath = @"bounds";
+    anmi1.duration = 0.01f;
+    anmi1.toValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 2*lastPoint.x, _lineChartView.bounds.size.height)];
+    anmi1.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anmi1.fillMode = kCAFillModeForwards;
+    anmi1.autoreverses = NO;
+    anmi1.removedOnCompletion = NO;
+    [_sellgradintLayer addAnimation:anmi1 forKey:@"bounds"];
+}
+
+#pragma mark - UITouchBegan
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    if (self.touchBlock) {
+        self.touchBlock(YES);
+    }
+    [self showTouchView:touches];
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self showTouchView:touches];
+    if (self.touchBlock) {
+        self.touchBlock(YES);
+    }
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self hideTouchView];
+    if (self.touchBlock) {
+        self.touchBlock(NO);
+    }
+}
+
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self hideTouchView];
+    if (self.touchBlock) {
+        self.touchBlock(NO);
+    }
+}
+
+- (void)hideTouchView {
+    [self.cursorView setNeedsDisplay];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(20 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.cursorView.hidden = YES;
+    });
+}
+
+- (void)showTouchView:(NSSet<UITouch *> *)touches {
+    CGPoint location = [touches.anyObject locationInView:self.contentView];
+    if (location.x < 0 || location.x > CGRectGetMaxX(self.contentView.frame)) return;
+    if (!self.sellPointCenterArr.count || !self.buyPointCenterArr.count) return;
+    CGFloat xInDeepView = location.x;
+    NSInteger selectIndex;
+    CGPoint targetPoint;
+    NSDictionary *targetModel;
+    NSDictionary *priceModel;
+    if (location.x > (self.contentView.frame.size.width / 2)){
+        selectIndex = [self findPointInArray:self.sellPointCenterArr withPositionX:xInDeepView];
+        targetPoint = [self.sellPointCenterArr[selectIndex] CGPointValue];
+        targetModel = self.sellDataArrOfPoint[selectIndex];
+        priceModel = self.sellDataArrOfPointPrice[selectIndex];
+    } else {
+        selectIndex = [self findPointInArray:self.buyPointCenterArr withPositionX:xInDeepView];
+        targetPoint = [self.buyPointCenterArr[selectIndex] CGPointValue];
+        targetModel = self.buyDataArrOfPoint[selectIndex];
+        priceModel = self.buyDataArrOfPointPrice[selectIndex];
+    }
+    self.cursorView.selectedPoint = targetPoint;
+    self.cursorView.selectModel = targetModel;
+    self.cursorView.priceModel = priceModel;
+    self.cursorView.priceCoinName = self.priceCoinName;
+    self.cursorView.priceScale = self.priceScale;
+    self.cursorView.fromScale = self.fromScale;
+    self.cursorView.hidden = NO;
+    [self.cursorView setNeedsDisplay];
+}
+
+- (NSInteger)findPointInArray:(NSArray *)array withPositionX:(CGFloat)x{
+    CGFloat minx = 10000;
+    NSInteger selectedIndeX = -1;
+    CGPoint targetPoing;
+    for (int i = 0; i<array.count; i++) {
+        CGPoint point = [array[i] CGPointValue];
+        if (ABS(point.x - x) < minx) {
+            targetPoing = point;
+            minx = ABS(point.x - x);
+            selectedIndeX = i;
+        }
+    }
+    return selectedIndeX;
+}
+
+@end

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="OptionalSymbol" representedClassName="OptionalSymbol" syncable="YES" codeGenerationType="class">
+        <attribute name="marketID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="UserAccount" representedClassName="UserAccount" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="pwd" optional="YES" attributeType="String"/>
+        <attribute name="sd" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <attribute name="vbg" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="OptionalSymbol" positionX="-63" positionY="-18" width="128" height="58"/>
+        <element name="UserAccount" positionX="-63" positionY="-9" width="128" height="134"/>
+    </elements>
+</model>

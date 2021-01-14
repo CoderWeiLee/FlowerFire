@@ -1,0 +1,1108 @@
+/* 
+  multiLanguage.strings
+  BaseDevelopmentFramework
+
+  Created by 王涛 on 2019/11/5.
+  Copyright © 2019 Celery. All rights reserved.
+*/
+//tabBar模块
+"tabbar1" = "首页";
+"tabbar2" = "行情";
+"tabbar3" = "交易";
+"tabbar4" = "合约";
+"tabbar5" = "资产";
+"tabbar6" = "我的";
+
+//通用
+"mainCurrency" = "HDU";
+
+//首页
+"homeTip1" = "收益";
+"homeTip2" = "更多";
+"homeTip3" = "实时•";
+"homeTip4" = "行情";
+"homeTip5" = "24H涨幅榜";
+"homeTip6" = "币种";
+"homeTip7" = "最新价";
+"homeTip8" = "24H涨跌";
+"homeTip9" = "请登录后查看收益";
+"homeTip10" = "去登录";
+"homeTip11" = "法币全部委托";
+"homeTip12" = "法币历史记录";
+"homeTip13" = "实名认证";
+"homeTip14" = "账号安全";
+"homeTip15" = "设置";
+"homeTip16" = "联系客服";
+"homeTip17" = "分享SD";
+
+
+"homeButtonTip0" = "充币";
+"homeButtonTip1" = "提币";
+"homeButtonTip2" = "划转";
+"homeButtonTip3" = "矿池";
+"homeButtonTip4" = "委托";
+"homeButtonTip5" = "历史记录";
+"homeButtonTip6" = "订单记录";
+"homeButtonTip7" = "收款账户";
+"homeButtonTip8" = "其他应用";
+"homeButtonTip9" = "敬请期待";
+"homeButtonTip10" = "募集";
+"homeButtonTip11" = "红包";
+"homeButtonTip12" = "账本";
+"homeButtonTip13" = "邀请激活";
+"homeButtonTip14" = "慈善";
+"homeButtonTip15" = "公告";
+"homeButtonTip16" = "商城";
+
+//更多应用
+"MoreApplicationTip1" = "排序";
+"MoreApplicationTip2" = "完成";
+"MoreApplicationTip3" = "按住拖动调整排序";
+
+//首页抽屉
+"homeSkidTip1" = "点击登录";
+"homeSkidTip2" = "欢迎使用SD";
+"homeSkidTip3" = "账户管理";
+"homeSkidTip4" = "安全中心";
+"homeSkidTip5" = "支付管理";
+"homeSkidTip6" = "SD公告";
+"homeSkidTip7" = "关于我们";
+"homeSkidTip8" = "实名认证";
+"homeSkidTip9" = "帮助中心";
+"homeSkidTip10" = "设置";
+"homeSkidTip11" = "联系客服";
+"homeSkidTip12" = "分享SDAPP";
+"homeSkidTip13" = "请先实名认证";
+
+//安全中心
+"securityTip1" = "安全中心";
+"securityTip2" = "修改登录密码";
+"securityTip3" = "修改交易密码";
+"securityTip4" = "找回交易密码";
+"securityTip5" = "Google认证";
+"securityTip6" = "交易免密设置";
+"securityTip7" = "支付验证设置";
+"securityTip8" = "登录验证设置";
+"securityTip9" = "修改手机号";
+"securityTip10" = "修改邮箱";
+
+//修改登录密码
+"changeLoginPwdTip1" = "修改登录密码";
+"changeLoginPwdTip2" = "正在为您的账号";
+"changeLoginPwdTip3" = "原登录密码";
+"changeLoginPwdTip4" = "请输入原登录密码";
+"changeLoginPwdTip5" = "新登录密码";
+"changeLoginPwdTip6" = "请输入新登录密码";
+"changeLoginPwdTip7" = "确认新密码";
+"changeLoginPwdTip8" = "请输入确认新的登录密码";
+"changeLoginPwdTip9" = "确认修改";
+"changeLoginPwdTip10" = "邮箱验证码";
+"changeLoginPwdTip11" = "请输入邮箱验证码";
+"changeLoginPwdTip12" = "获取验证码";
+"changeLoginPwdTip13" = "两次输入不一致";
+"Resend after seconds" = "秒后重新发送";
+"changeLoginPwdTip14" = "请填写全部信息";
+"BindingPhoneResendCode" = "重新发送验证码   ";
+
+//修改交易密码
+"changeFundPwdTip1" = "修改交易密码";
+"changeFundPwdTip2" = "原交易密码";
+"changeFundPwdTip3" = "请输入原交易密码";
+"changeFundPwdTip4" = "新交易密码";
+"changeFundPwdTip5" = "请输入新的交易密码";
+"changeFundPwdTip6" = "确认新密码";
+"changeFundPwdTip7" = "请确认新的交易密码";
+
+//修改邮箱
+"changeEmailTip1" = "修改邮箱";
+"changeEmailTip2" = "邮箱号";
+"changeEmailTip3" = "请输入邮箱号";
+"changeEmailTip4" = "确定";
+"changeEmailTip5" = "请输入正确的邮箱";
+
+//修改手机号
+"changePhoneTip1" = "修改手机号";
+"changePhoneTip2" = "手机号";
+"changePhoneTip3" = "请输入手机号";
+"changePhoneTip4" = "确定";
+"changePhoneTip5" = "请输入正确的手机号";
+"changePhoneTip6" = "手机验证码";
+"changePhoneTip7" = "请输入手机验证码";
+
+//验证设置
+"VerificationSettingTip1" = "交易免密设置";
+"VerificationSettingTip2" = "支付验证设置";
+"VerificationSettingTip3" = "登录验证设置";
+"VerificationSettingTip4" = "永不输入交易密码";
+"VerificationSettingTip5" = "短信验证码";
+"VerificationSettingTip6" = "登录密码";
+"VerificationSettingTip7" = "提交";
+
+//设置
+"settingTip1" = "系统语言";
+"settingTip2" = "登录";
+"settingTip3" = "安全退出";
+"settingTip4" = "设置";
+"settingTip5" = "语言设置";
+
+//谷歌身份验证器
+"googleVerificationTip1" = "谷歌身份验证器";
+"googleVerificationTip2" = "未绑定";
+"googleVerificationTip3" = "绑定谷歌身份验证器";
+"googleVerificationTip4" = "请妥善备份密钥以防遗失";
+"googleVerificationTip5" = "保存二维码到手机或复制密钥到剪贴板可能会有安全风险，请妥善保存。";
+"googleVerificationTip6" = "下一步";
+"googleVerificationTip7" = "复制";
+"googleVerificationTip8" = "谷歌验证码";
+"googleVerificationTip9" = "未获得密钥";
+"googleVerificationTip10" = "已绑定";
+"googleVerificationTip11" = "谷歌身份验证";
+"googleVerificationTip12" = "谷歌验证码丢失?";
+"googleVerificationTip13" = "点击这里";
+"googleVerificationTip14" = "粘贴";
+"googleVerificationTip15" = "未开启";
+"googleVerificationTip16" = "已开启";
+"googleVerificationTip17" = "空密钥";
+"googleVerificationTip18" = "请输入谷歌验证码";
+"Safety verification" = "安全验证";
+"Send" = "发送";
+"login password" = "登录密码";
+"Enter your login password" = "输入登录密码";
+"SMS verification code" = "邮箱验证码";
+"Successful copy" = "复制到剪贴板成功";
+"Resend Code" = "重新发送验证码";
+"ForgetTip1" = "请输入正确的邮箱或手机号";
+"LoginTip1" = "验证码错误";
+
+"aboutUsTip1" = "关于我们";
+"aboutUsTip2" = "用户协议和隐私";
+"aboutUsTip3" = "当前版本";
+
+//行情
+"quotesTip1" = "自选";
+"quotesTip2" = "全部";
+"quotesTip3" = "币种";
+"quotesTip4" = "最新价";
+"quotesTip5" = "24H涨跌";
+"Vol" = "量";
+
+//交易
+"transactionTip1" = "币币交易";
+"transactionTip2" = "法币交易";
+"ccTip1" = "未知交易对";
+"ccTotal" = "交易额";
+"Optimal market price" = "以当前最优价格交易";
+"BUY" = "买入";
+"SELL" = "卖出";
+"market" = "市价";
+"Limit" = "限价";
+"ccTip2" = "请输入委托价格";
+"ccTip3" = "委托价格要大于0";
+"ccTip4" = "请输入委托数量";
+"ccTip5" = "委托数量要大于0";
+"ccTip6" = "请输入委托额";
+"ccTip7" = "委托额要大于0";
+"ccTip8" = "您输入的数量不可大于可购买数量";
+"Default" = "默认";
+"BuyHandicap" = "买盘";
+"SellHandicap" = "卖盘";
+"Stop-Limit" = "止盈止损";
+"Depth" = "深度";
+"ccBuy1" = "买入 ";
+"ccSell1" = "卖出 ";
+"Price" = "价格";
+"Open Orders" = "当前委托";
+"Not record" = "暂无委托";
+"cancel1" = "撤销";
+"cancel2" = "已撤销";
+"ccTip9" = "已完成";
+"Revocation order" = "撤销委托单";
+"All commission" = "全部委托";
+"Order History" = "历史记录";
+"Order Type" = "订单类型";
+"Order Status" = "订单状态";
+"Reset" = "重置";
+"Search" = "搜索币种";
+"Exchange" = "币币";
+"Fiat1" = "法币";
+"ccTip10" = "交易未完成，无法查看明细";
+"ccTip11" = "请输入触发价";
+"Buy1" = "购买";
+"Sell1" = "出售";
+"Deal done" = "已成交";
+"Copy1" = "已复制";
+"No" = "暂无";
+"H" = "高";
+"L" = "低";
+"Line" = "分时";
+"1min" = "1分";
+"5min" = "5分";
+"1hour" = "1时";
+"1day" = "日线";
+"1week" = "1周";
+"1mon" = "1月";
+"15min" = "15分";
+"30min" = "30分";
+"close2" = "关闭";
+"More" = "更多";
+"Index" = "指标";
+"Filled" = "成交";
+"Introduction" = "简介";
+"Issue Time" = "发行时间";
+"Total Amount" = "发行总量";
+"Circulation" = "流通总量";
+"Token Price" = "众筹价格";
+"White Paper" = "白皮书";
+"Official Website" = "官网";
+"Block Explorer" = "区块查询";
+"Main" = "主图";
+"Sub" = "副图";
+"Open1" = "开";
+"Close1" = "收";
+"Change1" = "涨跌额";
+"Change%" = "涨跌幅";
+"Executed" = "成交量";
+"cursorTip1" = "委托价";
+"cursorTip2" = "累计数量";
+"cursorTip3" = "累计金额";
+"direction" = "方向";
+"VOL" = "VOL";
+"ccTip12" = "成交明细";
+"ccTip13" = "成交总额";
+"ccTip14" = "成交均价";
+"ccTip15" = "成交量";
+"ccTip16" = "手续费";
+"ccTip17" = "时间";
+"ccTip18" = "成交价";
+"All" = "历史记录";
+"Available" = "可用:";
+"Amount" = "数量";
+"Login" = "登录";
+
+//法币
+"FBTip1" = "购买";
+"FBTip2" = "出售";
+"FBTip3" = "委托单";
+"FBTip4" = "订单";
+"FBTip5" = "币种";
+"FBTip6" = "数量";
+"FBTip7" = "限额";
+
+"Order" = "订单";
+"Commission Order" = "委托单";
+"Optional transaction" = "自选交易";
+"Filter" = "筛选";
+"Filtered" = "已筛选";
+"FiatBuy" = "付款";
+"By Price1" = "按价格购买";
+"By amount1" = "按数量购买";
+"By Price2" = "按价格出售";
+"By amount2" = "按数量出售";
+"Total buy amount1" = "请输入欲购买法币总额";
+"Total buy amount2" = "请输入欲出售法币总额";
+"Buy amount1" = "请输入欲购买法币数量";
+"Buy amount2" = "请输入欲出售法币数量";
+"FiatPrice" = "单价";
+"FiatAmount" = "交易数量";
+"Payment total" = "交易总额";
+"Cancelled in" = "后自动取消";
+"FiatOrder" = "下单";
+"Minimum amount" = "最小金额";
+"Please enter the minimum amount" = "请输入最小金额";
+"Clear" = "清除";
+"Issue order" = "发布委托单";
+"I want to buy" = "我要购买";
+"I want to sell" = "我要出售";
+"Trading price" = "交易价格";
+"FiatTip1" = "请输入交易价格";
+"FiatTip2" = "当前盘口价格:";
+"FiatTip3" = "交易金额";
+"FiatTip4" = "限制最小金额";
+"FiatTip5" = "交易金额需";
+"FiatTip6" = "限制最小金额需";
+"FiatTip7" = "对手限制";
+"FiatTip8" = "对手认证等级";
+"FiatTip9" = "对手注册时间";
+"FiatTip10" = "交易说明";
+"FiatTip11" = "下单后急速付款，到账后及时放币";
+"FiatTip12" = "对手付款时间";
+"FiatTip13" = "1.请及时付款并点击[我已支付]按钮\n2.币由系统锁定托管，请安心下单";
+"Hanging up" = "挂售中";
+"Actual transaction" = "实际成交";
+"Order record" = "订单记录";
+"FiatTip14" = "委托方已设限";
+"FiatTip15" = "委托方要求:需通过KYC2级认证";
+"Certification" = "认证";
+"FiatLimit" = "限额";
+"FiatLimit1" = "限额 不限";
+"FiatTip16" = "输入不能为0";
+"FiatTip17" = "限制注册时间";
+"No limit" = "不限额";
+"FiatTip18" = "您输入的金额大于最大金额";
+"FiatTip19" = "您输入的金额小于最大金额";
+"FiatTip20" = "您输入的币量小于最小币量";
+"FiatTip21" = "您输入的币量大于最大币量";
+"FiatTip22" = "提交成功";
+"FiatBuy" = "购买";
+"FiatSell" = "出售";
+"BuyAll" = "全部买入";
+"SellAll" = "全部售出";
+"Pre-registration" = "前注册";
+"Limit certification level" = "限制认证等级";
+"FiatTip23" = "请先添加收款账号";
+"Go add" = "去添加";
+"Currently available" = "当前可用";
+"FiatTip24" = "请输入购买数量";
+"FiatTip25" = "交易金额(CNY)";
+"FiatTip26" = "输入金额需<=0";
+"FiatTip27" = "十分钟内完成付款";
+"FiatTip28" = "最小金额需<=0";
+"FiatTip29" = "出售数量不能超过总量";
+"Not records" = "暂无记录";
+"TransactionType" = "交易类型";
+"OrderTip1" = "待付款";
+"OrderTip2" = "已付款";
+"OrderTip3" = "已取消";
+"OrderTip4" = "申诉中";
+"OrderTip5" = "已付款，待放币";
+"OrderTip6" = "交易成功";
+//法币订单
+"FiatOrderTip1" = "已取消";
+"FiatOrderTip2" = "订单已取消，无法查看支付信息";
+"FiatOrderTip3" = "交易总额";
+"FiatOrderTip4" = "请付款";
+"FiatOrderTip5" = "请在";
+"FiatOrderTip6" = "内付款给商家";
+"FiatOrderTip7" = "待支付";
+"FiatOrderTip8" = "已付款";
+"FiatOrderTip9" = "等待卖家放币";
+"FiatOrderTip10" = "已支付";
+"FiatOrderTip11" = "申诉";
+"FiatOrderTip12" = "已支付,等待卖家放币";
+"FiatOrderTip13" = "已完成";
+"FiatOrderTip14" = "订单已完成";
+"FiatOrderTip15" = "申诉中";
+"FiatOrderTip16" = "对方已申诉，请提交您的申诉";
+"FiatOrderTip17" = "申诉信息";
+"FiatOrderTip18" = "放行";
+"FiatOrderTip19" = "买家已付款";
+"FiatOrderTip20" = "等待卖家放币";
+"FiatOrderTip21" = "等待买家付款";
+"FiatOrderTip22" = "放行已超时";
+"FiatOrderTip23" = "联系对方";
+"FiatOrderTip24" = "交易单价";
+"FiatOrderTip25" = "交易数量";
+"FiatOrderTip26" = "等待对方付款";
+"FiatOrderTip27" = "待付款";
+"FiatOrderTip28" = "切换方式";
+"FiatOrderTip29" = "如您已向卖家转账付款，请务必点击“标记为已支付“按钮,否则有可能造成资金损失。";
+"FiatOrderTip30" = "取消订单";
+"FiatOrderTip31" = "标记为已支付";
+"FiatOrderTip32" = "付款确认";
+"FiatOrderTip33" = "请确认您已向卖家付款\n恶意点击将直接冻结账户";
+"FiatOrderTip34" = "确认取消交易";
+"FiatOrderTip35" = "如果您已经向卖家付款，请千万不要取消交易\n我确认还有没有付款给对方";
+"FiatOrderTip36" = "我再想想";
+"FiatOrderTip37" = "参考号";
+"FiatOrderTip38" = "收款人";
+"FiatOrderTip39" = "收款二维码";
+"FiatOrderTip40" = "确认订单完成，放行货币";
+"FiatOrderTip41" = "卖家";
+"FiatOrderTip42" = "买家";
+"FiatOrderTip43" = "剩";
+"FiatOrderTip44" = "订单号";
+"FiatOrderTip45" = "下单时间";
+"FiatOrderTip46" = "请务必登录收款账户确认到账明细，避免因错误点击放行造成财产损失。";
+"QR Code" = "二维码";
+"FiatOrderTip47" = "请在付款信息中备注付款参考号";
+"FiatOrderTip48" = "请在付款信息中备注付款参考号";
+"FiatOrderTip49" = "● 如您已向卖家转账付款，请务必点击“标记为已支付”按钮,否则有可能造成资金损失\n\n ● 如您已向卖家转账付款，请务必点击“标记为已支付”按钮,否则有可能造成资金损失 \n";
+"FiatOrderTip50" = "订单详情";
+"FiatOrderTip51" = "对方邮箱号";
+
+//申诉
+"AppealTip1" = "请输入申诉内容";
+"AppealTip2" = "订单编号";
+"AppealTip3" = "订单数量";
+"AppealTip4" = "总价";
+"AppealTip5" = "上传凭证";
+"AppealTip6" = "凭证";
+
+
+//资产
+"Total Balances(BTC)" = "总账号资产折合";
+"Exchange" = "币币账户";
+"Contract" = "合约账户";
+"Fiat" = "法币账户";
+"Exchange Balances(BTC)" = "币币总资产折合(HDU)";
+"Total Contract Equity(BTC)" = "合约总权益折合(HDU)";
+"Fiat Balances(BTC)" = "法币总资产折合(HDU)";
+"On orders" = "冻结";
+"Estimated(CNY)" = "折合(CNY)";
+"Equity" = "账户权益";
+"EST liquidation price(USD)" = "预估强平价(USD)";
+"Margin rate" = "保证金率";
+"Finance Records" = "财务记录";
+"Transactions" = "合约账单";
+"System" = "系统";
+"Transfer In" = "转入";
+"Transfer Out" = "转出";
+"Recharge" = "充值";
+"Sell" = "卖出";
+"Buy" = "买入";
+"Open" = "开仓";
+"Close" = "平仓";
+"Liquidation" = "强平";
+"Delivery settlement" = "交割结算";
+"Fee" = "手续费";
+"Promotion Reward" = "活动奖励";
+"Date" = "时间";
+"Total" = "金额";
+"Type" = "类型";
+"Actual turnover" = "实际成交额";
+"qrCodeTip1" = "识别失败";
+"qrCodeTip2" = "对准二维码，即可自动扫描至地址栏";
+"AssetsTip1" = "隐藏小额币种";
+"Search" = "搜索";
+"assetsTip1" = "充币";
+"assetsTip2" = "提币";
+"assetsTip3" = "划转";
+"assetsTip4" = "可用:";
+"assetsTip5" = "冻结:";
+"Status" = "状态";
+
+//充提币记录
+"Currency" = "币种";
+"Time" = "时间";
+"Amount" = "数量";
+"Status" = "状态";
+"DepositRecording" = "充币记录";
+"WithdrawRecording" = "提币记录";
+//充币
+"Deposit" = "充币";
+"Withdraw" = "提币";
+"Transfer" = "划转";
+"leverageRiskWarning" = "风险提示";
+"SelectCurrency" = "选择币种";
+"Save QR code to album" = "保存二维码至相册";
+"DepositAddress" = "充币地址";
+"Copy" = "复制地址";
+"Successful copy" = "复制成功";
+"CopyTag" = "复制Tag";
+"DepositTip1" = "请认真核对并填写此地址标签，若遗漏标签将导致资金丢失!";
+"DepositTip2" = "您充值至上述地址后，需要整个网络节点的确认，到账时间为";
+"DepositTip3" = "次网络确认后。\n";
+"DepositTip4" = "最小充值金额:";
+"DepositTip5" = ",小于最小金额的充值将不会上账且无法退回。\n";
+"DepositTip6" = "您的充值地址不会经常改变，可以重复充值；如有更改，我们会尽量通过网站公告或邮件通知您。\n请务必取人电脑及浏览器安全，防止信息被传改或泄漏。";
+"DepositTip7" = "充币提醒";
+"Address" = "地址";
+"AddAddress" = "添加地址";
+"chain" = "链";
+"Remarks" = "备注";
+"DepositTip6" = "此币暂不可充值";
+
+//提币
+"Add" = "添加";
+"WithdrawTip1" = "请输入或长按粘贴地址";
+"WithdrawTip2" = "最小提币数量";
+"WithdrawTip3" = "最小提币数量为:";
+"WithdrawTip4" = "请输入到账数量";
+"WithdrawTip5" = "请输入资金密码";
+"WithdrawTip6" = "为保障资金安全，当您账户安全策略变更、密码修改、我们会对提币进行人工审核，请耐心等待工作人员电话或邮件联系。\n请务必确认电脑及浏览器安全，防止信息被传改或泄露。";
+"WithdrawAddress" = "提币地址";
+"CanMention" = "可提";
+"Number of arrivals" = "到账数量";
+"Handling fee" = "手续费";
+"Fund password" = "资金密码";
+"InputPaymentPassword" = "请输入资金密码";
+"Determine the coin" = "确定提币";
+"WithdrawTip7" = "暂停充币";
+"WithdrawTip8" = "暂停提币";
+"WithdrawTip9" = "您的提币操作一旦完成，对应的资产所有权将由您变更为目标地址所对应的账户所有人享有，请您务必在提币操作前，仔细核对提币地址信息，确保提币属于自愿行为，并确认不涉及任何传销、非法集资、诈骗等违法情形、谨防上当受骗，避免造成不必要的财产损失。";
+"Tag" = "标签";
+"WithdrawTip10" = "输入或长按粘贴标签";
+"WithdrawTip11" = "(填写错误可能导致资产损失，请仔细核对)";
+"WithdrawTip12" = "请填写提币地址";
+"WithdrawTip13" = "请填写提币数量";
+"WithdrawTip14" = "请填写备注";
+"WithdrawTip15" = "最大提币数量";
+
+//划转
+"Available" = "可用";
+"Contract account" = "合约账户";
+"Coin account" = "币币账户";
+"Legal currency account" = "法币账户";
+"Legal currency" = "法币"; //判定字符串是否包含法币，英文注意
+"TransferTip1" = "请输入划转数量";
+"TransferTip2" = "可划转数量为0";
+"TransferTip3" = "超出最大划转数量";
+"TransferTip4" = "交易说明";
+"TransferTip5" = "划转数量";
+"TransferTip6" = "只有将资产划转到对应账户才可以进行交易。账户间的划转不收取手续费";
+"All" = "全部";
+"From" = "从";
+"To" = "到";
+
+//登录
+"loginTip1" = "欢迎来到SD交易平台";
+"loginTip2" = "用户名";
+"loginTip3" = "密码";
+"loginTip4" = "请输入用户名";
+"loginTip5" = "请输入登录密码";
+"loginTip6" = "登录";
+"loginTip7" = "忘记密码";
+"loginTip8" = "注册账户";
+
+//忘记密码
+"forgetPwdTip1" = "新登录密码";
+"forgetPwdTip2" = "新输入新登录密码";
+"forgetPwdTip3" = "确认新登录密码";
+"forgetPwdTip4" = "请再次确认新的登录密码";
+"forgetPwdTip5" = "找回登录密码";
+"forgetPwdTip6" = "邮箱号";
+"forgetPwdTip7" = "请输入邮箱号";
+
+//注册
+"registeredTip1" = "用户昵称由字母和数字组成";
+"registeredTip2" = "邮箱号";
+"registeredTip3" = "请输入邮箱号";
+"registeredTip4" = "下一步";
+"registeredTip5" = "轻触上面“下一步”按钮，表示您同意";
+"registeredTip6" = "已有账号 直接登录>>";
+"registeredTip7" = "欢迎来到SD交易平台";
+"registeredTip8" = " 隐私条款和服务协议";
+"registeredTip9" = " 已有账号";
+"registeredTip10" = " 直接登录>>";
+
+//注册2
+"registeredTip11" = "登录密码";
+"registeredTip12" = "请输入登录密码";
+"registeredTip13" = "确认登录密码";
+"registeredTip14" = "请再次确认登录密码";
+"registeredTip15" = "设置密码";
+
+//kyc认证
+"Kyc certification" = "kyc认证";
+"KycTip1" = "•认证后可进行法币交易";
+"KycTip2" = "•认证后可提升提币额度";
+"KycTip3" = "•KYC2认证后，可进行单笔高于2K或累计金额大于5W的法币交易";
+"KycTip4" = "•KYC1认证后，方可进行高级认证";
+"KycTip5" = "•KYC1认证后，方可进行KYC2认证";
+"KycTip6" = "  您目前尚未完成身份认证，根据国家相关规定，币种交易需要进行实名登记，请填写您的真实身份信息，一旦认证完成将无法更改，感谢您的理解与支持！";
+"Name" = "姓名";
+"Identity number" = "身份证号";
+"KYC1 certification" = "KYC1认证";
+"Go to certification" = "去认证";
+"verified" = "已认证";
+"KYC2 certification" = "KYC2认证";
+"not certified" = "未认证";
+//KYC1认证
+"Kyc1Tip1" = "请输入姓名";
+"Kyc1Tip2" = "请输入身份证号码";
+"InputTrueName" = "请输入真实姓名";
+"ID card Number" = "身份证号码";
+"Save" = "保存";
+//KYC2认证
+"Kyc2Tip1" = "请上传身份证正面照";
+"Kyc2Tip2" = "请上传身份证背面照";
+"ID card front photo" = "身份证正面照";
+"ID card back photo" = "身份证背面照";
+
+//收款方式
+"Payment Method" = "收款方式";
+"Add" = "添加";
+"paymentMthodTip1" = "暂无账户\n请务必使用您本人的实名账户";
+//添加收款账户
+"Add PayMent Method" = "添加收款账户";
+"Add Bank card" = "添加银行卡";
+"Add Alipay" = "添加支付宝";
+"Add WChat" = "添加微信";
+"InputAcount" = "请输入账号";
+"Input Bank Account" = "请输入开户银行";
+"cardholder" = "持卡人";
+"cardholder1" = "请输入持卡人姓名";
+"Bank card number" = "银行卡号";
+"Bank card number1" = "请输入银行卡号";
+"Bank Account" = "开户银行";
+"Alipay Account" = "支付宝账号";
+"Input Alipay Account" = "请输入支付宝账号";
+"Add a QR code (optional)" = "添加收款二维码(选填)";
+"WChat Account" = "微信账号";
+"Input WChat Account" = "请输入微信账号";
+//收款账户详情
+"Collection account details" = "收款账户详情";
+"account type" = "账户类型";
+"Alipay collection code" = "支付宝收款码";
+"WeChat collection code" = "微信收款码";
+"accountdetailsTip" = "法币交易属于C2C交易，资金不经过平台，平台不会自动扣款，需要您手动自行转账给对方。对方才能收到款项";
+"Delete this account" = "删除此账号";
+"TrueName" = "真实姓名";
+"Bank card" = "银行卡";
+"Alipay" = "支付宝";
+"WChat" = "微信";
+"HomeTip1" = "有新版本";
+"HomeTip2" = "去更新";
+"ShowPaymentMethodTip1" = "已激活";
+"ShowPaymentMethodTip2" = "未激活";
+ 
+//权限提示
+"permissionCameraTip" = "相机";
+"permissionPhotoTip" = "相册";
+"permissionTip1" = "没有 ";
+"permissionTip2" = " 权限,是否前往设置";
+
+//Util
+"utilTip1" = "设置";
+"cancel" = "取消";
+"utilTip2" = "提示";
+"Tips" = "温馨提示";
+"determine" = "确定";
+"cancel" = "取消";
+"Failed to save image" = "保存图片失败";
+"Failed to create album" = "创建相册失败";
+"Save the picture successfully" = "保存图片成功";
+"Photo permissions are not turned on" = "照片权限未开启";
+"PhotoPermissionTip" = "请在系统设置中开启照片授权,否则您将无法保存图片";
+"PhotoPermissionTip1" = "请在系统设置中开启照片授权,否则您将无法上传图片";
+"Not yet" = "暂不";
+"Go to set" = "去设置";
+"photoErrorTip" = "因系统原因，无法访问相册";
+"NetWorkErrorTip" = "请检查网络链接";
+"NetWorkErrorTip1" = "未授权访问";
+"NetWorkErrorTip2" = "系统错误";
+"NetWorkErrorTip3" = "您当前未开启网络,将导致部分功能不可用";
+"Take a photo" = "拍照";
+"Album" = "相册";
+"upload failed" = "上传失败";
+"please enter" = "请输入";
+"confirm" = "确认";
+"Loading" = "请等待...";
+"cameraTip1" = "相机权限未开启";
+"cameraTip2" = "在系统设置中开启相机授权,否则您将无法拍照上传";
+"netTip" = "无更新版本";
+"min" = "分";
+"second" = "秒";
+"utilTip3" = "保存图片";
+"utilTip4" = "保存成功";
+"utilTip5" = "权限提示";
+"permissionTip12" = "权限";
+"permissionTip13" = "去设置";
+"SignOutSuccess" = "退出成功";
+
+//空数据提示
+"noDataTip" = "暂无数据，请稍后再试！";
+"noDataTip1" = "重试";
+
+//自选
+"OptionalSymbolTip1" = "选择自选成功";
+"OptionalSymbolTip2" = "选择自选失败";
+"OptionalSymbolTip3" = "取消自选成功";
+"OptionalSymbolTip4" = "取消自选失败";
+"OptionalSymbolTip5" = "自选";
+
+//矿池
+"MiningPollTip1" = "接受账户";
+"MiningPollTip2" = "请输入分钱帐户";
+"MiningPollTip3" = "数量";
+"MiningPollTip4" = "请输入数量";
+"MiningPollTip5" = "全部";
+"MiningPollTip6" = "可用";
+"MiningPollTip7" = "矿工费";
+"MiningPollTip8" = "确定";
+"MiningPollTip9" = "分钱包";
+
+//红包
+"RedEnvelopeTip1" = "金额";
+"RedEnvelopeTip2" = "请输入红包总金额";
+"RedEnvelopeTip3" = "数量";
+"RedEnvelopeTip4" = "请输入红包个数";
+"RedEnvelopeTip5" = "个";
+"RedEnvelopeTip6" = "可用余额";
+"RedEnvelopeTip7" = "创建红包";
+"RedEnvelopeTip8" = "创建并分享";
+"RedEnvelopeTip9" = "红包记录";
+
+//账本
+"LedgerTip1" = "账本动态";
+
+//邀请激活
+"InvitationActivateTip1" = "激活矿工";
+"InvitationActivateTip2" = "对方帐户";
+"InvitationActivateTip3" = "请输入sd账号";
+"InvitationActivateTip4" = "激活需要消耗";
+"InvitationActivateTip4jihuoma" = "激活码";
+
+//SD公告
+"AnnouncementTip1" = "SD公告";
+
+//帮助教程
+"HelpCenterTip1" = "帮助教程";
+
+//募集
+"RaiseTip1" = "募集";
+"RaiseTip2" = "审核中";
+"RaiseTip3" = "等待募集";
+"RaiseTip4" = "募集中";
+"RaiseTip5" = "募集结束";
+"RaiseTip6" = "目标人数";
+"RaiseTip7" = "发行总量";
+"RaiseTip8" = "募集";
+"RaiseTip9" = "上币申请";
+"RaiseTip10" = "项目详情";
+"RaiseTip11" = "公募状态";
+"RaiseTip12" = "审核时间:";
+"RaiseTip13" = "限购数量:";
+"RaiseTip14" = "接收币种:";
+"RaiseTip15" = "兑换比例:";
+"RaiseTip16" = "老用户:";
+"RaiseTip17" = "新用户:";
+"RaiseTip18" = "募集说明:";
+"RaiseTip19" = "发行时间";
+"RaiseTip20" = "总发行量";
+"RaiseTip21" = "白皮书";
+"RaiseTip22" = "官网";
+"RaiseTip23" = "钱包地址";
+"RaiseTip24" = "简介";
+"RaiseTip25" = "募集已结束";
+"RaiseTip26" = "为必填项";
+"RaiseTip27" = "联系人姓名";
+"RaiseTip28" = "请输入联系人姓名";
+"RaiseTip29" = "联系人手机号";
+"RaiseTip30" = "请输入联系人手机号";
+"RaiseTip31" = "币种中文名称";
+"RaiseTip32" = "请输入币种中文名称";
+"RaiseTip33" = "币种英文名称";
+"RaiseTip34" = "请输入币种英文名称";
+"RaiseTip35" = "总发行量";
+"RaiseTip36" = "请输入总发行量";
+"RaiseTip37" = "市场已流通量";
+"RaiseTip38" = "请输入市场已流通量";
+"RaiseTip39" = "项目介绍";
+"RaiseTip40" = "请输入项目介绍";
+"RaiseTip41" = "社区用户量";
+"RaiseTip42" = "请输入社区用户量";
+"RaiseTip43" = "营销预算";
+"RaiseTip44" = "请输入营销预算";
+"RaiseTip45" = "如果您的申请表符合标准，我们将尽快回复您";
+"RaiseTip46" = "提交申请";
+
+//花信
+"FlowerMessageTip1" = "花信";
+"FlowerMessageTip2" = "创建群组";
+"FlowerMessageTip3" = "添加群/好友";
+"FlowerMessageTip4" = "我的资料";
+"FlowerMessageTip5" = "搜索";
+"FlowerMessageTip6" = "个人资料";
+"FlowerMessageTip7" = "用户名";
+"FlowerMessageTip8" = "头像";
+"FlowerMessageTip9" = "好友备注";
+"FlowerMessageTip10" = "设置备注";
+"FlowerMessageTip11" = "设置昵称";
+"FlowerMessageTip12" = "设置头像";
+"FlowerMessageTip13" = "请输入昵称";
+"FlowerMessageTip14" = "*昵称设置后不可修改";
+"FlowerMessageTip15" = "保存";
+"FlowerMessageTip16" = "设置备注";
+"FlowerMessageTip17" = "好友备注";
+"FlowerMessageTip18" = "输入SD用户名/群ID检索";
+"FlowerMessageTip19" = "取消";
+"FlowerMessageTip20" = "加好友";
+"FlowerMessageTip21" = "好友申请发送成功";
+"FlowerMessageTip22" = "添加好友";
+"FlowerMessageTip23" = "添加好友留言";
+"FlowerMessageTip24" = "请输入留言...";
+"FlowerMessageTip25" = "确定";
+"FlowerMessageTip26" = "取消";
+"FlowerMessageTip27" = "提示";
+"FlowerMessageTip28" = "删除好友";
+"FlowerMessageTip29" = "将同时删除与他/她的聊天记录";
+"FlowerMessageTip30" = "设置个人昵称";
+"FlowerMessageTip31" = "请先完善个人昵称";
+"FlowerMessageTip32" = "创建群组";
+"FlowerMessageTip33" = "群名称";
+"FlowerMessageTip34" = "请输入群名称";
+"FlowerMessageTip35" = "群员上限500人";
+"FlowerMessageTip36" = "允许群员自动加入该群";
+"FlowerMessageTip37" = "开启后无需管理员统一即可加入";
+"FlowerMessageTip38" = "创建群最低要求 HDU 推广算力达到:100000";
+"FlowerMessageTip39" = "联系人列表";
+"FlowerMessageTip40" = "搜索";
+"FlowerMessageTip41" = "新朋友";
+"FlowerMessageTip42" = "好友";
+"FlowerMessageTip43" = "群组";
+"FlowerMessageTip44" = "新朋友";
+"FlowerMessageTip45" = "联系人列表";
+"FlowerMessageTip46" = "开始聊天";
+
+//收款码
+"CollectionQRcodeTip1" = "收款码";
+"CollectionQRcodeTip2" = "点击可复制";
+"CollectionQRcodeTip3" = "扫一扫";
+"CollectionQRcodeTip4" = "没有收款码";
+
+"maintitle" = "国兴金鼎";
+//578
+"578Tip1" = "立即认购>";
+"578Tip2" = "添加网关";
+"578Tip3" = "立即认购>";
+"578Tip4" = "激活挖矿";
+"578Tip5" = "激活矿工";
+"578Tip6" = "激活矿工列表";
+"578Tip7" = "申请节点";
+"578Tip8" = "分享APP";
+"578Tip9" = "账户管理";
+"578Tip10" = "安全中心";
+"578Tip11" = "意见反馈";
+"578Tip12" = "关于我们";
+"578Tip13" = "激活矿工列表";
+"578Tip14" = "激活时间:";
+"578Tip15" = "总持币:";
+"578Tip16" = "钱包地址:";
+"578Tip17" = "会员数量:";
+"578Tip18" = "设备数量:";
+"578Tip19" = "申请节点";
+"578Tip20" = "账号名称";
+"578Tip21" = "账号名称";
+"578Tip22" = "联系邮箱";
+"578Tip23" = "请输入联系邮箱";
+"578Tip24" = "描述(推荐人账户)";
+"578Tip25" = "请输入描述(推荐人账户)";
+"578Tip26" = "提交申请";
+"578Tip27" = "请输入联系邮箱";
+
+"578Tip28" = "账户管理";
+"578Tip29" = "退出登录";
+"578Tip30" = "(当前账户)";
+"578Tip31" = "创建账户";
+"578Tip32" = "导入账户";
+"578Tip33" = "助记词导入";
+"578Tip34" = "私钥导入";
+"578Tip35" = "请输入用户名";
+"578Tip36" = "用户名";
+"578Tip37" = "请输入助记词(使用空格分开)";
+"578Tip38" = "助记词";
+"578Tip39" = "确定导入";
+"578Tip40" = "助记词导入";
+"578Tip41" = "请输入私钥";
+"578Tip42" = "私钥";
+
+"578Tip43" = "添加账户";
+"578Tip44" = "设置用户名(必须包含字母和数字)";
+"578Tip45" = "设置密码";
+"578Tip46" = "重复密码";
+"578Tip47" = "请设置用户名";
+"578Tip48" = "请设置密码";
+"578Tip49" = "请设置重复密码";
+"578Tip50" = "确认添加";
+
+"578Tip51" = "区块链浏览器";
+"578Tip52" = "开源地址";
+"578Tip53" = "官方网址";
+
+"578Tip54" = "意见反馈";
+"578Tip55" = "请输入您要反馈的意见";
+"578Tip56" = "请输入您的邮箱";
+"578Tip57" = "确定提交";
+
+"578Tip58" = "账号名称";
+"578Tip59" = "备份助记词";
+"578Tip60" = "导出私钥";
+"578Tip61" = "账号详情";
+
+"578Tip62" = "矿池";
+"578Tip63" = "截止总挖出";
+"578Tip64" = "持币算力";
+"578Tip65" = "推广算力";
+"578Tip66" = "最佳持币";
+"578Tip67" = "最低持币";
+"578Tip68" = "累计总挖出";
+"578Tip689" = "生效金额";
+"578Tip6899" = "排队金额";
+"578Tip68999" = "平衡池系数";
+"578Tip689999" = "平衡池完成系数";
+
+
+
+"578Tip69" = "矿工列表";
+"578Tip70" = "最近一周收益";
+
+"578Tip71" = "矿工列表";
+"578Tip72" = "今日新增会员";
+"578Tip73" = "今日新增设备";
+"578Tip74" = "累积新增会员";
+"578Tip75" = "累积新增设备";
+"578Tip76" = "有效设备总数";
+"578Tip77" = "我的矿工列表";
+"578Tip78" = "账户名";
+"578Tip79" = "团队持币";
+
+"578Tip80" = "转账";
+"578Tip888" = "地账户";
+"578Tip999" = "交易账户";
+"578Tip81" = "认购";
+"578Tip82" = "输入SD数量";
+"578Tip83" = "全部";
+"578Tip84" = "最大认购额度:";
+"578Tip85" = "需要支付USD数量";
+"578Tip86" = "当前USD余额:";
+"578Tip87" = "输入交易密码";
+"578Tip88" = "注意:";
+"578Tip89" = "确定";
+"578Tip90" = "请输入SD数量";
+"578Tip91" = "需要支付USD数量";
+"578Tip92" = "请输入交易密码";
+
+"578Tip93" = "添加网关";
+"578Tip94" = "请选择需要添加或取消的网关";
+"578Tip95" = "请输入交易密码";
+
+"578Tip96" = "委托";
+"578Tip97" = "订单";
+"578Tip98" = "账单";
+
+"578Tip100" = "保存助记词";
+"578Tip101" = "请认真抄写并保存好助记词,一旦丢失，钱包将不可找回!";
+"578Tip102" = "*我理解如果我丢失了助记词，我将永远无法找回我的资产。\n*我理解如果我忘记了或者丢失了助记词，将没有任何人能帮助我恢复。";
+"578Tip103" = "*我理解如果我忘记了或者丢失了助记词，将没有任何人能帮助我恢复。";
+"578Tip104" = "下一步";
+
+"578Tip105" = "验证助记词";
+"578Tip106" = "请按顺序点击助记词，已确认您正确备份"; 
+"578Tip107" = "请点击全部助记词"; 
+
+"578Tip108" = "验证邮箱";
+"578Tip109" = "请再次输入登录密码";
+"578Tip110" = "请输入登录密码";
+"578Tip111" = "确定";
+
+"578Tip112" = "持币算力";
+"578Tip113" = "推广算力";
+"578Tip114" = "请输入账户名";
+"578Tip115" = "节点开启";
+"578Tip116" = "节点关闭";
+"578Tip117" = "SD认购";
+"578Tip118" = "节点关闭";
+"578Tip119" = "设置交易密码";
+"578Tip120" = "找回交易密码";
+"578Tip121" = "请设置交易密码";
+"578Tip122" = "钱包地址为空";
+"578Tip123" = "选择币种";
+"578Tip124" = "对方账户";
+"578Tip125" = "输入对方账户";
+"578Tip126" = "输入数量";
+"578Tip127" = "请输入转账数量";
+"578Tip128" = "可用余额:";
+"578Tip129" = "全部";
+"578Tip130" = "矿工费";
+"575Tip22" = "对方ID";
+"575Tip23" = "请输入对方账户";
+"575Tip24" = "转账金额：";
+"575Tip24777777" = "转账数量：";
+"578Tip12444444" = "转入天账户";
+"578Tip125555555" = "转入地账户";
+
+
+"575Tip2775678" = "当前可转次数还剩:";
+"575Tip278989" = "可转金额:";
+
+"575Tip27777777777" = "账户可用余额:";
+"575Tip27777777777777777" = "当前可转次数还剩1次，可转金额";
+"575Tip28888888888" = "锁定天数";
+"575Tip24444444444" = "输入质押数量:";
+
+"575Tip25" = "最低金额";
+"575Tip26" = "最高";
+"575Tip27" = "币币账户可用余额:";
+"575Tip27eee" = "用户可用余额:";
+
+"575Tip28" = "资金密码";
+"575Tip29" = "请输入资金密码";
+"575Tip30" = "确定转账";
+"575Tip59" = "选择币种";
+"575Tip60" = "请选择币种";
+"575Tip600" = "请选择天数";
+"575Tip42" = "请输入转账金额";
+
+"578Tip131" = "交易密码";
+"578Tip132" = "请输入交易密码";
+"578Tip133" = "确认交易密码";
+"578Tip134" = "请再次输入交易密码";
+"578Tip135" = "邮箱验证码";
+"578Tip136" = "请输入邮箱验证码";
+"578Tip137" = "获取验证码";
+"578Tip138" = "身份证号";
+"578Tip139" = "请输入身份证号";
+"578Tip140" = "确定";
+"578Tip141" = "设置交易密码";
+"578Tip142" = "已激活";
+"578Tip143" = "未激活";
+"578Tip144" = "网址为空";
+"578Tip145" = "注:1.认购时间，";
+"578Tip146" = "2.每人只有一次认购机会，确认后不能修改和撤销;";
+"578Tip147" = "确定";
+"578Tip148" = "没有可复制字符串";
+"578Tip149" = "是否切换账户";
+"578Tip150" = "账户名重复";
+"578Tip151" = "暂停访问";
+"578Tip152" = "查看详情";
+"578Tip153" = "安卓下载";
+"578Tip154" = "苹果下载";
+"578Tip155" = "是否移除此账号?";
+"578Tip156" = "激活设备数:";
+"578Tip157" = "我已阅读并同意《用户协议》";
+"578Tip158" = "《用户协议》";
+"578Tip159" = "创建账号";
+"578Tip160" = "导入账号";
+"578Tip161" = "请同意协议";
+"578Tip162" = "未有下载地址";
+"578Tip163" = "充值";
+"578Tip164" = "充值金额";
+"578Tip165" = "充值帐户";
+"578Tip166" = "确定充值";
+"578Tip167" = "收益记录";
+"578Tip168" = "时间";
+"578Tip169" = "收益";
+"578Tip170" = "推广挖矿收益";
+"578Tip171" = "持币挖矿收益";
+"578Tip172" = "链名称";
+"578Tip173" = "成交数量";
+"BindingPhoneTip2" = "请绑定邮箱";
+"578Tip174" = "挂单数量";
+"578Tip175" = "实际成交";
+"578Tip176" = "请先激活当前账户";
+
+"578NOW1" = "质押收益";
+"578NOW2" = "推广收益";
+"578NOW3" = "链接算力 ";
+"578NOW4" = "团队算力";
+"578NOW5" = "超级节点收益";
+
+
+
+
+"homeButtonTip17" = "充值";
+"homeButtonTip18" = "矿池";
+"homeButtonTip19" = "提币";
+"homeButtonTip20" = "转账";
+"homeButtonTip21" = "委托";
+"homeButtonTip22" = "账单";
+"homeButtonTip22suodan" = "天账户";
+"homeButtonTip23" = "订单";
+"homeButtonTip24" = "公告";
+"homeButtonTip25" = "社区";
+"homeButtonTip26" = "教育";
+"homeButtonTip27" = "慈善";
+"homeButtonTip28" = "商城";
+
+
+"homeButtonTip100" = "地账户";
+"homeButtonTip101" = "社区";
+"homeButtonTip102" = "收款";
+"homeButtonTip103" = "扫码";
+"homeButtonTip104" = "交易账户";
+
+"homeButtonWAIT1" = "DEFI";
+"homeButtonWAIT2" = "拼团";
+"homeButtonWAIT3" = "生态群";
+
