@@ -15,10 +15,13 @@
 
 @interface JiaoYiVC ()<UITextFieldDelegate>
 {
-    LightningChargeFormView *_herIDFormView,*_transNumFormView,*_pwdFormView,*_selectedCoinFormView,*_emailFormView;
+    UIButton *button2;
+    LightningChargeFormView *_herIDFormView,*_transNumFormView, *_pledgeNumFormView,*_pwdFormView,*_pwdFormViewB,*_selectedCoinFormView,*_emailFormView,*_dayview;
     WTLabel *_moneyLabel;
+    WTLabel *_pledgeMoneyLabel;
     NSString *_min_amount_transfer,*_max_amount_transfer,*_coin_id;
     NSMutableArray *_coinArray;
+    NSMutableArray *_dayArray;
     NSString       *_currentCoinName;
     NSString       *_herID;
     WTButton       *_sendCodeButton;
@@ -104,10 +107,6 @@
     [self.view addSubview:_transNumFormView];
     _moneyLabel = nil;
     _moneyLabel = [[WTLabel alloc] initWithFrame:CGRectMake(_transNumFormView.left + 15, _transNumFormView.bottom + 13, ScreenWidth, 20) Text:LocalizationKey(@"575Tip278989") Font:tFont(13) textColor:rgba(51, 51, 51, 1) parentView:self.view];
-    
-    // 575Tip2775678
- 
-    
 
     WTButton *selectedCoinButton = [[WTButton alloc] initWithFrame:_selectedCoinFormView.frame];
     [self.view addSubview:selectedCoinButton];
@@ -116,28 +115,38 @@
     _pwdFormView = [[LightningChargeFormView alloc] initWithFrame:CGRectMake(OverAllLeft_OR_RightSpace, _moneyLabel.bottom + 22, ScreenWidth - 2 *OverAllLeft_OR_RightSpace, 45) leftText:LocalizationKey(@"575Tip28") placeHolderStr:LocalizationKey(@"575Tip29")];
     _pwdFormView.secureTextEntry = YES;
     [self.view addSubview:_pwdFormView];
-     
-//    _emailFormView = [[LightningChargeFormView alloc] initWithFrame:CGRectMake(_pwdFormView.left, _pwdFormView.bottom + 22, _pwdFormView.width, _pwdFormView.height) leftText:@"" placeHolderStr:@""];
-//    _emailFormView.textAlignment = NSTextAlignmentLeft;
-//    _emailFormView.placeholder = LocalizationKey(@"changeLoginPwdTip11");
-//
-//    UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 15, 45)];
-//    _emailFormView.leftView = leftView;
-//    _emailFormView.leftViewMode = UITextFieldViewModeAlways;
-//
-//    _sendCodeButton = [[WTButton alloc] initWithFrame:CGRectMake(0, 0, 100, 45) titleStr:NSStringFormat(@"%@   ",LocalizationKey(@"changeLoginPwdTip12")) titleFont:tFont(13) titleColor:MainBlueColor parentView:nil];
-//    [_sendCodeButton addTarget:self action:@selector(getCaptchaClick) forControlEvents:UIControlEventTouchUpInside];
-//
-//    _emailFormView.rightView = _sendCodeButton;
-//    _emailFormView.rightViewMode = UITextFieldViewModeAlways;
     
-    [self.view addSubview:_emailFormView];
-    
-    WTButton *submitButton = [[WTButton alloc] initWithFrame:CGRectMake(OverAllLeft_OR_RightSpace, _pwdFormView.bottom + 65, _pwdFormView.width, 50) titleStr:@"提交" titleFont:tFont(15) titleColor:KWhiteColor parentView:self.view];
+    WTButton *submitButton = [[WTButton alloc] initWithFrame:CGRectMake(OverAllLeft_OR_RightSpace, _pwdFormView.bottom + 45, _pwdFormView.width, 50) titleStr:@"提交" titleFont:tFont(15) titleColor:KWhiteColor parentView:self.view];
     submitButton.backgroundColor = MainColor;
     submitButton.layer.cornerRadius = 25;
     [submitButton addTarget:self action:@selector(submitClick) forControlEvents:UIControlEventTouchUpInside];
     [selectedCoinButton addTarget:self action:@selector(selectedCoinClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    //输入质押数量
+    _pledgeNumFormView = [[LightningChargeFormView alloc] initWithFrame:CGRectMake(OverAllLeft_OR_RightSpace, submitButton.bottom + 22, ScreenWidth - 2 *OverAllLeft_OR_RightSpace, 45) leftText:LocalizationKey(@"575Tip24444444444") placeHolderStr:@""];
+    _pledgeNumFormView.keyboardType = UIKeyboardTypeNumberPad;
+    [self.view addSubview:_pledgeNumFormView];
+    
+    _pledgeMoneyLabel = nil;
+    _pledgeMoneyLabel = [[WTLabel alloc] initWithFrame:CGRectMake(_pledgeNumFormView.left + 15, _pledgeNumFormView.bottom + 13, ScreenWidth, 20) Text:LocalizationKey(@"575Tip27777777777") Font:tFont(13) textColor:rgba(51, 51, 51, 1) parentView:self.view];
+    
+    _dayview = [[LightningChargeFormView alloc] initWithFrame:CGRectMake(OverAllLeft_OR_RightSpace, _pledgeMoneyLabel.bottom + 22, ScreenWidth - 2 *OverAllLeft_OR_RightSpace, 45) leftText:LocalizationKey(@"575Tip28888888888") placeHolderStr:@""];
+    _dayview.userInteractionEnabled = NO;
+    [self.view addSubview:_dayview];
+
+    button2 = [UIButton buttonWithType:0];
+    [button2 setImage:[UIImage imageNamed:@"jiantouarrow492"] forState:0];
+    button2.frame = CGRectMake(_selectedCoinFormView.right - 40,0,25,25);
+    [_dayview addSubview:button2];
+    
+    _pwdFormViewB = [[LightningChargeFormView alloc] initWithFrame:CGRectMake(OverAllLeft_OR_RightSpace, _dayview.bottom + 22, ScreenWidth - 2 *OverAllLeft_OR_RightSpace, 45) leftText:LocalizationKey(@"575Tip28") placeHolderStr:LocalizationKey(@"575Tip29")];
+    _pwdFormViewB.secureTextEntry = YES;
+    [self.view addSubview:_pwdFormViewB];
+    
+    WTButton *submitButtonB = [[WTButton alloc] initWithFrame:CGRectMake(OverAllLeft_OR_RightSpace, _pwdFormViewB.bottom + 45, _pwdFormView.width, 50) titleStr:@"提交" titleFont:tFont(15) titleColor:KWhiteColor parentView:self.view];
+    submitButtonB.backgroundColor = MainColor;
+    submitButtonB.layer.cornerRadius = 25;
+    [submitButtonB addTarget:self action:@selector(submitClickB) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)initData{
@@ -152,8 +161,11 @@
     dispatch_async(queue, ^{
     //    [self.afnetWork jsonGetDict:@"/api/account/getAccountByTypeCoin" JsonDict:@{@"account_type":Coin_Account,@"coin_id":_coin_id} Tag:@"1"];
 
-     //   [self searchWallet];
+//        [self searchWallet];
     });
+    
+    //获取锁仓规则
+    [self.afnetWork jsonGetDict:@"/api/lock/rule" JsonDict:nil Tag:@"8888"];
 }
 //查下钱包
 -(void)searchWallet{
@@ -179,6 +191,13 @@
     [ma yy_setColor:MainBlueColor range:[[ma string] rangeOfString:countStr]];
 
     _moneyLabel.attributedText = ma;
+        
+        //质押数量
+        NSMutableAttributedString *pledgeMa = [[NSMutableAttributedString alloc] initWithString:NSStringFormat(@"%@ %@",LocalizationKey(@"575Tip27777777777"),useableStr)];
+        [pledgeMa yy_setColor:rgba(51, 51, 51, 1) range:[[pledgeMa string] rangeOfString:LocalizationKey(@"575Tip27777777777")]];
+        [pledgeMa yy_setColor:MainBlueColor range:[[pledgeMa string] rangeOfString:useableStr]];
+        
+        _pledgeMoneyLabel.attributedText = pledgeMa;
     }
    else if([type isEqualToString:@"1"]){
         NSString *useableStr = [NSString stringWithFormat:@"%@%@",dict[@"data"][@"money"],_currentCoinName];
@@ -188,6 +207,14 @@
         [ma yy_setColor:MainBlueColor range:[[ma string] rangeOfString:useableStr]];
         
         _moneyLabel.attributedText = ma;
+       
+       
+       //质押数量
+       NSMutableAttributedString *pledgeMa = [[NSMutableAttributedString alloc] initWithString:NSStringFormat(@"%@ %@",LocalizationKey(@"575Tip27777777777"),useableStr)];
+       [pledgeMa yy_setColor:rgba(51, 51, 51, 1) range:[[pledgeMa string] rangeOfString:LocalizationKey(@"575Tip27777777777")]];
+       [pledgeMa yy_setColor:MainBlueColor range:[[pledgeMa string] rangeOfString:useableStr]];
+       
+       _pledgeMoneyLabel.attributedText = pledgeMa;
     }else if([type isEqualToString:@"2"]){
         //最低转账金额
         _min_amount_transfer = dict[@"data"][@"min_amount_transfer"];
@@ -207,6 +234,11 @@
         }
         
       //  [self showChooseCoinView];
+    }else if ([type isEqualToString:@"8888"]) {
+        _dayArray = [NSMutableArray array];
+        for (NSDictionary *dic in dict[@"data"][@"lock_rule"]) {
+            [_dayArray addObject:dic];
+        }
     }else{
         printAlert(dict[@"msg"], 1.f);
         [[HelpManager sharedHelpManager] sendVerificationCode:_sendCodeButton];
@@ -234,10 +266,6 @@
 -(void)submitClick{
     NSLog(@"%@",[WTUserInfo shareUserInfo].token);
     //去设置
-//    if([HelpManager isBlankString:_herID]){
-//        printAlert(LocalizationKey(@"575Tip23"), 1.f);
-//        return;
-//    }
     if([HelpManager isBlankString:_transNumFormView.text]){
         printAlert(LocalizationKey(@"575Tip42"), 1.f);
         return;
@@ -250,23 +278,38 @@
         printAlert(LocalizationKey(@"575Tip60"), 1.f);
         return;
     }
-
-
     NSMutableDictionary *md = [NSMutableDictionary dictionaryWithCapacity:5];
-//    md[@"target"] = _herID; //对方的用户id或者SD钱包地址
     md[@"money"] = _transNumFormView.text;
-//    md[@"coin_id"] = _coin_id;
     md[@"paypass"] = _pwdFormView.text;
-//    md[@"is_transfer"] = @"1";//0代表是SD充值,1为转账
-//    md[@"email"] = [WTUserInfo shareUserInfo].email;
-//    md[@"code"] = _emailFormView.text;
-    //minxin
     [self.afnetWork jsonPostDict:@"/api/account/transfortobusiness" JsonDict:md Tag:@"4"];
 }
+
+-(void)submitClickB{
+    NSLog(@"%@",[WTUserInfo shareUserInfo].token);
+    //去设置
+    if([HelpManager isBlankString:_transNumFormView.text]){
+        printAlert(LocalizationKey(@"575Tip42"), 1.f);
+        return;
+    }
+    if([HelpManager isBlankString:_pwdFormViewB.text]){
+        printAlert(LocalizationKey(@"575Tip29"), 1.f);
+        return;
+    }
+    if([HelpManager isBlankString:_coin_id]){
+        printAlert(LocalizationKey(@"575Tip600"), 1.f);
+        return;
+    }
+    NSMutableDictionary *md = [NSMutableDictionary dictionaryWithCapacity:5];
+    md[@"day"] = self->_dayview.text;
+    md[@"amount"] = _transNumFormView.text;
+    md[@"paypass"] = _pwdFormViewB.text;
+    [self.afnetWork jsonPostDict:@"/api/lock/enterb" JsonDict:md Tag:@"4"];
+}
+
 //币币闪充转账获取货币列表
 -(void)selectedCoinClick{
-    if(_coinArray.count>0){
-       // [self showChooseCoinView];
+    if(_dayArray.count>0){
+        [self showChooseCoinView];
     }else{
         [self.afnetWork jsonPostDict:@"/api/cc/getccTransfersCoin" JsonDict:nil Tag:@"5"];
     }
@@ -275,10 +318,11 @@
 
 -(void)showChooseCoinView{
     UIAlertController *ua = [UIAlertController alertControllerWithTitle:nil message:LocalizationKey(@"575Tip60") preferredStyle:UIAlertControllerStyleActionSheet];
-    NSArray *dayarray = @[@"10天",@"50天",@"100天"];
-    for (int i = 0; i<dayarray.count; i++) {
-        UIAlertAction *abc = [UIAlertAction actionWithTitle:dayarray[i] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-             
+//    NSArray *dayarray = @[@"10天",@"50天",@"100天"];
+    for (int i = 0; i<_dayArray.count; i++) {
+        UIAlertAction *abc = [UIAlertAction actionWithTitle:_dayArray[i][@"day"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            self->button2.hidden = YES;
+            self->_dayview.text = action.title;
             self->_coin_id = NSStringFormat(@"%@",self->_coinArray[i][@"coin_id"]);
             self->_currentCoinName = self->_coinArray[i][@"symbol"];
             self->_selectedCoinFormView.text = self->_currentCoinName;

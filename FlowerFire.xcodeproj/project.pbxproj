@@ -5556,7 +5556,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XU3T6FFXAY;
+				DEVELOPMENT_TEAM = W6LAHQF374;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FlowerFire/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = FlowerFire/Info.plist;
@@ -5578,11 +5578,11 @@
 			baseConfigurationReference = 68CFBEA6041DF5D1C649CEF3 /* Pods-FlowerFire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3WY776C2TN;
+				DEVELOPMENT_TEAM = W6LAHQF374;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FlowerFire/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = FlowerFire/Info.plist;
@@ -5595,7 +5595,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceshiyishibao;
 				PRODUCT_NAME = FlowerFire;
-				PROVISIONING_PROFILE_SPECIFIER = un;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -52,9 +52,9 @@
     UIViewController *firstNavigationController = [BaseNavigationController rootVC:firstViewController];
     [firstViewController cyl_setHideNavigationBarSeparator:YES];
   
-    QuotesMainViewController *secondViewController = [[QuotesMainViewController alloc] init];
-    UIViewController *secondNavigationController = [BaseNavigationController rootVC:secondViewController] ;
-    [secondViewController cyl_setHideNavigationBarSeparator:YES];
+//    QuotesMainViewController *secondViewController = [[QuotesMainViewController alloc] init];
+//    UIViewController *secondNavigationController = [BaseNavigationController rootVC:secondViewController] ;
+//    [secondViewController cyl_setHideNavigationBarSeparator:YES];
      
     TransactionMainViewController *thirdViewController = [[TransactionMainViewController alloc] init];
     UIViewController *thirdNavigationController = [BaseNavigationController rootVC:thirdViewController] ;
@@ -71,7 +71,7 @@
     
    NSArray *viewControllers = @[
                                 firstNavigationController,
-                                secondNavigationController,
+//                                secondNavigationController,
                                 thirdNavigationController,
                                 fouthNavigationController,
                                 fiveNavigationController,
@@ -84,11 +84,11 @@
                                                 CYLTabBarItemTitle : LocalizationKey(@"tabbar1"),
                                                 CYLTabBarItemImage : self.darkMode ? @"home_not_ic" : @"home_not_ic",   CYLTabBarItemSelectedImage : @"home_cli_ic",
                                                 };
-   NSDictionary *secondTabBarItemsAttributes = @{
-                                                 CYLTabBarItemTitle : LocalizationKey(@"tabbar2"),
-                                                 CYLTabBarItemImage : self.darkMode ? @"price_not_ic" : @"price_not_ic",
-                                                 CYLTabBarItemSelectedImage : @"price_cli_ic",
-                                                 };
+//   NSDictionary *secondTabBarItemsAttributes = @{
+//                                                 CYLTabBarItemTitle : LocalizationKey(@"tabbar2"),
+//                                                 CYLTabBarItemImage : self.darkMode ? @"price_not_ic" : @"price_not_ic",
+//                                                 CYLTabBarItemSelectedImage : @"price_cli_ic",
+//                                                 };
    NSDictionary *thirdTabBarItemsAttributes = @{
                                                  CYLTabBarItemTitle : LocalizationKey(@"tabbar3"),
                                                  CYLTabBarItemImage : self.darkMode ? @"deal_not_ic" : @"deal_not_ic",
@@ -110,7 +110,7 @@
     
    NSArray *tabBarItemsAttributes = @[
                                       firstTabBarItemsAttributes,
-                                      secondTabBarItemsAttributes,
+//                                      secondTabBarItemsAttributes,
                                       thirdTabBarItemsAttributes,
                                       fourthTabBarItemsAttributes,
                                       fivethTabBarItemsAttributes

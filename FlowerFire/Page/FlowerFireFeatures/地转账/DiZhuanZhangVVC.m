@@ -287,7 +287,7 @@
     
     for (int i = 0; i<_dayArray.count; i++) {
         UIAlertAction *abc = [UIAlertAction actionWithTitle:_dayArray[i][@"day"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            button2.hidden = YES;
+            self->button2.hidden = YES;
             self->_dayview.text = action.title;
         }];
         [ua addAction:abc];
