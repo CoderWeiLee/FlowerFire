@@ -7,7 +7,7 @@
 */
 //tabBar模塊
 "tabbar1" = "首頁";
-"tabbar2" = "行情";
+"tabbar2" = "资讯";
 "tabbar3" = "交易";
 "tabbar4" = "合約";
 "tabbar5" = "資產";

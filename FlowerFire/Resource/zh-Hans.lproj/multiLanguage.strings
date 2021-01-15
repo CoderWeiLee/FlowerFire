@@ -7,7 +7,7 @@
 */
 //tabBar模块
 "tabbar1" = "首页";
-"tabbar2" = "行情";
+"tabbar2" = "资讯";
 "tabbar3" = "交易";
 "tabbar4" = "合约";
 "tabbar5" = "资产";

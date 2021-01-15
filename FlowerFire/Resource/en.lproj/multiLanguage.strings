@@ -7,7 +7,7 @@
 */
 //tabBar模块
 "tabbar1" = "Home";
-"tabbar2" = "Quote";
+"tabbar2" = "News";
 "tabbar3" = "Transaction";
 "tabbar4" = "Contract";
 "tabbar5" = "Asset";

@@ -17,7 +17,7 @@
 #import "AboutUsViewController.h"
 #import "FFFeedbackViewController.h"
 #import "FFShareFriendViewController.h"
-
+#import "WTMainRootViewController.h"
 @interface FFMineMainViewController ()
 {
     WTButton *_rightBarItemButon;
@@ -30,7 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    WTMainRootViewController *rootVC = (WTMainRootViewController *)UIApplication.sharedApplication.keyWindow.rootViewController;
+    rootVC.navigationBar.hidden = YES;
     [self createNavBar];
     [self createUI];
     

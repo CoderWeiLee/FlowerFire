@@ -11,7 +11,7 @@
 #import "CoinAccountChildVC.h"
 #import "XDPagesView.h"
 #import "FFAddNetSwitchViewController.h"
-
+#import "WTMainRootViewController.h"
 @interface AssetsViewController ()<XDPagesViewDataSourceDelegate>
 {
     XDTitleBarLayout *_layout;
@@ -46,7 +46,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    WTMainRootViewController *rootVC = (WTMainRootViewController *)UIApplication.sharedApplication.keyWindow.rootViewController;
+    rootVC.navigationBar.hidden = YES;
     self.gk_navBarAlpha = 0;
     self.gk_navigationItem.title = LocalizationKey(@"tabbar5");
     self.gk_navTitleColor = KWhiteColor;

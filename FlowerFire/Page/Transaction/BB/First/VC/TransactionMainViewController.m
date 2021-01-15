@@ -11,7 +11,7 @@
 #import "CurrencyTransactionVC.h"
 #import "ViewController.h"
 #import "FBTransactionViewController.h"
-
+#import "WTMainRootViewController.h"
 @interface TransactionMainViewController ()
  
 @property (nonatomic ,strong) CurrencyTransactionVC         *transactionVC;
@@ -30,7 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    WTMainRootViewController *rootVC = (WTMainRootViewController *)UIApplication.sharedApplication.keyWindow.rootViewController;
+    rootVC.navigationBar.hidden = YES;
     [self createNavBar];
     [self createUI];
     [self initData];

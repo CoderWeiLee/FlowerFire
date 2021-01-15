@@ -542,6 +542,13 @@
 		92B0F91A257B71C700AD8FC7 /* suocangcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0F918257B71C700AD8FC7 /* suocangcell.m */; };
 		92B0F91B257B71C700AD8FC7 /* suocangcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B0F919257B71C700AD8FC7 /* suocangcell.xib */; };
 		BF77A86DA7598F7E8B5906F3 /* libPods-FlowerFire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B00B58E22BA41C1AAC97341 /* libPods-FlowerFire.a */; };
+		D0846A7C25B02795008C1B8B /* NewsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A7B25B02795008C1B8B /* NewsMainViewController.m */; };
+		D0846A8625B02DE7008C1B8B /* NewsFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A8525B02DE7008C1B8B /* NewsFlashViewController.m */; };
+		D0846A8F25B02E6A008C1B8B /* DeFiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A8E25B02E6A008C1B8B /* DeFiViewController.m */; };
+		D0846A9525B02EA1008C1B8B /* BocaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A9425B02EA1008C1B8B /* BocaViewController.m */; };
+		D0846A9B25B02ECD008C1B8B /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A9A25B02ECD008C1B8B /* ForecastViewController.m */; };
+		D0846AA125B02F15008C1B8B /* AMMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846AA025B02F15008C1B8B /* AMMViewController.m */; };
+		D0846AA725B02F49008C1B8B /* BitcoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846AA625B02F49008C1B8B /* BitcoinViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1606,6 +1613,20 @@
 		92B0F917257B71C700AD8FC7 /* suocangcell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = suocangcell.h; sourceTree = "<group>"; };
 		92B0F918257B71C700AD8FC7 /* suocangcell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = suocangcell.m; sourceTree = "<group>"; };
 		92B0F919257B71C700AD8FC7 /* suocangcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = suocangcell.xib; sourceTree = "<group>"; };
+		D0846A7A25B02795008C1B8B /* NewsMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsMainViewController.h; sourceTree = "<group>"; };
+		D0846A7B25B02795008C1B8B /* NewsMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsMainViewController.m; sourceTree = "<group>"; };
+		D0846A8425B02DE7008C1B8B /* NewsFlashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsFlashViewController.h; sourceTree = "<group>"; };
+		D0846A8525B02DE7008C1B8B /* NewsFlashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFlashViewController.m; sourceTree = "<group>"; };
+		D0846A8D25B02E6A008C1B8B /* DeFiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeFiViewController.h; sourceTree = "<group>"; };
+		D0846A8E25B02E6A008C1B8B /* DeFiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeFiViewController.m; sourceTree = "<group>"; };
+		D0846A9325B02EA1008C1B8B /* BocaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocaViewController.h; sourceTree = "<group>"; };
+		D0846A9425B02EA1008C1B8B /* BocaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BocaViewController.m; sourceTree = "<group>"; };
+		D0846A9925B02ECD008C1B8B /* ForecastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForecastViewController.h; sourceTree = "<group>"; };
+		D0846A9A25B02ECD008C1B8B /* ForecastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastViewController.m; sourceTree = "<group>"; };
+		D0846A9F25B02F15008C1B8B /* AMMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMMViewController.h; sourceTree = "<group>"; };
+		D0846AA025B02F15008C1B8B /* AMMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMMViewController.m; sourceTree = "<group>"; };
+		D0846AA525B02F49008C1B8B /* BitcoinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitcoinViewController.h; sourceTree = "<group>"; };
+		D0846AA625B02F49008C1B8B /* BitcoinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitcoinViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2677,6 +2698,7 @@
 		8D19381823701ED60066E5AA /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				D0846A7625B02742008C1B8B /* News */,
 				8D7A8DB824F0B11A00D2C990 /* Mine */,
 				8D685E8C24BD537000666960 /* FlowerFireFeatures */,
 				8D6E42392459765A00607E68 /* Assets */,
@@ -4672,6 +4694,59 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D0846A7625B02742008C1B8B /* News */ = {
+			isa = PBXGroup;
+			children = (
+				D0846A7925B02760008C1B8B /* View */,
+				D0846A7825B0275B008C1B8B /* Model */,
+				D0846A7725B02754008C1B8B /* VC */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		D0846A7725B02754008C1B8B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				D0846A8325B02DAF008C1B8B /* ChildViewController */,
+				D0846A7A25B02795008C1B8B /* NewsMainViewController.h */,
+				D0846A7B25B02795008C1B8B /* NewsMainViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		D0846A7825B0275B008C1B8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0846A7925B02760008C1B8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0846A8325B02DAF008C1B8B /* ChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0846A8425B02DE7008C1B8B /* NewsFlashViewController.h */,
+				D0846A8525B02DE7008C1B8B /* NewsFlashViewController.m */,
+				D0846A8D25B02E6A008C1B8B /* DeFiViewController.h */,
+				D0846A8E25B02E6A008C1B8B /* DeFiViewController.m */,
+				D0846A9325B02EA1008C1B8B /* BocaViewController.h */,
+				D0846A9425B02EA1008C1B8B /* BocaViewController.m */,
+				D0846A9925B02ECD008C1B8B /* ForecastViewController.h */,
+				D0846A9A25B02ECD008C1B8B /* ForecastViewController.m */,
+				D0846A9F25B02F15008C1B8B /* AMMViewController.h */,
+				D0846AA025B02F15008C1B8B /* AMMViewController.m */,
+				D0846AA525B02F49008C1B8B /* BitcoinViewController.h */,
+				D0846AA625B02F49008C1B8B /* BitcoinViewController.m */,
+			);
+			path = ChildViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -4996,6 +5071,7 @@
 				8D17D1A024CC032100ED840D /* JVShopcartHeaderView.m in Sources */,
 				8D6C125C2458127D0042EB4F /* WTSegmentedControl.m in Sources */,
 				8D5D357924613D8400AD9186 /* MJCChildMainView.m in Sources */,
+				D0846A7C25B02795008C1B8B /* NewsMainViewController.m in Sources */,
 				8D17D1C824CC032100ED840D /* SubmitOrderViewController.m in Sources */,
 				8D5ABD27245A6F140074BACA /* LoginViewController.m in Sources */,
 				8D7FDCC624F389F40035F76F /* FFAcountManagerViewController.m in Sources */,
@@ -5030,6 +5106,7 @@
 				8D17D18C24CC032100ED840D /* ChooseCityViewController.m in Sources */,
 				8D7BE44D24669D3700D1BA38 /* FinanceRecordModel.m in Sources */,
 				8D7A6C17246E36360012909A /* AppealDetailTBVC.m in Sources */,
+				D0846AA725B02F49008C1B8B /* BitcoinViewController.m in Sources */,
 				8D053DAB236FF51B005D3C6A /* ViewController.m in Sources */,
 				8D67702A246BCDDD00ACD77E /* BindGoogleVerificationViewController.m in Sources */,
 				8D62639724625C420088A5F2 /* MyOrderPageCell.m in Sources */,
@@ -5092,6 +5169,7 @@
 				8D17D19E24CC032100ED840D /* JVShopcartProductModel.m in Sources */,
 				8D17D1A724CC032100ED840D /* MyStockViewController.m in Sources */,
 				8D17D1AD24CC032100ED840D /* MyStockModel.m in Sources */,
+				D0846A8625B02DE7008C1B8B /* NewsFlashViewController.m in Sources */,
 				8D5D355A24613D8400AD9186 /* CATextLayer+DateTextLayer.m in Sources */,
 				8D5D355B24613D8400AD9186 /* UIColor+Y_StockChart.m in Sources */,
 				8D5D356E24613D8400AD9186 /* CommonMethod.m in Sources */,
@@ -5157,6 +5235,7 @@
 				8D193809237007F70066E5AA /* PopoverAction.m in Sources */,
 				8D7A6BFE246E28550012909A /* ShowPaymentMethodCell.m in Sources */,
 				8D7FDCC324F36E2A0035F76F /* ApplyNodeViewController.m in Sources */,
+				D0846A9B25B02ECD008C1B8B /* ForecastViewController.m in Sources */,
 				8D17D18524CC032100ED840D /* MineMainViewController.m in Sources */,
 				8D62639524625C420088A5F2 /* OrderRecordCell.m in Sources */,
 				8D1A39BA237101BE000FAB13 /* CAShapeLayer+SDTheme.m in Sources */,
@@ -5196,6 +5275,7 @@
 				8D17D1B624CC032100ED840D /* MyTeamRecommendHeaderCollectionView.m in Sources */,
 				8D7BE4802466A20600D1BA38 /* AddWithdrawAddressVC.m in Sources */,
 				8D17D1A124CC032100ED840D /* JVShopcartBottomView.m in Sources */,
+				D0846AA125B02F15008C1B8B /* AMMViewController.m in Sources */,
 				8D7A6C08246E295D0012909A /* AccountReceivableDetailsCell.m in Sources */,
 				8D17D1BD24CC032100ED840D /* MyTeamChildTotalDelegateCell.m in Sources */,
 				8D17D1D624CC032100ED840D /* ShopDetailsBuyPopView.m in Sources */,
@@ -5210,6 +5290,7 @@
 				8D7A6C0E246E35E10012909A /* SwitchPaymentCell.m in Sources */,
 				8D62637F24625C420088A5F2 /* payMethodModel.m in Sources */,
 				8D7AE92D24FF82CE00EEE464 /* AnnouncementDetailsViewController.m in Sources */,
+				D0846A9525B02EA1008C1B8B /* BocaViewController.m in Sources */,
 				8D1937F8237007F70066E5AA /* AppDelegate+LaunchAnimation.m in Sources */,
 				8D17D1C924CC032100ED840D /* SubmitPayPopView.m in Sources */,
 				8D17D1D424CC032100ED840D /* MemberLevelInfoModel.m in Sources */,
@@ -5341,6 +5422,7 @@
 				8D193804237007F70066E5AA /* ZQTColorSwitch.m in Sources */,
 				8D62638224625C420088A5F2 /* CurrencyTransactionModel.m in Sources */,
 				8D62637D24625C420088A5F2 /* TransactionMainViewController.m in Sources */,
+				D0846A8F25B02E6A008C1B8B /* DeFiViewController.m in Sources */,
 				8D6C122D2457BD0F0042EB4F /* HomeHornView.m in Sources */,
 				8D5D356924613D8400AD9186 /* Y_KLineMainView.m in Sources */,
 				8D5D357724613D8400AD9186 /* MJCTabItem.m in Sources */,

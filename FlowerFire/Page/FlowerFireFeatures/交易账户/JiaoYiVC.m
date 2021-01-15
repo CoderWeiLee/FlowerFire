@@ -108,10 +108,6 @@
     _moneyLabel = nil;
     _moneyLabel = [[WTLabel alloc] initWithFrame:CGRectMake(_transNumFormView.left + 15, _transNumFormView.bottom + 13, ScreenWidth, 20) Text:LocalizationKey(@"575Tip278989") Font:tFont(13) textColor:rgba(51, 51, 51, 1) parentView:self.view];
 
-    WTButton *selectedCoinButton = [[WTButton alloc] initWithFrame:_selectedCoinFormView.frame];
-    [self.view addSubview:selectedCoinButton];
-    
-    
     _pwdFormView = [[LightningChargeFormView alloc] initWithFrame:CGRectMake(OverAllLeft_OR_RightSpace, _moneyLabel.bottom + 22, ScreenWidth - 2 *OverAllLeft_OR_RightSpace, 45) leftText:LocalizationKey(@"575Tip28") placeHolderStr:LocalizationKey(@"575Tip29")];
     _pwdFormView.secureTextEntry = YES;
     [self.view addSubview:_pwdFormView];
@@ -120,7 +116,6 @@
     submitButton.backgroundColor = MainColor;
     submitButton.layer.cornerRadius = 25;
     [submitButton addTarget:self action:@selector(submitClick) forControlEvents:UIControlEventTouchUpInside];
-    [selectedCoinButton addTarget:self action:@selector(selectedCoinClick) forControlEvents:UIControlEventTouchUpInside];
     
     //输入质押数量
     _pledgeNumFormView = [[LightningChargeFormView alloc] initWithFrame:CGRectMake(OverAllLeft_OR_RightSpace, submitButton.bottom + 22, ScreenWidth - 2 *OverAllLeft_OR_RightSpace, 45) leftText:LocalizationKey(@"575Tip24444444444") placeHolderStr:@""];
@@ -139,6 +134,9 @@
     button2.frame = CGRectMake(_selectedCoinFormView.right - 40,0,25,25);
     [_dayview addSubview:button2];
     
+    WTButton *selectedCoinButton = [[WTButton alloc] initWithFrame:_dayview.frame];
+    [self.view addSubview:selectedCoinButton];
+    
     _pwdFormViewB = [[LightningChargeFormView alloc] initWithFrame:CGRectMake(OverAllLeft_OR_RightSpace, _dayview.bottom + 22, ScreenWidth - 2 *OverAllLeft_OR_RightSpace, 45) leftText:LocalizationKey(@"575Tip28") placeHolderStr:LocalizationKey(@"575Tip29")];
     _pwdFormViewB.secureTextEntry = YES;
     [self.view addSubview:_pwdFormViewB];
@@ -147,6 +145,7 @@
     submitButtonB.backgroundColor = MainColor;
     submitButtonB.layer.cornerRadius = 25;
     [submitButtonB addTarget:self action:@selector(submitClickB) forControlEvents:UIControlEventTouchUpInside];
+    [selectedCoinButton addTarget:self action:@selector(selectedCoinClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)initData{

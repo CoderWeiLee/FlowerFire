@@ -16,7 +16,7 @@
 #import "MainTabBarController.h"
 #import "HomeSkidVC.h"
 #import "FFAcountManager.h"
-
+#import "WTMainRootViewController.h"
 NSArray *NoticeListArray;
 @interface HomeMainViewController ()<UITableViewDelegate,UITableViewDataSource,HomeNavigationViewDelegate>
 
@@ -62,7 +62,8 @@ NSArray *NoticeListArray;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    WTMainRootViewController *rootVC = (WTMainRootViewController *)UIApplication.sharedApplication.keyWindow.rootViewController;
+    rootVC.navigationBar.hidden = YES;
     [self createNavBar];
     
     [self createUI];
