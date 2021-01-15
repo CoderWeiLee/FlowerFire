@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '10.0'
 source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 inhibit_all_warnings!
 target 'FlowerFire' do
@@ -7,10 +7,10 @@ target 'FlowerFire' do
  # use_frameworks!
 
   # Pods for BaseDevelopmentFramework
-
+ pod 'LSTCategory'
  pod 'GKNavigationBar'
  pod 'AFNetworking'
- pod 'SDWebImage'
+# pod 'SDWebImage'
  pod 'Masonry'
  pod 'MJRefresh'
  pod 'TZImagePickerController'
@@ -41,7 +41,7 @@ target 'FlowerFire' do
  #电影票轮播图。https://github.com/12207480/TYCyclePagerView
  pod 'TYCyclePagerView'
  #WkWebView的二次封装。https://github.com/xiubojin/JXBWKWebView
-  pod 'JXBWebKit' 
+  pod 'JXBWebKit'
  #启动广告
 # pod 'XHLaunchAd'
  #只安装系统原生API封装库 二维码生成及扫描库

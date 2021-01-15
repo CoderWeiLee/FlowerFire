@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
+
+API_AVAILABLE(ios(8.0)) 
 @interface LBXPermissionSetting : NSObject
 
 #pragma mark- guide user to show App privacy setting
@@ -46,5 +49,15 @@
                                           cancel:(NSString*)cancel
                                          setting:(NSString*)setting
                                       completion:(void(^)(void))completion;
+
+
+
+/// only show tip alert
+/// @param title title
+/// @param message message
+/// @param ok button title
++ (void)showAlertWithTitle:(NSString*)title
+                       msg:(NSString*)message
+                        ok:(NSString*)ok;
 
 @end

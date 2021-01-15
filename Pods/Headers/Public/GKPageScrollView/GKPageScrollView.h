@@ -1,1 +1,1 @@
-../../../GKPageScrollView/GKPageScrollView/objc/GKPageScrollView.h
+../../../GKPageScrollView/Sources/GKPageScrollView/GKPageScrollView.h

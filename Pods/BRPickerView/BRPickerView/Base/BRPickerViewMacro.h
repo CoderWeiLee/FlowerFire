@@ -16,7 +16,7 @@
 #define BR_BOTTOM_MARGIN \
 ({CGFloat safeBottomHeight = 0;\
 if (@available(iOS 11.0, *)) {\
-safeBottomHeight = BRGetWindow().safeAreaInsets.bottom;\
+safeBottomHeight = BRGetKeyWindow().safeAreaInsets.bottom;\
 }\
 (safeBottomHeight);})
 
@@ -84,24 +84,6 @@ safeBottomHeight = BRGetWindow().safeAreaInsets.bottom;\
 #endif
 
 
-/** 屏幕大小 */
-static inline CGRect BRScreenBounds(void) {
-    return [UIScreen mainScreen].bounds;
-}
-
-
-/** 屏幕宽度 */
-static inline CGFloat BRScreenWidth(void) {
-    return [UIScreen mainScreen].bounds.size.width;
-}
-
-
-/** 屏幕高度 */
-static inline CGFloat BRScreenHeight(void) {
-    return [UIScreen mainScreen].bounds.size.height;
-}
-
-
 /** RGB颜色(16进制) */
 static inline UIColor *BR_RGB_HEX(uint32_t rgbValue, CGFloat alpha) {
     return [UIColor colorWithRed:((CGFloat)((rgbValue & 0xFF0000) >> 16)) / 255.0
@@ -111,24 +93,32 @@ static inline UIColor *BR_RGB_HEX(uint32_t rgbValue, CGFloat alpha) {
 }
 
 
-/** 获取 window（比较严谨的获取方法）*/
-static inline UIWindow *BRGetWindow(void) {
-    // 适配iOS13
+/** 获取 keyWindow */
+static inline UIWindow *BRGetKeyWindow(void) {
+    UIWindow *keyWindow = nil;
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 130000 // 编译时检查SDK版本：Xcode11+编译会调用（iOS SDK 13.0 以后版本的处理）
     if (@available(iOS 13.0, *)) {
-        for (UIWindowScene *windowScene in [UIApplication sharedApplication].connectedScenes) {
-            if (windowScene.activationState == UISceneActivationStateForegroundActive) {
-                return windowScene.windows.lastObject;
+        NSSet<UIScene *> *connectedScenes = [UIApplication sharedApplication].connectedScenes;
+        for (UIScene *scene in connectedScenes) {
+            if (scene.activationState == UISceneActivationStateForegroundActive && [scene isKindOfClass:[UIWindowScene class]]) {
+                UIWindowScene *windowScene = (UIWindowScene *)scene;
+                for (UIWindow *window in windowScene.windows) {
+                    if (window.isKeyWindow) {
+                        keyWindow = window;
+                        break;
+                    }
+                }
             }
         }
-        return [[UIApplication sharedApplication].windows lastObject];
-    } else {
-        NSArray *windows = [UIApplication sharedApplication].windows;
-        for (UIWindow *window in [windows reverseObjectEnumerator]) {
-            if ([window isKindOfClass:[UIWindow class]] && CGRectEqualToRect(window.bounds, [UIScreen mainScreen].bounds))
-                return window;
-        }
+    } else
+#endif
+    {
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < 130000
         return [UIApplication sharedApplication].keyWindow;
+#endif
     }
+    
+    return keyWindow;
 }
 
 

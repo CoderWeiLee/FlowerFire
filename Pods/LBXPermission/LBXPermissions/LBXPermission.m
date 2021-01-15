@@ -24,6 +24,7 @@ typedef void(^completionPermissionHandler)(BOOL granted,BOOL firstTime);
     {
         SEL sel = NSSelectorFromString(@"isServicesEnabled");
         BOOL ret  = ((BOOL *(*)(id,SEL))objc_msgSend)( NSClassFromString(@"LBXPermissionLocation"), sel);
+
         return ret;
     }
     return YES;
@@ -72,6 +73,16 @@ typedef void(^completionPermissionHandler)(BOOL granted,BOOL firstTime);
             break;
         case LBXPermissionType_DataNetwork:
             break;
+        case LBXPermissionType_MediaLibrary:
+            strClass = @"LBXPermissionMediaLibrary";
+            break;
+        case LBXPermissionType_Tracking:
+            strClass = @"LBXPermissionTracking";
+            break;
+        case LBXPermissionType_Notification:
+            strClass = @"LBXPermissionNotification";
+            break;
+            
         default:
             break;
     }
@@ -114,6 +125,15 @@ typedef void(^completionPermissionHandler)(BOOL granted,BOOL firstTime);
             break;
         case LBXPermissionType_DataNetwork:
             strClass = @"LBXPermissionData";
+            break;
+        case LBXPermissionType_MediaLibrary:
+            strClass = @"LBXPermissionMediaLibrary";
+            break;
+        case LBXPermissionType_Tracking:
+            strClass = @"LBXPermissionTracking";
+            break;
+        case LBXPermissionType_Notification:
+            strClass = @"LBXPermissionNotification";
             break;
             
         default:

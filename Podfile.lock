@@ -15,17 +15,17 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - AlipaySDK-iOS (15.7.9)
-  - BRPickerView (2.6.7):
-    - BRPickerView/AddressPickerView (= 2.6.7)
-    - BRPickerView/Base (= 2.6.7)
-    - BRPickerView/DatePickerView (= 2.6.7)
-    - BRPickerView/StringPickerView (= 2.6.7)
-  - BRPickerView/AddressPickerView (2.6.7):
+  - BRPickerView (2.7.3):
+    - BRPickerView/AddressPickerView (= 2.7.3)
+    - BRPickerView/Base (= 2.7.3)
+    - BRPickerView/DatePickerView (= 2.7.3)
+    - BRPickerView/StringPickerView (= 2.7.3)
+  - BRPickerView/AddressPickerView (2.7.3):
     - BRPickerView/Base
-  - BRPickerView/Base (2.6.7)
-  - BRPickerView/DatePickerView (2.6.7):
+  - BRPickerView/Base (2.7.3)
+  - BRPickerView/DatePickerView (2.7.3):
     - BRPickerView/Base
-  - BRPickerView/StringPickerView (2.6.7):
+  - BRPickerView/StringPickerView (2.7.3):
     - BRPickerView/Base
   - CRBoxInputView (1.2.1):
     - Masonry
@@ -38,39 +38,29 @@ PODS:
     - GKNavigationBar/NavigationBar (= 1.4.0)
   - GKNavigationBar/GestureHandle (1.4.0)
   - GKNavigationBar/NavigationBar (1.4.0)
-  - GKPageScrollView (1.3.8)
+  - GKPageScrollView (1.5.2):
+    - GKPageScrollView/Objc (= 1.5.2)
+  - GKPageScrollView/Objc (1.5.2)
   - IQKeyboardManager (6.5.6)
-  - JXBWebKit (1.2.0)
-  - JXCategoryView (1.5.6)
-  - LBXPermission/Base (1.0.5)
-  - LBXPermission/Camera (1.0.5)
-  - LBXPermission/Photo (1.0.5)
-  - LBXScan/LBXNative (2.4.1):
+  - JXBWebKit (1.3.0)
+  - JXCategoryView (1.5.8)
+  - LBXPermission/Base (1.0.9)
+  - LBXPermission/Camera (1.0.9)
+  - LBXPermission/Photo (1.0.9)
+  - LBXScan/LBXNative (2.5.1):
     - LBXScan/Types (~> 2.2)
-  - LBXScan/Types (2.4.1)
-  - LBXScan/UI (2.4.1):
+  - LBXScan/Types (2.5.1)
+  - LBXScan/UI (2.5.1):
     - LBXScan/Types (~> 2.2)
-  - LSTCategory/LSTControlEvents (0.2.04281546)
-  - LSTCategory/LSTGestureEvents (0.2.04281546)
-  - "LSTCategory/NSString+LSTString (0.2.04281546)"
-  - "LSTCategory/UIColor+LSTColor (0.2.04281546)"
-  - "LSTCategory/UIView+LSTView (0.2.04281546)"
-  - LSTPopView (0.1.08111531):
-    - LSTCategory/LSTControlEvents
-    - LSTCategory/LSTGestureEvents
-    - "LSTCategory/NSString+LSTString"
-    - "LSTCategory/UIColor+LSTColor"
-    - "LSTCategory/UIView+LSTView"
-    - LSTPopView/Code (= 0.1.08111531)
+  - LSTCategory (0.2.04281546):
+    - LSTCategory/Code (= 0.2.04281546)
+  - LSTCategory/Code (0.2.04281546)
+  - LSTPopView (0.2.122201):
+    - LSTPopView/Code (= 0.2.122201)
     - LSTTimer
-  - LSTPopView/Code (0.1.08111531):
-    - LSTCategory/LSTControlEvents
-    - LSTCategory/LSTGestureEvents
-    - "LSTCategory/NSString+LSTString"
-    - "LSTCategory/UIColor+LSTColor"
-    - "LSTCategory/UIView+LSTView"
+  - LSTPopView/Code (0.2.122201):
     - LSTTimer
-  - LSTTimer (0.1.07241822)
+  - LSTTimer (0.1.08251125)
   - LYEmptyView (1.3.1)
   - MagicalRecord (2.4.0):
     - MagicalRecord/Core (= 2.4.0)
@@ -79,13 +69,13 @@ PODS:
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.5.0)
   - ReactiveObjC (3.1.1)
-  - SDCycleScrollView (1.80):
+  - SDCycleScrollView (1.82):
     - SDWebImage (>= 5.0.0)
-  - SDWebImage (5.8.4):
-    - SDWebImage/Core (= 5.8.4)
-  - SDWebImage/Core (5.8.4)
+  - SDWebImage (5.10.2):
+    - SDWebImage/Core (= 5.10.2)
+  - SDWebImage/Core (5.10.2)
   - TYCyclePagerView (1.2.0)
-  - TZImagePickerController (3.4.1)
+  - TZImagePickerController (3.5.8)
   - UICountingLabel (1.4.1)
   - WechatOpenSDK (1.8.7.1)
   - XHLaunchAd (3.9.12):
@@ -124,6 +114,7 @@ DEPENDENCIES:
   - LBXPermission/Photo
   - LBXScan/LBXNative
   - LBXScan/UI
+  - LSTCategory
   - LSTPopView
   - LYEmptyView
   - MagicalRecord (from `https://github.com/magicalpanda/MagicalRecord`)
@@ -132,7 +123,6 @@ DEPENDENCIES:
   - MJRefresh
   - ReactiveObjC
   - SDCycleScrollView
-  - SDWebImage
   - TYCyclePagerView
   - TZImagePickerController
   - UICountingLabel
@@ -182,8 +172,6 @@ SPEC REPOS:
     - YYModel
     - YYText
     - YYWebImage
-  trunk:
-    - SDWebImage
 
 EXTERNAL SOURCES:
   MagicalRecord:
@@ -197,30 +185,30 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   AlipaySDK-iOS: 94ff4c0e17c5e7d126b8207596d5033006534c25
-  BRPickerView: 1d337e647974c43cc7152053d8b8f399f0b24c73
+  BRPickerView: 9cc11880ac79c4872d081ccb88f306224c1501d7
   CRBoxInputView: d73a630e5326ee70487b4a56d09daebf915d82fd
   CYLTabBarController: f5460b8446f82d016945d4d53895a1ef185b79e3
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   GKNavigationBar: fe87990bde3fb2b7ece3f81014c6d4bc654bef06
-  GKPageScrollView: 5cd374fd7d34c0fb89f313307ac0e31939f82c30
+  GKPageScrollView: 95cdae06705e1c7cf388411c915987a64fec003c
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
-  JXBWebKit: 170bd0fb1bbbb90edf1deffb772ed51dd3110cdd
-  JXCategoryView: 603ccd8277a89b1a73e9cedb9d8ed4b294576008
-  LBXPermission: e03503500e9540efb75d5f206b82a1a760fd0b26
-  LBXScan: 740f2a4dcff7923cb08700c8ac864ca300fb5335
+  JXBWebKit: 7af9f6581e17d706b52a0979d4ed0dbaef52bccc
+  JXCategoryView: 778a620f76070d6598fd8d7239991b8da8326170
+  LBXPermission: 09656504c7f813e3fd56be47e9778a9ed932dd8e
+  LBXScan: 90ca10d0c38fb4a5a6980d7782354f3f69f50093
   LSTCategory: f70d240021080d1c4ab555b6129e74f5b0aa4ccb
-  LSTPopView: 9b1d7e190889e091e8a5f3c57f094dd9902f1773
-  LSTTimer: c9e2714fbed75d412367fb53190bbc04167796ae
+  LSTPopView: 58ee0b58e0798d88bfc39ced86ffd3e26dd026e8
+  LSTTimer: 6c4b5d75a71ce9b09961cfcc5e957d224383f92b
   LYEmptyView: b6d418cfa38b78df0cf243f9a9c25ccbdc399922
   MagicalRecord: 1f22a766156474d9f46a9b1e1ce59ca9e37830fc
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
-  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
   TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
-  TZImagePickerController: 4e7a7b3d314f8a75f11042931dfd9d34c270c7db
+  TZImagePickerController: 7fd9702897ef8c0b7c951e5463f4bcf398296f9e
   UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
   WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
   XHLaunchAd: 6320f9c68732667323072fc3a5f104e40fbe9cfe
@@ -232,6 +220,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 5fe7877556f257c196c9e3c0dc0fda6391b2b0ef
+PODFILE CHECKSUM: 93282aa9ecf3ae576cd2bba58e37cff23615b457
 
 COCOAPODS: 1.10.0

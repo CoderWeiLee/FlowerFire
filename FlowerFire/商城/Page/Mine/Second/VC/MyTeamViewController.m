@@ -180,7 +180,7 @@
  - (GKPageScrollView *)pageScrollView {
      if (!_pageScrollView) {
          _pageScrollView = [[GKPageScrollView alloc] initWithDelegate:self];
-         _pageScrollView.isLazyLoadList = YES;
+         _pageScrollView.lazyLoadList = YES;
      //    _pageScrollView.ceilPointHeight = Height_StatusBar;
          _pageScrollView.mainTableView.bounces = NO;
      }

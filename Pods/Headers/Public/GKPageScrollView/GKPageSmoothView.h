@@ -1,1 +1,0 @@
-../../../GKPageScrollView/GKPageScrollView/objc/GKPageSmoothView.h

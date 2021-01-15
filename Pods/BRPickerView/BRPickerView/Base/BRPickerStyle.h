@@ -187,6 +187,9 @@ typedef NS_ENUM(NSInteger, BRBorderStyle) {
 /** 设置 picker 的行高。暂不支持日期选择器前4种类型 */
 @property (nonatomic, assign) CGFloat rowHeight;
 
+/** 清除iOS14之后选择器默认自带的新样式（主要是：①隐藏中间选择行的背景样式，②清除默认的内边距，③新增中间选择行的两条分割线；与iOS14之前的样式保持一致），默认为 YES */
+@property (nonatomic, assign) BOOL clearPickerNewStyle;
+
 
 /**
  *  设置语言（不设置或为nil时，将随系统的语言自动改变）
@@ -224,6 +227,12 @@ typedef NS_ENUM(NSInteger, BRBorderStyle) {
 /// @param doneBtnImage 完成按钮的 image
 + (instancetype)pickerStyleWithDoneBtnImage:(nullable UIImage *)doneBtnImage;
 
+
+/** 设置选择器中间选中行的样式（组件内部使用）*/
+- (void)setupPickerSelectRowStyle:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+
+/** 添加选择器中间行上下两条分割线（iOS14之后系统默认去掉，需要手动添加；组件内部使用）*/
+- (void)addSeparatorLineView:(UIView *)pickerView;
 
 @end
 

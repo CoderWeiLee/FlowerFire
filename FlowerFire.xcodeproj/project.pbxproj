@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -528,7 +528,6 @@
 		92555E2C25728D1300FAF87C /* JiaoYiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92555E2B25728D1300FAF87C /* JiaoYiVC.m */; };
 		92B0F91A257B71C700AD8FC7 /* suocangcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0F918257B71C700AD8FC7 /* suocangcell.m */; };
 		92B0F91B257B71C700AD8FC7 /* suocangcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B0F919257B71C700AD8FC7 /* suocangcell.xib */; };
-		BF77A86DA7598F7E8B5906F3 /* libPods-FlowerFire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B00B58E22BA41C1AAC97341 /* libPods-FlowerFire.a */; };
 		D0846A7C25B02795008C1B8B /* NewsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A7B25B02795008C1B8B /* NewsMainViewController.m */; };
 		D0846A8625B02DE7008C1B8B /* NewsFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A8525B02DE7008C1B8B /* NewsFlashViewController.m */; };
 		D0846A8F25B02E6A008C1B8B /* DeFiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A8E25B02E6A008C1B8B /* DeFiViewController.m */; };
@@ -536,6 +535,7 @@
 		D0846A9B25B02ECD008C1B8B /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A9A25B02ECD008C1B8B /* ForecastViewController.m */; };
 		D0846AA125B02F15008C1B8B /* AMMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846AA025B02F15008C1B8B /* AMMViewController.m */; };
 		D0846AA725B02F49008C1B8B /* BitcoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846AA625B02F49008C1B8B /* BitcoinViewController.m */; };
+		DA4E044F86532A132AB176A7 /* libPods-FlowerFire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4985988E9A42930F9DED7DEE /* libPods-FlowerFire.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -556,9 +556,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3CE6A0B028D6BD19AE59F8E1 /* Pods-FlowerFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerFire.debug.xcconfig"; path = "Target Support Files/Pods-FlowerFire/Pods-FlowerFire.debug.xcconfig"; sourceTree = "<group>"; };
-		68CFBEA6041DF5D1C649CEF3 /* Pods-FlowerFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerFire.release.xcconfig"; path = "Target Support Files/Pods-FlowerFire/Pods-FlowerFire.release.xcconfig"; sourceTree = "<group>"; };
-		7B00B58E22BA41C1AAC97341 /* libPods-FlowerFire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlowerFire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4985988E9A42930F9DED7DEE /* libPods-FlowerFire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlowerFire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA76719CD7FE1F70D3D8ABA /* Pods-FlowerFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerFire.release.xcconfig"; path = "Target Support Files/Pods-FlowerFire/Pods-FlowerFire.release.xcconfig"; sourceTree = "<group>"; };
+		631CB609CC92A8709D7281F8 /* Pods-FlowerFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerFire.debug.xcconfig"; path = "Target Support Files/Pods-FlowerFire/Pods-FlowerFire.debug.xcconfig"; sourceTree = "<group>"; };
 		8D053DA0236FF51B005D3C6A /* FlowerFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D053DA3236FF51B005D3C6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D053DA4236FF51B005D3C6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1593,7 +1593,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF77A86DA7598F7E8B5906F3 /* libPods-FlowerFire.a in Frameworks */,
+				DA4E044F86532A132AB176A7 /* libPods-FlowerFire.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1614,13 +1614,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52AA8FD4341B57D96B24AE11 /* Pods */ = {
+		019C932651D3AF5453430B20 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3CE6A0B028D6BD19AE59F8E1 /* Pods-FlowerFire.debug.xcconfig */,
-				68CFBEA6041DF5D1C649CEF3 /* Pods-FlowerFire.release.xcconfig */,
+				631CB609CC92A8709D7281F8 /* Pods-FlowerFire.debug.xcconfig */,
+				5AA76719CD7FE1F70D3D8ABA /* Pods-FlowerFire.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		646FE0C8B73CAD3DBF7BF766 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4985988E9A42930F9DED7DEE /* libPods-FlowerFire.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8D053D97236FF51B005D3C6A = {
@@ -1630,9 +1639,9 @@
 				8D1A39D9237123F2000FAB13 /* SDTheme-White */,
 				8D187EAE237275F800C8B976 /* SDTheme-Black */,
 				8D053DA1236FF51B005D3C6A /* Products */,
-				B1C82D06CD11838B218794CA /* Frameworks */,
-				52AA8FD4341B57D96B24AE11 /* Pods */,
 				8D685E8524BD3AC300666960 /* Recovered References */,
+				019C932651D3AF5453430B20 /* Pods */,
+				646FE0C8B73CAD3DBF7BF766 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4585,14 +4594,6 @@
 			path = "交易账户";
 			sourceTree = "<group>";
 		};
-		B1C82D06CD11838B218794CA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7B00B58E22BA41C1AAC97341 /* libPods-FlowerFire.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D0846A7625B02742008C1B8B /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -4653,11 +4654,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D053DBC236FF51D005D3C6A /* Build configuration list for PBXNativeTarget "FlowerFire" */;
 			buildPhases = (
-				EC21AE63B289C7D9AE513676 /* [CP] Check Pods Manifest.lock */,
+				A972DCF6A6D7E554C259668A /* [CP] Check Pods Manifest.lock */,
 				8D053D9C236FF51B005D3C6A /* Sources */,
 				8D053D9D236FF51B005D3C6A /* Frameworks */,
 				8D053D9E236FF51B005D3C6A /* Resources */,
-				61E97FA5580F7C042C9106B3 /* [CP] Copy Pods Resources */,
+				78C3C20048774D67287C5A6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -4822,7 +4823,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		61E97FA5580F7C042C9106B3 /* [CP] Copy Pods Resources */ = {
+		78C3C20048774D67287C5A6B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4839,7 +4840,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlowerFire/Pods-FlowerFire-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC21AE63B289C7D9AE513676 /* [CP] Check Pods Manifest.lock */ = {
+		A972DCF6A6D7E554C259668A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5517,7 +5518,7 @@
 		};
 		8D053DBD236FF51D005D3C6A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CE6A0B028D6BD19AE59F8E1 /* Pods-FlowerFire.debug.xcconfig */;
+			baseConfigurationReference = 631CB609CC92A8709D7281F8 /* Pods-FlowerFire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -5543,7 +5544,7 @@
 		};
 		8D053DBE236FF51D005D3C6A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68CFBEA6041DF5D1C649CEF3 /* Pods-FlowerFire.release.xcconfig */;
+			baseConfigurationReference = 5AA76719CD7FE1F70D3D8ABA /* Pods-FlowerFire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";

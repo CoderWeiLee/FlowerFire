@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** NSString 转 NSDate */
 - (NSDate *)br_dateFromString:(NSString *)dateString dateFormat:(NSString *)dateFormat;
 
-/** 比较两个时间大小（可以指定比较级数，即按指定格式进行比较） */
+/** 比较两个日期大小（可以指定比较级数，即按指定格式进行比较） */
 - (NSComparisonResult)br_compareDate:(NSDate *)date targetDate:(NSDate *)targetDate dateFormat:(NSString *)dateFormat;
 
 /** 获取 yearArr 数组 */
@@ -52,27 +52,24 @@ NS_ASSUME_NONNULL_BEGIN
 /** 添加 pickerView */
 - (void)setupPickerView:(UIView *)pickerView toView:(UIView *)view;
 
-/** 设置时间单位 */
+/** 设置日期单位 */
 - (NSArray *)setupPickerUnitLabel:(UIPickerView *)pickerView unitArr:(NSArray *)unitArr;
-
-/** 设置选择器中间选中行的样式 */
-- (void)setupPickerSelectRowStyle:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 
 - (NSString *)getYearNumber:(NSInteger)year;
 
 - (NSString *)getMDHMSNumber:(NSInteger)number;
 
-- (NSString *)getYearText:(NSString *)yearString;
+- (NSString *)getYearText:(NSArray *)yearArr row:(NSInteger)row;
 
-- (NSString *)getMonthText:(NSString *)monthString monthNames:(NSArray *)monthNames;
+- (NSString *)getMonthText:(NSArray *)monthArr row:(NSInteger)row monthNames:(NSArray *)monthNames;
 
-- (NSString *)getDayText:(NSString *)dayString mSelectDate:(NSDate *)mSelectDate;
+- (NSString *)getDayText:(NSArray *)dayArr row:(NSInteger)row mSelectDate:(NSDate *)mSelectDate;
 
-- (NSString *)getHourText:(NSString *)hourString;
+- (NSString *)getHourText:(NSArray *)hourArr row:(NSInteger)row;
 
-- (NSString *)getMinuteText:(NSString *)minuteString;
+- (NSString *)getMinuteText:(NSArray *)minuteArr row:(NSInteger)row;
 
-- (NSString *)getSecondText:(NSString *)secondString;
+- (NSString *)getSecondText:(NSArray *)secondArr row:(NSInteger)row;
 
 - (NSString *)getAMText;
 
@@ -89,6 +86,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)getMinuteUnit;
 
 - (NSString *)getSecondUnit;
+
+- (NSInteger)getIndexWithArray:(NSArray *)array object:(NSString *)obj;
 
 @end
 

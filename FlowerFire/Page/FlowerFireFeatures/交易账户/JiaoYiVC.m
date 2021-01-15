@@ -300,7 +300,7 @@
     }
     NSMutableDictionary *md = [NSMutableDictionary dictionaryWithCapacity:5];
     md[@"day"] = self->_dayview.text;
-    md[@"amount"] = _transNumFormView.text;
+    md[@"amount"] = _pledgeNumFormView.text;
     md[@"paypass"] = _pwdFormViewB.text;
     [self.afnetWork jsonPostDict:@"/api/lock/enterb" JsonDict:md Tag:@"4"];
 }

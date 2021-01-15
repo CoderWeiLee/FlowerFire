@@ -4,7 +4,7 @@ BRPickerView 封装的是iOS中常用的选择器组件，主要包括：日期�
 
 【说明】
 
-- 当前最新版本为： `2.6.7` 。
+- 当前最新版本为： `2.7.3` 。
 - 如果不能找到最新版本，请先执行一下 `pod repo update` 更新本地仓库，待更新完成后；再执行 `pod search BRPickerView` 进行搜索，就会看到最新版本。
 
 # 效果演示
@@ -303,9 +303,28 @@ stringPickerView.pickerStyle = customStyle;
 
 # 更新记录
 
+#### 2020-09-25（V2.7.3）
+
+- 适配选择器iOS14的样式：[#189](https://github.com/91renb/BRPickerView/issues/189) 、[#191](https://github.com/91renb/BRPickerView/issues/191)
+
+#### 2020-09-23（V2.7.2）
+
+- 日期选择器新增添加自定义字符串属性：`firstRowContent` 和 `lastRowContent`
+- 解决日期选择器设置最小日期时，存在的联动不正确的问题：[#184](https://github.com/91renb/BRPickerView/issues/184) 
+
+#### 2020-08-28（V2.7.0）
+
+- 日期选择器添加 `nonSelectableDates` 属性：[#178](https://github.com/91renb/BRPickerView/issues/178) 
+- 优化选中行文本显示：[#177](https://github.com/91renb/BRPickerView/issues/177) 
+
+#### 2020-08-16（V2.6.8）
+
+- 优化代码，适配 iPad 分屏显示
+- 新增 `keyView` 属性（即组件的父视图：可以将组件添加到 自己获取的 keyWindow 上，或页面的 view 上）
+
 #### 2020-08-09（V2.6.7）
 
-- 适配iOS14
+- 适配 iOS14
 
 #### 2020-08-06（V2.6.6）
 
