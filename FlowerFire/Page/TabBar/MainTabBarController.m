@@ -54,7 +54,7 @@
   
     NewsMainViewController *secondViewController = [[NewsMainViewController alloc] init];
     UINavigationController *secondNavigationController = [[UINavigationController alloc] initWithRootViewController:secondViewController];
-//    [secondViewController cyl_setHideNavigationBarSeparator:YES];
+    [secondViewController cyl_setHideNavigationBarSeparator:YES];
      
     TransactionMainViewController *thirdViewController = [[TransactionMainViewController alloc] init];
     UIViewController *thirdNavigationController = [BaseNavigationController rootVC:thirdViewController] ;
@@ -71,7 +71,7 @@
     
    NSArray *viewControllers = @[
                                 firstNavigationController,
-//                                secondNavigationController,
+                                secondNavigationController,
                                 thirdNavigationController,
                                 fouthNavigationController,
                                 fiveNavigationController,
@@ -110,7 +110,7 @@
     
    NSArray *tabBarItemsAttributes = @[
                                       firstTabBarItemsAttributes,
-//                                      secondTabBarItemsAttributes,
+                                      secondTabBarItemsAttributes,
                                       thirdTabBarItemsAttributes,
                                       fourthTabBarItemsAttributes,
                                       fivethTabBarItemsAttributes
