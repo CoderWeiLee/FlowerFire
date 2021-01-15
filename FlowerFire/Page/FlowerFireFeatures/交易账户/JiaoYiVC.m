@@ -286,7 +286,7 @@
 -(void)submitClickB{
     NSLog(@"%@",[WTUserInfo shareUserInfo].token);
     //去设置
-    if([HelpManager isBlankString:_transNumFormView.text]){
+    if([HelpManager isBlankString:_pledgeNumFormView.text]){
         printAlert(LocalizationKey(@"575Tip42"), 1.f);
         return;
     }
@@ -316,7 +316,7 @@
 }
 
 -(void)showChooseCoinView{
-    UIAlertController *ua = [UIAlertController alertControllerWithTitle:nil message:LocalizationKey(@"575Tip60") preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertController *ua = [UIAlertController alertControllerWithTitle:nil message:LocalizationKey(@"575Tip600") preferredStyle:UIAlertControllerStyleActionSheet];
 //    NSArray *dayarray = @[@"10天",@"50天",@"100天"];
     for (int i = 0; i<_dayArray.count; i++) {
         UIAlertAction *abc = [UIAlertAction actionWithTitle:_dayArray[i][@"day"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
