@@ -173,7 +173,9 @@
 }
 
 - (void)dataNormal:(NSDictionary *)dict type:(NSString *)type{
-    
+    if (!_currentCoinName) {
+        _currentCoinName = @"";
+    }
     if([type isEqualToString:@"109"]){
     NSString *useableStr = [NSString stringWithFormat:@"%@%@",dict[@"data"][@"balance"],_currentCoinName];
    
