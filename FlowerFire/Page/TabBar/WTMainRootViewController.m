@@ -21,7 +21,7 @@
     self.navigationBarHidden = NO;
     self.view.backgroundColor = [UIColor whiteColor];
     [self createNewTabBar];
-     
+    self.navigationBar.hidden = YES;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(theme_didChanged) name:SDThemeChangedNotification object:nil];
 }
 

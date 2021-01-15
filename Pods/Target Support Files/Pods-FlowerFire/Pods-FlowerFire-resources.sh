@@ -99,6 +99,7 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle"
   install_resource "${PODS_ROOT}/BRPickerView/BRPickerView/Base/BRPickerView.bundle"
+  install_resource "${PODS_ROOT}/GKNavigationBar/GKNavigationBar/NavigationBar/GKNavigationBar.bundle"
   install_resource "${PODS_ROOT}/JXBWebKit/JXBWebKit/JSResources.bundle"
   install_resource "${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle"
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
@@ -108,6 +109,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle"
   install_resource "${PODS_ROOT}/BRPickerView/BRPickerView/Base/BRPickerView.bundle"
+  install_resource "${PODS_ROOT}/GKNavigationBar/GKNavigationBar/NavigationBar/GKNavigationBar.bundle"
   install_resource "${PODS_ROOT}/JXBWebKit/JXBWebKit/JSResources.bundle"
   install_resource "${PODS_ROOT}/LBXScan/LBXScan/UI/CodeScan.bundle"
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
@@ -126,7 +128,7 @@ rm -f "$RESOURCES_TO_COPY"
 if [[ -n "${WRAPPER_EXTENSION}" ]] && [ "`xcrun --find actool`" ] && [ -n "${XCASSET_FILES:-}" ]
 then
   # Find all other xcassets (this unfortunately includes those of path pods and other targets).
-  OTHER_XCASSETS=$(find "$PWD" -iname "*.xcassets" -type d)
+  OTHER_XCASSETS=$(find -L "$PWD" -iname "*.xcassets" -type d)
   while read line; do
     if [[ $line != "${PODS_ROOT}*" ]]; then
       XCASSET_FILES+=("$line")

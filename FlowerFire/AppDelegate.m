@@ -11,7 +11,7 @@
 #import "TYFPSLabel.h"
 #import "AppDelegate+LaunchAnimation.h"
 #import <MagicalRecord/MagicalRecord.h> 
-
+#import <GKNavigationBar/GKNavigationBar.h>
 //交易小数点
 CGFloat transactionDecimalPoint = 6;
 @interface AppDelegate ()
@@ -24,7 +24,7 @@ CGFloat transactionDecimalPoint = 6;
     
     [self startLaunchAnimation];
     [self initTheme];
-    [self configureNavBar];
+//    [self configureNavBar];
     
     [ChangeLanguage initUserLanguage];//初始化应用语言
     [ChangeLanguage setUserlanguage:[ChangeLanguage userLanguage]];
@@ -63,17 +63,17 @@ CGFloat transactionDecimalPoint = 6;
     [[UIApplication sharedApplication] theme_setStatusBarColor:THEME_TEXT_COLOR animated:YES];
 }
 
--(void)configureNavBar{
-    // 配置导航栏属性
-     [GKConfigure setupCustomConfigure:^(GKNavigationBarConfigure * _Nonnull configure) {
-         configure.gk_translationX = 15;
-         configure.gk_translationY = 20;
-         configure.gk_scaleX = 0.90;
-         configure.gk_scaleY = 0.92;
-         configure.gk_navItemRightSpace = OverAllLeft_OR_RightSpace;
-         configure.gk_navItemLeftSpace = 5;
-     }];
-}
+//-(void)configureNavBar{
+//    // 配置导航栏属性
+//     [GKConfigure setupCustomConfigure:^(GKNavigationBarConfigure * _Nonnull configure) {
+//         configure.gk_translationX = 15;
+//         configure.gk_translationY = 20;
+//         configure.gk_scaleX = 0.90;
+//         configure.gk_scaleY = 0.92;
+//         configure.gk_navItemRightSpace = OverAllLeft_OR_RightSpace;
+//         configure.gk_navItemLeftSpace = 5;
+//     }];
+//}
 
   //默认数据
 -(void)initData{

@@ -33,6 +33,11 @@ PODS:
     - CYLTabBarController/Core (= 1.29.0)
   - CYLTabBarController/Core (1.29.0)
   - FLAnimatedImage (1.0.12)
+  - GKNavigationBar (1.4.0):
+    - GKNavigationBar/GestureHandle (= 1.4.0)
+    - GKNavigationBar/NavigationBar (= 1.4.0)
+  - GKNavigationBar/GestureHandle (1.4.0)
+  - GKNavigationBar/NavigationBar (1.4.0)
   - GKPageScrollView (1.3.8)
   - IQKeyboardManager (6.5.6)
   - JXBWebKit (1.2.0)
@@ -109,6 +114,7 @@ DEPENDENCIES:
   - BRPickerView
   - CRBoxInputView
   - CYLTabBarController
+  - GKNavigationBar
   - GKPageScrollView
   - IQKeyboardManager
   - JXBWebKit
@@ -140,13 +146,14 @@ DEPENDENCIES:
   - YYWebImage
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
     - AlipaySDK-iOS
     - BRPickerView
     - CRBoxInputView
     - CYLTabBarController
     - FLAnimatedImage
+    - GKNavigationBar
     - GKPageScrollView
     - IQKeyboardManager
     - JXBWebKit
@@ -175,6 +182,8 @@ SPEC REPOS:
     - YYModel
     - YYText
     - YYWebImage
+  trunk:
+    - SDWebImage
 
 EXTERNAL SOURCES:
   MagicalRecord:
@@ -192,6 +201,7 @@ SPEC CHECKSUMS:
   CRBoxInputView: d73a630e5326ee70487b4a56d09daebf915d82fd
   CYLTabBarController: f5460b8446f82d016945d4d53895a1ef185b79e3
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  GKNavigationBar: fe87990bde3fb2b7ece3f81014c6d4bc654bef06
   GKPageScrollView: 5cd374fd7d34c0fb89f313307ac0e31939f82c30
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JXBWebKit: 170bd0fb1bbbb90edf1deffb772ed51dd3110cdd
@@ -222,6 +232,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 621f7a6edf4a94e03448bc8f16db032a366e3d55
+PODFILE CHECKSUM: 5fe7877556f257c196c9e3c0dc0fda6391b2b0ef
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0

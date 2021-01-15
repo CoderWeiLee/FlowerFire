@@ -26,17 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    WTMainRootViewController *rootVC = (WTMainRootViewController *)UIApplication.sharedApplication.keyWindow.rootViewController;
-    rootVC.navigationBar.hidden = NO;
-//    rootVC.title = @"资讯中心";
-//    rootVC.navigationItem.title = @"你到底显示不显示嘛";
-//    rootVC.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#333333"], NSFontAttributeName: [UIFont systemFontOfSize:18]};
-//    rootVC.navigationBar.backgroundColor = [UIColor blackColor];
-//    self.title = @"6666";
-    self.gk_navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor redColor], NSFontAttributeName: [UIFont systemFontOfSize:18]};
+    self.gk_navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor], NSFontAttributeName: [UIFont systemFontOfSize:18]};
     self.gk_navigationBar.backgroundColor = [UIColor whiteColor];
-    self.gk_navigationItem.title = @"资讯中心";
-    self.gk_navTitleColor = [UIColor blackColor];
+    self.gk_navTitle = @"资讯中心";
     //1.初始化 JXCategoryTitleView
     self.categoryView = [[JXCategoryTitleView alloc] initWithFrame:CGRectMake(0, LSTStatusBarHeight() + LSTNavBarHeight(), kScreenWidth, 50)];
     self.categoryView.delegate = self;
