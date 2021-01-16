@@ -208,8 +208,14 @@ NSArray *NoticeListArray;
 //        ((AppDelegate *)[UIApplication sharedApplication].delegate).marketId = model.market_id;
 //        [self.navigationController pushViewController:klVC animated:YES];
         //点击主页进入指定交易的修改
-       ((AppDelegate *)[UIApplication sharedApplication].delegate).displayName = model.display_name; 
-        [[WTPageRouterManager sharedInstance] jumpTabBarController:2];
+       ((AppDelegate *)[UIApplication sharedApplication].delegate).displayName = model.display_name;
+        WTMainRootViewController *rootVC = (WTMainRootViewController *)UIApplication.sharedApplication.keyWindow.rootViewController;
+        MainTabBarController *tabVC = rootVC.viewControllers.firstObject;
+        if (tabVC.viewControllers.count > 4) {
+            [[WTPageRouterManager sharedInstance] jumpTabBarController:2];
+        }else {
+            [[WTPageRouterManager sharedInstance] jumpTabBarController:1];
+        }
         
         NSDictionary *dic;
         
