@@ -61,7 +61,9 @@
 
 - (void)initData{
     [self.afnetWork jsonGetDict:@"/api/bonus/detail" JsonDict:nil Tag:@"1"];
-   // [self.afnetWork jsonGetDict:@"/api/bonus/weekRecords" JsonDict:nil Tag:@"2"];
+    [self.afnetWork jsonGetDict:@"/api/bonus/weekRecords" JsonDict:nil Tag:@"2"];
+//    [self.afnetWork jsonGetDict:@"/api/otc/advertise/detail" JsonDict:@{@"marketPrice": @20} Tag:@"2"];
+//    [self.afnetWork jsonPostDict:@"/otc/advertise/detail" JsonDict:@{@"marketPrice": @20} Tag:@"2"];
     /*
      "578Tip689" = "Effective amount";
      "578Tip6899" = "Queuing amount";
