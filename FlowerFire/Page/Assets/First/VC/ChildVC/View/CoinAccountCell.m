@@ -90,6 +90,7 @@ extern BOOL ISHIDDENPRICE;
     self.layer.cornerRadius = 2;
     
     _coinImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"USDT"]];
+    _coinImage.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:_coinImage];
     
     _coinName = [UILabel new];
@@ -188,8 +189,20 @@ extern BOOL ISHIDDENPRICE;
 }
 
 -(void)setCellData:(NSDictionary *)dic CoinAccountType:(CoinAccountType)coinAccountType{
-    _coinImage.image = [UIImage imageNamed:dic[@"symbol"]];
-    _coinName.text = dic[@"symbol"];
+    NSString *imgName = dic[@"symbol"];
+    if ([imgName isEqualToString:@"SD"]) {
+        imgName = @"replaceSD";
+    }
+    UIImage *img = [UIImage imageNamed:imgName];
+    if (img == nil) {
+        img = [UIImage imageNamed:@"USDT"];
+    }
+    _coinImage.image = img;
+    NSString *titleName = dic[@"symbol"];
+    if ([titleName isEqualToString:@"tusdt"]) {
+        titleName = @"TUSDT";
+    }
+    _coinName.text = titleName;
     _coinValue.text = ISHIDDENPRICE ? @"*****" : [NSString stringWithFormat:@"%.8f",[dic[@"money"] doubleValue]];
     _coinCNYValue.text = ISHIDDENPRICE ? @"***** CNY" : [NSString stringWithFormat:@"≈%.8f CNY",[dic[@"money_cny"] doubleValue]];
  

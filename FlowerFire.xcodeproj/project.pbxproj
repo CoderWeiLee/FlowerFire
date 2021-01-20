@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -1620,7 +1620,6 @@
 				631CB609CC92A8709D7281F8 /* Pods-FlowerFire.debug.xcconfig */,
 				5AA76719CD7FE1F70D3D8ABA /* Pods-FlowerFire.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -5534,7 +5533,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.7;
+				MARKETING_VERSION = 2.1.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceshiyishibao;
 				PRODUCT_NAME = FlowerFire;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5560,7 +5559,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.7;
+				MARKETING_VERSION = 2.1.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ceshiyishibao;
 				PRODUCT_NAME = FlowerFire;

@@ -22,7 +22,7 @@ CGFloat transactionDecimalPoint = 6;
  
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self startLaunchAnimation];
+//    [self startLaunchAnimation];
     [self initTheme];
 //    [self configureNavBar];
     
