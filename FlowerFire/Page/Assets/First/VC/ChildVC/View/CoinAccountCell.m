@@ -66,11 +66,12 @@ extern BOOL ISHIDDENPRICE;
 //
 //    ChooseCoinTBVC *tvc = [[ChooseCoinTBVC alloc] initWithChooseCoinType:ChooseCoinTypeWithdraw];
 //    [[self viewController].navigationController pushViewController:tvc animated:YES];
-    ChooseCoinListModel *model = [[ChooseCoinListModel alloc] init];
-    model.coin_id = [NSString stringWithFormat:@"%@",coind_id];
-    model.symbol = [NSString stringWithFormat:@"%@",symbol];
+    ChooseCoinListModel *lwmodel = [[ChooseCoinListModel alloc] init];
+    lwmodel.coin_id = [NSString stringWithFormat:@"%@",coind_id];
+    lwmodel.symbol = [NSString stringWithFormat:@"%@",symbol];
+    lwmodel.withdraw_fee = self.model.withdraw_fee;
     WithdrawCoinTBVC *wvc = [WithdrawCoinTBVC new];
-    wvc.coinListModel = model;
+    wvc.coinListModel = lwmodel;
     [[self viewController].navigationController pushViewController:wvc animated:YES];
 }
 

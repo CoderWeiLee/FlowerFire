@@ -13,7 +13,8 @@
 #import "FinancialRecordTBVC.h"
 #import "SearchCoinTextField.h"
 #import "FFApplyBuyViewController.h"
-
+#import <MJExtension/MJExtension.h>
+#import "ChooseCoinListModel.h"
 @interface CoinAccountChildVC ()<UITableViewDataSource,UITableViewDelegate,SearchCoinTextFieldDelegate>
 {
     NSString          *account_total; //账户总资产
@@ -32,7 +33,8 @@
 
 @property(nonatomic, assign) BOOL                   isSearchStatus;
 @property(nonatomic, strong) NSArray                *searchDataArray;
-@property(nonatomic, strong) SearchCoinTextField    *textField; 
+@property(nonatomic, strong) SearchCoinTextField    *textField;
+@property (nonatomic, strong) NSArray *listModelArray;
 @end
 
 @implementation CoinAccountChildVC
@@ -54,7 +56,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self.view addSubview:self.tableView];
      
     [self.tableHeaderView setHeaderData:self.coinAccountType SumAssets:@"0.0000000" CNYStr:@"0.00"];
@@ -115,6 +116,23 @@
 -(void)initData{
     self.dataArray = [NSMutableArray array];
     [self.afnetWork jsonGetDict:@"/api/account/getAccount" JsonDict:nil Tag:@"1" LoadingInView:self.view];
+    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@%@",BASE_URL,@"/api/coin/getCoinList"] parameters:@{@"type":@"cc"} headers:[self httpHeaderDic] progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSDictionary *dict = (NSDictionary *)responseObject;
+        self.listModelArray = [ChooseCoinListModel mj_objectArrayWithKeyValuesArray:dict[@"data"]];
+        [self.tableView reloadData];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+}
+
+-(NSMutableDictionary *)httpHeaderDic{
+    NSMutableDictionary *httpHeaderDic = [NSMutableDictionary dictionaryWithCapacity:1];
+    httpHeaderDic[@"token"] = [WTUserInfo shareUserInfo].token;
+    httpHeaderDic[@"type"] = @"cc";
+    return httpHeaderDic;
 }
 
 /// 查下认购信息
@@ -198,7 +216,7 @@
         static NSString *identifier = @"cell";
         [self.tableView registerClass:[CoinAccountCell class] forCellReuseIdentifier:identifier];
         CoinAccountCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-        
+        cell.model = self.listModelArray[indexPath.row];
         if(self.isSearchStatus){
             if(self.searchDataArray.count >0){
                 [cell setCellData:self.searchDataArray[indexPath.row] CoinAccountType:self.coinAccountType];

@@ -8,7 +8,7 @@
 
 #import "BaseTableViewCell.h"
 #import "CoinAccountChildVC.h"
-
+#import "ChooseCoinListModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CoinAccountCell : BaseTableViewCell
@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setCellData:(NSDictionary *)dic
    CoinAccountType:(CoinAccountType )coinAccountType;
 
+@property (nonatomic, strong) ChooseCoinListModel *model;
 @end
 
 NS_ASSUME_NONNULL_END
