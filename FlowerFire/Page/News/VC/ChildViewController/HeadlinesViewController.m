@@ -23,19 +23,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.tableView = [[UITableView alloc] init];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.clipsToBounds = NO;
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    self.tableView.backgroundColor = [UIColor redColor];
+    self.tableView.backgroundColor = [UIColor whiteColor];
     [self.tableView registerClass:[LWNewsTableViewCell class] forCellReuseIdentifier:NSStringFromClass([LWNewsTableViewCell class])];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.view).offset(100);
-        make.left.mas_equalTo(self.view).offset(50);
-        make.right.mas_equalTo(self.view).offset(-50);
-        make.bottom.mas_equalTo(self.view).offset(-100);
+        make.edges.mas_equalTo(self.view);
     }];
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
     self.tableView.mj_header.automaticallyChangeAlpha = YES;
@@ -47,7 +46,6 @@
 //下拉刷新
 - (void)loadData {
     self.currentPage = 1;
-    self.dataArray = [NSMutableArray array];
     NSMutableDictionary *md = [NSMutableDictionary dictionary];
     md[@"type"] = @"3";
     md[@"page"] =  [NSString stringWithFormat:@"%ld", (long)self.currentPage];
@@ -59,7 +57,6 @@
 //加载更多
 - (void)loadMore {
     self.currentPage = self.currentPage + 1;
-    self.dataArray = [NSMutableArray array];
     NSMutableDictionary *md = [NSMutableDictionary dictionary];
     md[@"type"] = @"3";
     md[@"page"] =  [NSString stringWithFormat:@"%ld", (long)self.currentPage];
@@ -83,7 +80,8 @@
                 if(self.currentPage == 1){
                     self.dataArray=[[NSMutableArray alloc]init];
                 }
-                self.dataArray = [LWNewsModel mj_objectArrayWithKeyValuesArray:dict[@"data"][@"list"]];
+                NSArray *models = [LWNewsModel mj_objectArrayWithKeyValuesArray:dict[@"data"][@"list"]];
+                [self.dataArray addObjectsFromArray:models];
                 self.currentPage = (NSInteger)dict[@"data"][@"page"][@"page_current"];
                 self.totalPage = (NSInteger)dict[@"data"][@"page"][@"page_count"];
                 if (self.currentPage == self.totalPage) {
@@ -102,6 +100,7 @@
 #pragma mark - tableViewDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     LWNewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LWNewsTableViewCell class]) forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     LWNewsModel *model = self.dataArray[indexPath.row];
     model.type = @"快讯";
     cell.model = model;
@@ -109,7 +108,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 110;
+    return 150;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

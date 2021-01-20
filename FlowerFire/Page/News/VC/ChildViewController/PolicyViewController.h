@@ -8,10 +8,11 @@
 
 #import "BaseViewController.h"
 #import <JXCategoryView/JXCategoryView.h>
+#import "AFNetworking.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PolicyViewController : BaseViewController<JXCategoryListContentViewDelegate>
-
+@interface PolicyViewController : UIViewController<JXCategoryListContentViewDelegate, AFNetworkDelege>
+@property(nonatomic, strong) AFNetworkClass *afnetWork; 
 @end
 
 NS_ASSUME_NONNULL_END

@@ -29,7 +29,7 @@
     self.gk_navigationBar.backgroundColor = [UIColor whiteColor];
     self.gk_navTitle = @"资讯中心";
     //1.初始化 JXCategoryTitleView
-    self.categoryView = [[JXCategoryTitleView alloc] initWithFrame:CGRectMake(0, LSTStatusBarHeight() + LSTNavBarHeight(), kScreenWidth, 50)];
+    self.categoryView = [[JXCategoryTitleView alloc] initWithFrame:CGRectMake(0, LSTStatusBarHeight() + LSTNavBarHeight(), kScreenWidth, [self preferredCategoryViewHeight])];
     self.categoryView.delegate = self;
     [self.view addSubview:self.categoryView];
     
@@ -51,11 +51,16 @@
     
     //4.初始化列表容器视图
     self.listContainerView = [[JXCategoryListContainerView alloc] initWithType:JXCategoryListContainerType_ScrollView delegate:self];
+    self.listContainerView.frame = CGRectMake(0, [self preferredCategoryViewHeight], self.view.bounds.size.width, self.view.bounds.size.height);
     [self.view addSubview:self.listContainerView];
     // 关联到 categoryView
     self.categoryView.listContainer = self.listContainerView;
     
     
+}
+
+- (CGFloat)preferredCategoryViewHeight {
+    return 50;
 }
 
 ////重写让导航栏不隐藏
