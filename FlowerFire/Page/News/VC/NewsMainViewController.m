@@ -51,7 +51,7 @@
     
     //4.初始化列表容器视图
     self.listContainerView = [[JXCategoryListContainerView alloc] initWithType:JXCategoryListContainerType_ScrollView delegate:self];
-    self.listContainerView.frame = CGRectMake(0, [self preferredCategoryViewHeight], self.view.bounds.size.width, self.view.bounds.size.height);
+    self.listContainerView.frame = CGRectMake(0, LSTStatusBarHeight() + LSTNavBarHeight() + [self preferredCategoryViewHeight], self.view.bounds.size.width, self.view.bounds.size.height);
     [self.view addSubview:self.listContainerView];
     // 关联到 categoryView
     self.categoryView.listContainer = self.listContainerView;
