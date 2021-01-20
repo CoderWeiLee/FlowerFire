@@ -8,12 +8,10 @@
 
 #import "NewsMainViewController.h"
 #import <JXCategoryView/JXCategoryView.h>
-#import "NewsFlashViewController.h"
-#import "DeFiViewController.h"
-#import "BocaViewController.h"
-#import "ForecastViewController.h"
-#import "AMMViewController.h"
-#import "BitcoinViewController.h"
+#import "HeadlinesViewController.h"
+#import "LWNewsViewController.h"
+#import "PolicyViewController.h"
+#import "AllDayViewController.h"
 #import <LSTCategory/UIView+LSTView.h>
 #import "WTMainRootViewController.H"
 @interface NewsMainViewController () <JXCategoryViewDelegate, JXCategoryListContainerViewDelegate>
@@ -26,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor lightGrayColor];
     self.gk_navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor], NSFontAttributeName: [UIFont systemFontOfSize:18]};
     self.gk_navigationBar.backgroundColor = [UIColor whiteColor];
     self.gk_navTitle = @"资讯中心";
@@ -35,7 +34,7 @@
     [self.view addSubview:self.categoryView];
     
     //2.配置 JXCategoryTitleView 的属性
-    self.titles = @[@"快讯", @"DeFi", @"波卡", @"预测市场", @"AMM", @"比特币"];
+    self.titles = @[@"7*24新闻",@"头条", @"新闻", @"政策"];
     self.categoryView.titles = self.titles;
     self.categoryView.titleColorGradientEnabled = YES;
     self.categoryView.backgroundColor = [UIColor colorWithHexString:@"#3583FC"];
@@ -114,22 +113,16 @@
 - (id<JXCategoryListContentViewDelegate>)listContainerView:(JXCategoryListContainerView *)listContainerView initListForIndex:(NSInteger)index {
     switch (index) {
         case 0:
-            return [[NewsFlashViewController alloc] init];
+            return [[HeadlinesViewController alloc] init];
             break;
         case 1:
-            return [[DeFiViewController alloc] init];
+            return [[LWNewsViewController alloc] init];
             break;;
         case 2:
-            return [[BocaViewController alloc] init];
+            return [[PolicyViewController alloc] init];
             break;;
-        case 3:
-            return [[ForecastViewController alloc] init];
-            break;
-        case 4:
-            return [[AMMViewController alloc] init];
-            break;
         default:
-            return [[BitcoinViewController alloc] init];
+            return [[AllDayViewController alloc] init];
             break;
     }
 }

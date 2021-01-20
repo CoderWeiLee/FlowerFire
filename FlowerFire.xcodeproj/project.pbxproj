@@ -528,13 +528,13 @@
 		92555E2C25728D1300FAF87C /* JiaoYiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 92555E2B25728D1300FAF87C /* JiaoYiVC.m */; };
 		92B0F91A257B71C700AD8FC7 /* suocangcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B0F918257B71C700AD8FC7 /* suocangcell.m */; };
 		92B0F91B257B71C700AD8FC7 /* suocangcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B0F919257B71C700AD8FC7 /* suocangcell.xib */; };
+		D04EFF6425B7F58200BF1D27 /* LWNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D04EFF6325B7F58200BF1D27 /* LWNewsModel.m */; };
+		D04EFF9625B7F88400BF1D27 /* LWNewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D04EFF9525B7F88400BF1D27 /* LWNewsTableViewCell.m */; };
 		D0846A7C25B02795008C1B8B /* NewsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A7B25B02795008C1B8B /* NewsMainViewController.m */; };
-		D0846A8625B02DE7008C1B8B /* NewsFlashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A8525B02DE7008C1B8B /* NewsFlashViewController.m */; };
-		D0846A8F25B02E6A008C1B8B /* DeFiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A8E25B02E6A008C1B8B /* DeFiViewController.m */; };
-		D0846A9525B02EA1008C1B8B /* BocaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A9425B02EA1008C1B8B /* BocaViewController.m */; };
-		D0846A9B25B02ECD008C1B8B /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A9A25B02ECD008C1B8B /* ForecastViewController.m */; };
-		D0846AA125B02F15008C1B8B /* AMMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846AA025B02F15008C1B8B /* AMMViewController.m */; };
-		D0846AA725B02F49008C1B8B /* BitcoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846AA625B02F49008C1B8B /* BitcoinViewController.m */; };
+		D0846A8625B02DE7008C1B8B /* HeadlinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A8525B02DE7008C1B8B /* HeadlinesViewController.m */; };
+		D0846A8F25B02E6A008C1B8B /* LWNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A8E25B02E6A008C1B8B /* LWNewsViewController.m */; };
+		D0846A9525B02EA1008C1B8B /* PolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A9425B02EA1008C1B8B /* PolicyViewController.m */; };
+		D0846A9B25B02ECD008C1B8B /* AllDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A9A25B02ECD008C1B8B /* AllDayViewController.m */; };
 		DA4E044F86532A132AB176A7 /* libPods-FlowerFire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4985988E9A42930F9DED7DEE /* libPods-FlowerFire.a */; };
 /* End PBXBuildFile section */
 
@@ -1572,20 +1572,20 @@
 		92B0F917257B71C700AD8FC7 /* suocangcell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = suocangcell.h; sourceTree = "<group>"; };
 		92B0F918257B71C700AD8FC7 /* suocangcell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = suocangcell.m; sourceTree = "<group>"; };
 		92B0F919257B71C700AD8FC7 /* suocangcell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = suocangcell.xib; sourceTree = "<group>"; };
+		D04EFF6225B7F58200BF1D27 /* LWNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNewsModel.h; sourceTree = "<group>"; };
+		D04EFF6325B7F58200BF1D27 /* LWNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNewsModel.m; sourceTree = "<group>"; };
+		D04EFF9425B7F88400BF1D27 /* LWNewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNewsTableViewCell.h; sourceTree = "<group>"; };
+		D04EFF9525B7F88400BF1D27 /* LWNewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNewsTableViewCell.m; sourceTree = "<group>"; };
 		D0846A7A25B02795008C1B8B /* NewsMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsMainViewController.h; sourceTree = "<group>"; };
 		D0846A7B25B02795008C1B8B /* NewsMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsMainViewController.m; sourceTree = "<group>"; };
-		D0846A8425B02DE7008C1B8B /* NewsFlashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsFlashViewController.h; sourceTree = "<group>"; };
-		D0846A8525B02DE7008C1B8B /* NewsFlashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFlashViewController.m; sourceTree = "<group>"; };
-		D0846A8D25B02E6A008C1B8B /* DeFiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeFiViewController.h; sourceTree = "<group>"; };
-		D0846A8E25B02E6A008C1B8B /* DeFiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeFiViewController.m; sourceTree = "<group>"; };
-		D0846A9325B02EA1008C1B8B /* BocaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BocaViewController.h; sourceTree = "<group>"; };
-		D0846A9425B02EA1008C1B8B /* BocaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BocaViewController.m; sourceTree = "<group>"; };
-		D0846A9925B02ECD008C1B8B /* ForecastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForecastViewController.h; sourceTree = "<group>"; };
-		D0846A9A25B02ECD008C1B8B /* ForecastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastViewController.m; sourceTree = "<group>"; };
-		D0846A9F25B02F15008C1B8B /* AMMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMMViewController.h; sourceTree = "<group>"; };
-		D0846AA025B02F15008C1B8B /* AMMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMMViewController.m; sourceTree = "<group>"; };
-		D0846AA525B02F49008C1B8B /* BitcoinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitcoinViewController.h; sourceTree = "<group>"; };
-		D0846AA625B02F49008C1B8B /* BitcoinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitcoinViewController.m; sourceTree = "<group>"; };
+		D0846A8425B02DE7008C1B8B /* HeadlinesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeadlinesViewController.h; sourceTree = "<group>"; };
+		D0846A8525B02DE7008C1B8B /* HeadlinesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeadlinesViewController.m; sourceTree = "<group>"; };
+		D0846A8D25B02E6A008C1B8B /* LWNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNewsViewController.h; sourceTree = "<group>"; };
+		D0846A8E25B02E6A008C1B8B /* LWNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNewsViewController.m; sourceTree = "<group>"; };
+		D0846A9325B02EA1008C1B8B /* PolicyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolicyViewController.h; sourceTree = "<group>"; };
+		D0846A9425B02EA1008C1B8B /* PolicyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolicyViewController.m; sourceTree = "<group>"; };
+		D0846A9925B02ECD008C1B8B /* AllDayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllDayViewController.h; sourceTree = "<group>"; };
+		D0846A9A25B02ECD008C1B8B /* AllDayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllDayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4593,11 +4593,29 @@
 			path = "交易账户";
 			sourceTree = "<group>";
 		};
+		D04EFF6025B7F57000BF1D27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D04EFF6225B7F58200BF1D27 /* LWNewsModel.h */,
+				D04EFF6325B7F58200BF1D27 /* LWNewsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D04EFF6125B7F57500BF1D27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D04EFF9425B7F88400BF1D27 /* LWNewsTableViewCell.h */,
+				D04EFF9525B7F88400BF1D27 /* LWNewsTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D0846A7625B02742008C1B8B /* News */ = {
 			isa = PBXGroup;
 			children = (
-				D0846A7925B02760008C1B8B /* View */,
-				D0846A7825B0275B008C1B8B /* Model */,
+				D04EFF6125B7F57500BF1D27 /* View */,
+				D04EFF6025B7F57000BF1D27 /* Model */,
 				D0846A7725B02754008C1B8B /* VC */,
 			);
 			path = News;
@@ -4613,35 +4631,17 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
-		D0846A7825B0275B008C1B8B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D0846A7925B02760008C1B8B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		D0846A8325B02DAF008C1B8B /* ChildViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D0846A8425B02DE7008C1B8B /* NewsFlashViewController.h */,
-				D0846A8525B02DE7008C1B8B /* NewsFlashViewController.m */,
-				D0846A8D25B02E6A008C1B8B /* DeFiViewController.h */,
-				D0846A8E25B02E6A008C1B8B /* DeFiViewController.m */,
-				D0846A9325B02EA1008C1B8B /* BocaViewController.h */,
-				D0846A9425B02EA1008C1B8B /* BocaViewController.m */,
-				D0846A9925B02ECD008C1B8B /* ForecastViewController.h */,
-				D0846A9A25B02ECD008C1B8B /* ForecastViewController.m */,
-				D0846A9F25B02F15008C1B8B /* AMMViewController.h */,
-				D0846AA025B02F15008C1B8B /* AMMViewController.m */,
-				D0846AA525B02F49008C1B8B /* BitcoinViewController.h */,
-				D0846AA625B02F49008C1B8B /* BitcoinViewController.m */,
+				D0846A8425B02DE7008C1B8B /* HeadlinesViewController.h */,
+				D0846A8525B02DE7008C1B8B /* HeadlinesViewController.m */,
+				D0846A8D25B02E6A008C1B8B /* LWNewsViewController.h */,
+				D0846A8E25B02E6A008C1B8B /* LWNewsViewController.m */,
+				D0846A9325B02EA1008C1B8B /* PolicyViewController.h */,
+				D0846A9425B02EA1008C1B8B /* PolicyViewController.m */,
+				D0846A9925B02ECD008C1B8B /* AllDayViewController.h */,
+				D0846A9A25B02ECD008C1B8B /* AllDayViewController.m */,
 			);
 			path = ChildViewController;
 			sourceTree = "<group>";
@@ -4999,7 +4999,6 @@
 				8D17D18C24CC032100ED840D /* ChooseCityViewController.m in Sources */,
 				8D7BE44D24669D3700D1BA38 /* FinanceRecordModel.m in Sources */,
 				8D7A6C17246E36360012909A /* AppealDetailTBVC.m in Sources */,
-				D0846AA725B02F49008C1B8B /* BitcoinViewController.m in Sources */,
 				8D053DAB236FF51B005D3C6A /* ViewController.m in Sources */,
 				8D67702A246BCDDD00ACD77E /* BindGoogleVerificationViewController.m in Sources */,
 				8D62639724625C420088A5F2 /* MyOrderPageCell.m in Sources */,
@@ -5062,7 +5061,7 @@
 				8D17D19E24CC032100ED840D /* JVShopcartProductModel.m in Sources */,
 				8D17D1A724CC032100ED840D /* MyStockViewController.m in Sources */,
 				8D17D1AD24CC032100ED840D /* MyStockModel.m in Sources */,
-				D0846A8625B02DE7008C1B8B /* NewsFlashViewController.m in Sources */,
+				D0846A8625B02DE7008C1B8B /* HeadlinesViewController.m in Sources */,
 				8D5D355A24613D8400AD9186 /* CATextLayer+DateTextLayer.m in Sources */,
 				8D5D355B24613D8400AD9186 /* UIColor+Y_StockChart.m in Sources */,
 				8D5D356E24613D8400AD9186 /* CommonMethod.m in Sources */,
@@ -5086,6 +5085,7 @@
 				8D5D356224613D8400AD9186 /* Y_AccessoryMAView.m in Sources */,
 				8D62638624625C420088A5F2 /* CurrencyTransactionCurrentCommissionView.m in Sources */,
 				8D5D356124613D8400AD9186 /* Y_KLineAccessory.m in Sources */,
+				D04EFF6425B7F58200BF1D27 /* LWNewsModel.m in Sources */,
 				8D7A6BF5246E27FB0012909A /* ShowPaymentMethodTBVC.m in Sources */,
 				8D7FDCD324F3A3100035F76F /* FFAddAcountViewController.m in Sources */,
 				8D1A39BB237101BE000FAB13 /* UIImage+SDExtension.m in Sources */,
@@ -5128,7 +5128,7 @@
 				8D193809237007F70066E5AA /* PopoverAction.m in Sources */,
 				8D7A6BFE246E28550012909A /* ShowPaymentMethodCell.m in Sources */,
 				8D7FDCC324F36E2A0035F76F /* ApplyNodeViewController.m in Sources */,
-				D0846A9B25B02ECD008C1B8B /* ForecastViewController.m in Sources */,
+				D0846A9B25B02ECD008C1B8B /* AllDayViewController.m in Sources */,
 				8D17D18524CC032100ED840D /* MineMainViewController.m in Sources */,
 				8D62639524625C420088A5F2 /* OrderRecordCell.m in Sources */,
 				8D1A39BA237101BE000FAB13 /* CAShapeLayer+SDTheme.m in Sources */,
@@ -5167,7 +5167,6 @@
 				8D17D1B624CC032100ED840D /* MyTeamRecommendHeaderCollectionView.m in Sources */,
 				8D7BE4802466A20600D1BA38 /* AddWithdrawAddressVC.m in Sources */,
 				8D17D1A124CC032100ED840D /* JVShopcartBottomView.m in Sources */,
-				D0846AA125B02F15008C1B8B /* AMMViewController.m in Sources */,
 				8D7A6C08246E295D0012909A /* AccountReceivableDetailsCell.m in Sources */,
 				8D17D1BD24CC032100ED840D /* MyTeamChildTotalDelegateCell.m in Sources */,
 				8D17D1D624CC032100ED840D /* ShopDetailsBuyPopView.m in Sources */,
@@ -5182,7 +5181,7 @@
 				8D7A6C0E246E35E10012909A /* SwitchPaymentCell.m in Sources */,
 				8D62637F24625C420088A5F2 /* payMethodModel.m in Sources */,
 				8D7AE92D24FF82CE00EEE464 /* AnnouncementDetailsViewController.m in Sources */,
-				D0846A9525B02EA1008C1B8B /* BocaViewController.m in Sources */,
+				D0846A9525B02EA1008C1B8B /* PolicyViewController.m in Sources */,
 				8D1937F8237007F70066E5AA /* AppDelegate+LaunchAnimation.m in Sources */,
 				8D17D1C924CC032100ED840D /* SubmitPayPopView.m in Sources */,
 				8D17D1D424CC032100ED840D /* MemberLevelInfoModel.m in Sources */,
@@ -5191,6 +5190,7 @@
 				8D1937F2237007F70066E5AA /* TYWeakProxy.m in Sources */,
 				8D87194924F9DDC400F96A18 /* FFBuyRecordCommissionModel.m in Sources */,
 				8D17D1B924CC032100ED840D /* MyKeepTableViewCell.m in Sources */,
+				D04EFF9625B7F88400BF1D27 /* LWNewsTableViewCell.m in Sources */,
 				8D6E42712459783600607E68 /* CoinAccountChildVC.m in Sources */,
 				8D62637E24625C420088A5F2 /* BlockchainIntroductionModel.m in Sources */,
 				8D5D355E24613D8400AD9186 /* Y_StockChartRightYView.m in Sources */,
@@ -5310,7 +5310,7 @@
 				8D193804237007F70066E5AA /* ZQTColorSwitch.m in Sources */,
 				8D62638224625C420088A5F2 /* CurrencyTransactionModel.m in Sources */,
 				8D62637D24625C420088A5F2 /* TransactionMainViewController.m in Sources */,
-				D0846A8F25B02E6A008C1B8B /* DeFiViewController.m in Sources */,
+				D0846A8F25B02E6A008C1B8B /* LWNewsViewController.m in Sources */,
 				8D6C122D2457BD0F0042EB4F /* HomeHornView.m in Sources */,
 				8D5D356924613D8400AD9186 /* Y_KLineMainView.m in Sources */,
 				8D5D357724613D8400AD9186 /* MJCTabItem.m in Sources */,

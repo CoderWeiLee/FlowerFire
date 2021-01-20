@@ -54,6 +54,7 @@ target 'FlowerFire' do
  pod 'LBXPermission/Base'
  pod 'LBXPermission/Camera'
  pod 'LBXPermission/Photo'
+ pod 'MJExtension'
 # pod 'LBXPermission/Contact'
 # pod 'LBXPermission/Location'
 # pod 'LBXPermission/Location'

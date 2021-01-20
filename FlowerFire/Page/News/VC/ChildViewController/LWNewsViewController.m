@@ -1,25 +1,23 @@
 //
-//  ForecastViewController.m
+//  LWNewsViewController.m
 //  FlowerFire
 //
 //  Created by 李伟 on 2021/1/14.
 //  Copyright © 2021 Celery. All rights reserved.
-//  预测市场
+//  新闻
 
-#import "ForecastViewController.h"
+#import "LWNewsViewController.h"
 
-@interface ForecastViewController ()
+@interface LWNewsViewController ()
 
 @end
 
-@implementation ForecastViewController
+@implementation LWNewsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor redColor];
 }
-
-
 
 #pragma mark - JXCategoryListContentViewDelegate
 // 返回列表视图
@@ -28,5 +26,6 @@
 - (UIView *)listView {
     return self.view;
 }
+
 
 @end

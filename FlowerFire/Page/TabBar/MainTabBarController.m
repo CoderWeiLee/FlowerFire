@@ -71,7 +71,7 @@
     
    NSArray *viewControllers = @[
                                 firstNavigationController,
-//                                secondNavigationController,
+                                secondNavigationController,
                                 thirdNavigationController,
                                 fouthNavigationController,
                                 fiveNavigationController,
@@ -110,7 +110,7 @@
     
    NSArray *tabBarItemsAttributes = @[
                                       firstTabBarItemsAttributes,
-//                                      secondTabBarItemsAttributes,
+                                      secondTabBarItemsAttributes,
                                       thirdTabBarItemsAttributes,
                                       fourthTabBarItemsAttributes,
                                       fivethTabBarItemsAttributes

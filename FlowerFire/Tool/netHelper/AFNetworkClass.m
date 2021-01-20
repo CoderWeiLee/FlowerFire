@@ -59,7 +59,7 @@
 
 - (void)jsonGetDict:(NSString *)httpstr JsonDict:(NSDictionary *)jsonDict Tag:(NSString *)tag LoadingInView:(UIView *)view{
     NSString *requestUrl=[NSString stringWithFormat:@"%@%@",BASE_URL,httpstr];
-    NSLog(@"jsonPost %@ /n 内容：%@",requestUrl,jsonDict);
+    NSLog(@"jsonGet %@ /n 内容：%@",requestUrl,jsonDict);
     [MBManager showLoadingInView:view];
     AFHTTPSessionManager *manager= [AFHTTPSessionManager shareManager];
 

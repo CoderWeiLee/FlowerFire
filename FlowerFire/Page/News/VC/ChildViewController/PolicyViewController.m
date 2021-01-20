@@ -1,22 +1,22 @@
 //
-//  AMMViewController.m
+//  PolicyViewController.m
 //  FlowerFire
 //
 //  Created by 李伟 on 2021/1/14.
 //  Copyright © 2021 Celery. All rights reserved.
-//
+//  政策
 
-#import "AMMViewController.h"
+#import "PolicyViewController.h"
 
-@interface AMMViewController ()
+@interface PolicyViewController ()
 
 @end
 
-@implementation AMMViewController
+@implementation PolicyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor purpleColor];
 }
 
 
@@ -28,4 +28,5 @@
 - (UIView *)listView {
     return self.view;
 }
+
 @end

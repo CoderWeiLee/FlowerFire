@@ -67,6 +67,7 @@ PODS:
   - MagicalRecord/Core (2.4.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
+  - MJExtension (3.2.3)
   - MJRefresh (3.5.0)
   - ReactiveObjC (3.1.1)
   - SDCycleScrollView (1.82):
@@ -120,6 +121,7 @@ DEPENDENCIES:
   - MagicalRecord (from `https://github.com/magicalpanda/MagicalRecord`)
   - Masonry
   - MBProgressHUD
+  - MJExtension
   - MJRefresh
   - ReactiveObjC
   - SDCycleScrollView
@@ -156,6 +158,7 @@ SPEC REPOS:
     - LYEmptyView
     - Masonry
     - MBProgressHUD
+    - MJExtension
     - MJRefresh
     - ReactiveObjC
     - SDCycleScrollView
@@ -203,6 +206,7 @@ SPEC CHECKSUMS:
   MagicalRecord: 1f22a766156474d9f46a9b1e1ce59ca9e37830fc
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: a6fd35a527dafd7f3f1259017ee57551d58b3bb8
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
@@ -220,6 +224,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 93282aa9ecf3ae576cd2bba58e37cff23615b457
+PODFILE CHECKSUM: 0c2fe8c895c658162e561dff0ff1a87401ed0e3a
 
 COCOAPODS: 1.10.0

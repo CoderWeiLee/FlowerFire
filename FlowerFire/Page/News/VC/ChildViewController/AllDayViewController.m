@@ -1,22 +1,22 @@
 //
-//  BocaViewController.m
+//  AllDayViewController.m
 //  FlowerFire
 //
 //  Created by 李伟 on 2021/1/14.
 //  Copyright © 2021 Celery. All rights reserved.
-//  波卡
+//  预测市场
 
-#import "BocaViewController.h"
+#import "AllDayViewController.h"
 
-@interface BocaViewController ()
+@interface AllDayViewController ()
 
 @end
 
-@implementation BocaViewController
+@implementation AllDayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor darkGrayColor];
 }
 
 
