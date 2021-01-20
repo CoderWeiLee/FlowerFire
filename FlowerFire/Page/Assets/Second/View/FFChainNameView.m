@@ -30,7 +30,7 @@
 - (void)createUI{
     _topTip = [[WTLabel alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 20) Text:LocalizationKey(@"578Tip172") Font:tFont(14) textColor:KBlackColor parentView:self];
     
-    _chainName = [[WTButton alloc] initWithFrame:CGRectMake(_topTip.left, _topTip.bottom + 5, 80, 30) titleStr:@"ERC20" titleFont:tFont(14) titleColor:MainBlueColor parentView:self];
+    _chainName = [[WTButton alloc] initWithFrame:CGRectMake(_topTip.left, _topTip.bottom + 5, 80, 30) titleStr:@"TRC20" titleFont:tFont(14) titleColor:MainBlueColor parentView:self];
     _chainName.layer.cornerRadius = 3;
     _chainName.layer.borderWidth = 1;
     _chainName.layer.borderColor = MainBlueColor.CGColor;

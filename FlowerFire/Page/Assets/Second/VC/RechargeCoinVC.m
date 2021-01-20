@@ -157,10 +157,10 @@ static const CGFloat Threshold = 80;
         self.chainNameView.hidden = YES;
         centerBac.top = _headerBtn.bottom + 15;
     }else{
-        _coinName.text = model.symbol;
+        _coinName.text = [model.symbol uppercaseString];
         self.bottomView.hidden = NO;
         self.bottomView.showTextLabel.text =
-        NSStringFormat(@"%@%@%@%@%@%@%@",LocalizationKey(@"DepositTip2"),model.reharge_confirm,LocalizationKey(@"DepositTip3"),LocalizationKey(@"DepositTip4"),model.reharge_min,model.symbol,LocalizationKey(@"DepositTip5")); 
+        NSStringFormat(@"%@%@%@%@%@%@%@",LocalizationKey(@"DepositTip2"),model.reharge_confirm,LocalizationKey(@"DepositTip3"),LocalizationKey(@"DepositTip4"),model.reharge_min,[model.symbol uppercaseString],LocalizationKey(@"DepositTip5")); 
     
         self.chainNameView.hidden = NO;
         centerBac.top = self.chainNameView.bottom + 15;
