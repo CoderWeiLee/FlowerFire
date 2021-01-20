@@ -320,7 +320,7 @@ static const CGFloat bottomViewHeight = 120;
         [self.withdrawAmount.leftBtn setTitle:self.coinListModel.symbol forState:UIControlStateNormal];
         self.withdrawAmount.bottomLabel.text = NSStringFormat(@"%@ 0.0000 %@",LocalizationKey(@"Available"),self.coinListModel.symbol);
         [self.feeView.rightBtn setTitle:self.coinListModel.symbol forState:UIControlStateNormal];
-        self.feeView.inputTextField.text = NSStringFormat(@"%0.6f",0.0);
+        self.feeView.inputTextField.text = NSStringFormat(@"%0.6f",self.coinListModel.withdraw_fee);
         _arrivalsNum.text = NSStringFormat(@"0.0 %@",self.coinListModel.symbol);
         [self.bottomView.showTitleBtn setTitle:NSStringFormat(@"%@ %f%@",LocalizationKey(@"WithdrawTip3"),self.coinListModel.withdraw_min,self.coinListModel.symbol) forState:UIControlStateNormal];
     }
