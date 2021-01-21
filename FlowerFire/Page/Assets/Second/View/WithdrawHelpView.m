@@ -62,7 +62,7 @@
         [self.leftBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(rightView.mas_left).offset(OverAllLeft_OR_RightSpace);
             make.centerY.mas_equalTo(rightView.mas_centerY);
-            make.size.mas_equalTo(CGSizeMake((rightViewWidth - OverAllLeft_OR_RightSpace * 2)/2, 30));
+//            make.size.mas_equalTo(CGSizeMake((rightViewWidth - OverAllLeft_OR_RightSpace * 2)/2, 30));
         }];
         
         self.line = [UIView new];
@@ -83,7 +83,7 @@
         [self.rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.mas_equalTo(rightView.mas_right).offset(-OverAllLeft_OR_RightSpace);
             make.centerY.mas_equalTo(rightView.mas_centerY);
-            make.size.mas_equalTo(CGSizeMake((rightViewWidth - OverAllLeft_OR_RightSpace * 2)/2, 30));
+//            make.size.mas_equalTo(CGSizeMake((rightViewWidth - OverAllLeft_OR_RightSpace * 2)/2, 30));
         }];
           
         UIView *line1 = [UIView new];

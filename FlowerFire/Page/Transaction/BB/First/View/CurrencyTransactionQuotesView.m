@@ -424,7 +424,6 @@
         }
         cell.priceLabel.textColor = qutesRedColor;
         if(self.askcontentArr.count > 0){
-            
             if (self.HandicapDataCount == 5) {
                 
                 if (self.askcontentArr.count <= 5) {
@@ -1099,7 +1098,6 @@
 -(UITableView *)SaleTableView{
     if(!_SaleTableView){
         _SaleTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-     //   _SaleTableView.backgroundColor = navBarColor;
         _SaleTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _SaleTableView.delegate = self;
         _SaleTableView.dataSource = self;

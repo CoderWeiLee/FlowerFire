@@ -216,7 +216,8 @@
         static NSString *identifier = @"cell";
         [self.tableView registerClass:[CoinAccountCell class] forCellReuseIdentifier:identifier];
         CoinAccountCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-        cell.model = self.listModelArray[indexPath.row];
+        NSUInteger count = self.listModelArray.count;
+        cell.model = self.listModelArray[count - (indexPath.row) - 1];
         if(self.isSearchStatus){
             if(self.searchDataArray.count >0){
                 [cell setCellData:self.searchDataArray[indexPath.row] CoinAccountType:self.coinAccountType];

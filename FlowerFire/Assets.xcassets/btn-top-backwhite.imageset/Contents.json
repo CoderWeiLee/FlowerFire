@@ -5,11 +5,12 @@
       "scale" : "1x"
     },
     {
-      "filename" : "price_not_ic@2x.png",
+      "filename" : "btn-top-backwhite@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "btn-top-backwhite@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
