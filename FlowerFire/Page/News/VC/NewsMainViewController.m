@@ -34,7 +34,7 @@
     [self.view addSubview:self.categoryView];
     
     //2.配置 JXCategoryTitleView 的属性
-    self.titles = @[@"7*24新闻",@"头条", @"新闻", @"政策"];
+    self.titles = @[@"快讯",@"头条", @"新闻", @"政策"];
     self.categoryView.titles = self.titles;
     self.categoryView.titleColorGradientEnabled = YES;
     self.categoryView.backgroundColor = [UIColor colorWithHexString:@"#3583FC"];

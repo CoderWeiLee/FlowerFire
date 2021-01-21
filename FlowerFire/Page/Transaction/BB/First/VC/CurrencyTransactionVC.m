@@ -17,7 +17,7 @@
 #import "QuotesTradingZoneModel.h"
 #import "CurrencyTransactionModel.h"
 #import "SHPolling.h"
-
+#import <MJExtension/MJExtension.h>
 const CGFloat commissionViewHeight = 192;
 int FROMSCALE;   //交易对钱精确度(小数点后几位)
 int TOSCALE;     //交易对后精确度
@@ -160,6 +160,7 @@ int PRICESCALE;  //价格精确度
             case 400:
             {
                 [self jumpAddAccount:dict];
+                break;
             }
             default:
                 printAlert(dict[@"NetWorkErrorTip2"], 1.f);
@@ -216,17 +217,13 @@ int PRICESCALE;  //价格精确度
         NSString *leftCoinId;
         NSString *rightCoinId;
         
-        NSArray<QuotesTransactionPairModel *> *listModel;
+        NSMutableArray<QuotesTransactionPairModel *> *listModel = [NSMutableArray array];
         for (NSDictionary *dic in dict[@"data"]) {
-         //   if([dic[@"symbol"] isEqualToString:@"USDT"]){
         QuotesTradingZoneModel *model = [QuotesTradingZoneModel yy_modelWithDictionary:dic];
-        listModel = model.list;
-//                break;
-//            }
-              
+            [listModel addObjectsFromArray:model.list];
         }
         if(listModel.count>0){
-            display_name = listModel.firstObject.display_name;
+            display_name = listModel.lastObject.display_name;
             leftSymbol = [display_name componentsSeparatedByString:@"/"][0];
             rightSymbol = [display_name componentsSeparatedByString:@"/"][1];
             leftCoinId = listModel.firstObject.from;

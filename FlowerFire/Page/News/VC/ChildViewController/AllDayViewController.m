@@ -11,6 +11,7 @@
 #import <MJExtension/MJExtension.h>
 #import "LWNewsTableViewCell.h"
 #import <Masonry/Masonry.h>
+#import "NewsDetailViewController.h"
 @interface AllDayViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, assign) NSInteger maxCount;
 @property (nonatomic, strong) UITableView *tableView;
@@ -115,6 +116,14 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataArray.count;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    LWNewsModel *model = self.dataArray[indexPath.row];
+    NewsDetailViewController *detailVC = [[NewsDetailViewController alloc] init];
+    detailVC.model = model;
+    detailVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 #pragma mark - lazyInit
