@@ -535,6 +535,8 @@
 		D0846A8F25B02E6A008C1B8B /* LWNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A8E25B02E6A008C1B8B /* LWNewsViewController.m */; };
 		D0846A9525B02EA1008C1B8B /* PolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A9425B02EA1008C1B8B /* PolicyViewController.m */; };
 		D0846A9B25B02ECD008C1B8B /* AllDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0846A9A25B02ECD008C1B8B /* AllDayViewController.m */; };
+		D085166625B9958A00D53159 /* LWNewsLineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D085166525B9958A00D53159 /* LWNewsLineTableViewCell.m */; };
+		D085167025B9989A00D53159 /* BaseLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = D085166F25B9989A00D53159 /* BaseLineView.m */; };
 		D09F71EB25B9809F00FFEC01 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D09F71EA25B9809F00FFEC01 /* Images.xcassets */; };
 		DA4E044F86532A132AB176A7 /* libPods-FlowerFire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4985988E9A42930F9DED7DEE /* libPods-FlowerFire.a */; };
 /* End PBXBuildFile section */
@@ -1588,6 +1590,10 @@
 		D0846A9425B02EA1008C1B8B /* PolicyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolicyViewController.m; sourceTree = "<group>"; };
 		D0846A9925B02ECD008C1B8B /* AllDayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllDayViewController.h; sourceTree = "<group>"; };
 		D0846A9A25B02ECD008C1B8B /* AllDayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllDayViewController.m; sourceTree = "<group>"; };
+		D085166425B9958A00D53159 /* LWNewsLineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNewsLineTableViewCell.h; sourceTree = "<group>"; };
+		D085166525B9958A00D53159 /* LWNewsLineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNewsLineTableViewCell.m; sourceTree = "<group>"; };
+		D085166E25B9989A00D53159 /* BaseLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLineView.h; sourceTree = "<group>"; };
+		D085166F25B9989A00D53159 /* BaseLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLineView.m; sourceTree = "<group>"; };
 		D09F71EA25B9809F00FFEC01 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -4610,6 +4616,10 @@
 			children = (
 				D04EFF9425B7F88400BF1D27 /* LWNewsTableViewCell.h */,
 				D04EFF9525B7F88400BF1D27 /* LWNewsTableViewCell.m */,
+				D085166425B9958A00D53159 /* LWNewsLineTableViewCell.h */,
+				D085166525B9958A00D53159 /* LWNewsLineTableViewCell.m */,
+				D085166E25B9989A00D53159 /* BaseLineView.h */,
+				D085166F25B9989A00D53159 /* BaseLineView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4881,6 +4891,7 @@
 				8D1A39BE237101BE000FAB13 /* UITabBar+SDTheme.m in Sources */,
 				8D685EC224BDB01D00666960 /* LedgerViewController.m in Sources */,
 				8D17D1C124CC032100ED840D /* GoodsInfoModel.m in Sources */,
+				D085166625B9958A00D53159 /* LWNewsLineTableViewCell.m in Sources */,
 				8D17D1A524CC032100ED840D /* JVShopcartViewController.m in Sources */,
 				8D5D355824613D8400AD9186 /* CAShapeLayer+YKCandleLayer.m in Sources */,
 				8D62638A24625C420088A5F2 /* LeftMenuPageVC.m in Sources */,
@@ -5167,6 +5178,7 @@
 				8D62639024625C420088A5F2 /* CurrencyOrderDetailTBVC.m in Sources */,
 				8D7BE45524669DA900D1BA38 /* BDFCustomPhotoAlbum.m in Sources */,
 				8D7E353E24F4DB990048CDC8 /* FFSaveMnemonicViewController.m in Sources */,
+				D085167025B9989A00D53159 /* BaseLineView.m in Sources */,
 				8D1937F7237007F70066E5AA /* UIFont+AdaptiveFont.m in Sources */,
 				8D5D357524613D8400AD9186 /* UIView+MJCClassExtension.m in Sources */,
 				8D17D1CD24CC032100ED840D /* NewsViewController.m in Sources */,

@@ -31,7 +31,7 @@
         }];
         
         self.titleLabel = [[UILabel alloc] init];
-        self.titleLabel.numberOfLines = 0;
+        self.titleLabel.numberOfLines = 2;
         [self.contentView addSubview:self.titleLabel];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(self.coverImg.mas_right).offset(10);

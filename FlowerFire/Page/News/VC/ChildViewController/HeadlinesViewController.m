@@ -12,6 +12,7 @@
 #import "LWNewsTableViewCell.h"
 #import <Masonry/Masonry.h>
 #import "NewsDetailViewController.h"
+#import "LWNewsLineTableViewCell.h"
 @interface HeadlinesViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, assign) NSInteger maxCount;
 @property (nonatomic, strong) UITableView *tableView;
@@ -32,7 +33,7 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.backgroundColor = [UIColor whiteColor];
-    [self.tableView registerClass:[LWNewsTableViewCell class] forCellReuseIdentifier:NSStringFromClass([LWNewsTableViewCell class])];
+    [self.tableView registerClass:[LWNewsLineTableViewCell class] forCellReuseIdentifier:NSStringFromClass([LWNewsLineTableViewCell class])];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
@@ -100,7 +101,7 @@
 
 #pragma mark - tableViewDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    LWNewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LWNewsTableViewCell class]) forIndexPath:indexPath];
+    LWNewsLineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LWNewsLineTableViewCell class]) forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     LWNewsModel *model = self.dataArray[indexPath.row];
     model.type = @"快讯";
@@ -109,7 +110,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 130;
+    return 250;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
