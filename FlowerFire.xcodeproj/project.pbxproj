@@ -5541,8 +5541,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W6LAHQF374;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = R6LCY2C3NY;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FlowerFire/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = FlowerFire/Info.plist;
@@ -5551,8 +5551,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceshiyishibao;
+				MARKETING_VERSION = 1.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ngjtreedfcdd.rrdd;
 				PRODUCT_NAME = FlowerFire;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -5567,8 +5567,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W6LAHQF374;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = R6LCY2C3NY;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FlowerFire/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = FlowerFire/Info.plist;
@@ -5577,9 +5577,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.9;
+				MARKETING_VERSION = 1.12;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ceshiyishibao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ngjtreedfcdd.rrdd;
 				PRODUCT_NAME = FlowerFire;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
